@@ -1,0 +1,128 @@
+[
+  {
+    "key": "studioClassScheduleHero",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/6d334bff-2542-4845-896e-9619c4876352/ubud-studio-class-schedule.jpeg",
+    "file": "public/assets/hero/ubud-studio-class-schedule.jpg",
+    "maxWidth": 2500,
+    "alt": "A class resting on their mats in an open-air wooden shala surrounded by jungle at Radiantly Alive, Ubud"
+  },
+  {
+    "key": "studioCommunityClass",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/91e27d7d-063f-46f9-9a2f-fac63550c45e/30.08.2026.Hot+Potato+Everyone.Denise-92.jpg",
+    "file": "public/assets/classes/community-class-together.jpg",
+    "maxWidth": 2300,
+    "alt": "A teacher guiding three seated students in a glass-walled shala surrounded by jungle"
+  },
+  {
+    "key": "studioPrivateClass",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/f01175aa-5ac7-41d7-ac3f-aa14e7d61bc5/Radiantly+Alive+2020+-5138.jpg",
+    "file": "public/assets/classes/private-yoga-class.jpg",
+    "maxWidth": 1100,
+    "alt": "A student folding forward with hands in prayer on a wooden shala floor"
+  },
+  {
+    "key": "studioWorkshopsHero",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/f131699d-f114-470a-a165-29da8802b292/bg-studio-workshops-ubud.jpeg",
+    "file": "public/assets/hero/studio-workshops-events-ubud.jpg",
+    "maxWidth": 2500,
+    "alt": "A workshop group practising downward dog beside a live drummer in an open-air shala"
+  },
+  {
+    "key": "studioHealingsHero",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/f2286b9c-624a-4181-8c0e-f7836d98f3d8/Radiantly%2BAlive%2B2020%2B-5257+%281%29.jpeg",
+    "file": "public/assets/hero/studio-healings.jpg",
+    "maxWidth": 2500,
+    "alt": "A practitioner resting her hands on a woman’s forehead during a healing session"
+  },
+  {
+    "key": "studioHealerMadeNawa",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/044aeafa-eb7b-4d14-b73f-9901d4f1ece0/Made%2BNawa%2BBio%2B1.jpeg",
+    "file": "public/assets/healings/healer-made-nawa.jpg",
+    "maxWidth": 1400,
+    "alt": "Portrait of Made Nawa, healing massage therapist, with hands in prayer"
+  },
+  {
+    "key": "studioHealerNyomanSudiasa",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/15759b46-23aa-4a8e-aac9-e78e7abaa623/Nyoman%2BSudiasa%2B29.jpeg",
+    "file": "public/assets/healings/healer-nyoman-sudiasa.jpg",
+    "maxWidth": 1400,
+    "alt": "Portrait of Nyoman Sudiasa, Chi Nei Tsang practitioner, with hands in prayer"
+  },
+  {
+    "key": "studioHealerMichaelGreen",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/b2d006e1-f499-4e1b-b46a-9f6da16494cb/MichaelGreenBioPhoto+%281%29.jpeg",
+    "file": "public/assets/healings/healer-michael-green.jpg",
+    "maxWidth": 1200,
+    "alt": "Portrait of Michael Green, Ayurvedic consultant, smiling in profile"
+  },
+  {
+    "key": "studioHealerDewaOka",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/12455736-a272-4fe3-b17d-19eb5967c947/Dewa%2Boka2.jpeg",
+    "file": "public/assets/healings/healer-dewa-oka.jpg",
+    "maxWidth": 1100,
+    "alt": "Portrait of Dewa Oka, colonic hydrotherapist, among tropical plants"
+  },
+  {
+    "key": "studioHealerZara",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/c7c419f1-cb56-465d-be8a-7ba50fadb406/FullMoon-53.png",
+    "file": "public/assets/healings/healer-zara.jpg",
+    "maxWidth": 1400,
+    "alt": "Zara seated cross-legged in a shala with a crystal singing bowl"
+  },
+  {
+    "key": "studioShalaRentalHero",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/bce526ff-4ba6-459d-8d54-41085dd6d866/2023.08.YTT.L1.Radiantly+Alive.Ubud.Opening+Ceremony+%281%29.jpg",
+    "file": "public/assets/hero/shala-rental-opening-ceremony.jpg",
+    "maxWidth": 2500,
+    "alt": "A shala overlooking bamboo, set for an opening ceremony with floor cushions around flower mandalas"
+  },
+  {
+    "key": "studioShalaRentalIntro",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/ea162457-318f-4d4f-b402-add749179a11/IMG_1234.JPG",
+    "file": "public/assets/studio/shala-rental-intro.jpg",
+    "maxWidth": 2000,
+    "alt": "A glass-walled shala looking onto the jungle, with cushions arranged around a small flower mandala"
+  },
+  {
+    "key": "studioRiverShalaWide",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/77ef57cf-847e-4e96-b2da-460ab9217957/Radiantly+Alive+Yoga+Ubud+Bali+River+Shala+%288%29.jpg",
+    "file": "public/assets/studio/river-shala-wide.jpg",
+    "maxWidth": 2000,
+    "alt": "The long River Shala with rows of red mats under a high timber roof"
+  },
+  {
+    "key": "studioJungleShalaWide",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/fa85236e-f38c-42d4-877c-2879f2f2c342/Radiantly+Alive+Yoga+Ubud+Bali+Jungle+Shala+%2815%29.jpg",
+    "file": "public/assets/studio/jungle-shala-wide.jpg",
+    "maxWidth": 2000,
+    "alt": "Shelves of bolsters, blocks and folded blankets in the Jungle Shala"
+  },
+  {
+    "key": "studioBambooShalaWide",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/ccbedbc3-67be-468f-947b-1a7f56f1e1f0/Radiantly+Alive+Yoga+Ubud+Bali+Bamboo+Shala+%2810%29.jpg",
+    "file": "public/assets/studio/bamboo-shala-wide.jpg",
+    "maxWidth": 2000,
+    "alt": "The Bamboo Shala, with warm walls opening onto bamboo trees and red mats laid out"
+  },
+  {
+    "key": "studioUpperShalaWide",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/56986c7e-e15b-466b-800b-db2b692f3a18/Radiantly+Alive+Yoga+Ubud+Bali+Upper+Shala+%289%29.jpg",
+    "file": "public/assets/studio/upper-shala-wide.jpg",
+    "maxWidth": 2000,
+    "alt": "The Upper Shala, a wide wooden-floored hall with red mats and large windows"
+  },
+  {
+    "key": "studioSkyShalaWide",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/8ae1cbf2-df49-4570-95d7-5f1e5ca19040/Radiantly+Alive+Yoga+Ubud+Bali+Sky+Shala+%285%29.jpg",
+    "file": "public/assets/studio/sky-shala-wide.jpg",
+    "maxWidth": 2500,
+    "alt": "Colourful aerial hammocks hanging in the Sky Shala"
+  },
+  {
+    "key": "studioRiverShalaDetail",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/6b9599a6-1186-451c-9d8a-ae3817740089/Radiantly+Alive+Yoga+Ubud+Bali+River+Shala+%285%29.jpg",
+    "file": "public/assets/studio/river-shala-detail.jpg",
+    "maxWidth": 2000,
+    "alt": "Rolled mats and white storage shelves in the River Shala"
+  }
+]

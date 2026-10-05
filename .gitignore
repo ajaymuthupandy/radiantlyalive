@@ -39,3 +39,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# allow the documented example env file
+!.env.example
+
+# raw media downloads (input to scripts/prepare-media.py)
+/.media-source
+.media-cache

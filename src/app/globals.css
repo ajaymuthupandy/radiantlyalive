@@ -1,26 +1,477 @@
 @import "tailwindcss";
 
+/* ---------------------------------------------------------------------------
+   Design tokens: the single source of truth. See DESIGN_SYSTEM.md
+   Colour:     Radiantly Alive (radiantlyalive.com theme tokens)
+   Typography: House of Om (Bagnard display, Mulish headings/UI, Inter text)
+   ------------------------------------------------------------------------ */
+@theme {
+  /* Colour — every value is taken from radiantlyalive.com */
+  --color-canvas: #f5f0e8; /* RA lightAccent: page background */
+  --color-paper: #fffdeb; /* RA ivory: raised surfaces, cards */
+  --color-sand: #ede5d5; /* RA sand: quiet panels, placeholders */
+  --color-ink: #3a0d1f; /* RA paragraph plum: primary text */
+  --color-ink-soft: #6e4b57; /* ink at reading strength: secondary text */
+  --color-plum: #4a1328; /* RA header plum: primary dark surface, buttons, footer */
+  --color-wine: #5a162f; /* RA accent: hover on plum surfaces */
+  --color-crimson: #9b1823; /* RA red: accent text on light, secondary dark surface */
+  --color-saffron: #ef9000; /* RA saffron: accent on dark surfaces only */
+  --color-cream: #fffdeb; /* RA ivory: text on dark surfaces */
+  --color-mist: #e2cfcb; /* secondary text on dark surfaces */
+  --color-shade: #1c0810; /* deepest plum: flat overlays on photography and film */
+
+  /* Font families */
+  --font-display: var(--font-bagnard), Georgia, "Times New Roman", serif;
+  --font-heading: var(--font-mulish), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  /* Radius */
+  --radius-frame: 0.375rem; /* images, cards, panels */
+  --radius-control: 0.5rem; /* buttons, inputs, chips */
+
+  /* Breakpoints (Tailwind defaults + xs and 3xl) */
+  --breakpoint-xs: 30rem;
+  --breakpoint-3xl: 105rem;
+
+  /* Motion */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-soft: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Layout */
+  --container-max: 90rem;
+  --gutter: clamp(1.25rem, 4vw, 3.5rem);
+  --section-space: clamp(4.5rem, 9vw, 8rem);
+  --section-space-tight: clamp(3.5rem, 6vw, 5rem);
+  --header-height: 4.5rem;
+
+  /* Stacking order: content < sticky UI < scrim < header < dialogs < skip link */
+  --z-raised: 10;
+  --z-scrim: 40;
+  --z-header: 50;
+  --z-dialog: 60;
+  --z-dialog-top: 70;
+  --z-skip: 100;
+
+  /* Accent used by <em> inside display headings; dark surfaces switch it */
+  --em-color: var(--color-crimson);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@media (min-width: 48rem) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --header-height: 5rem;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* ---------------------------------------------------------------------------
+   Base
+   ------------------------------------------------------------------------ */
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background-color: var(--color-canvas);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  @media (min-width: 48rem) {
+    body {
+      font-size: 1.0625rem;
+    }
+  }
+
+  ::selection {
+    background-color: var(--color-saffron);
+    color: var(--color-plum);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-saffron);
+    outline-offset: 3px;
+  }
+
+  summary {
+    cursor: pointer;
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   Layout utilities
+   ------------------------------------------------------------------------ */
+@utility container-x {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+@utility section-y {
+  padding-block: var(--section-space);
+}
+
+@utility section-y-tight {
+  padding-block: var(--section-space-tight);
+}
+
+/* Dark surface: flips heading emphasis to saffron */
+@utility surface-dark {
+  --em-color: var(--color-saffron);
+}
+
+@utility shape-arch {
+  border-radius: 999px 999px 0 0;
+}
+
+@utility hairline {
+  border-color: color-mix(in oklab, var(--color-ink) 14%, transparent);
+}
+
+/* Reading measures */
+@utility measure {
+  max-width: 62ch;
+}
+
+@utility measure-lead {
+  max-width: 40rem;
+}
+
+@utility max-w-prose-tight {
+  max-width: 36rem;
+}
+
+/* ---------------------------------------------------------------------------
+   Typography scale (House of Om): every text element maps to one of these.
+   Display / H1 / H2  Bagnard 400   statements and section headings
+   H3 / H4            Mulish 600    card, list and panel titles
+   Lead / Body / Small / Caption    Inter 400
+   Eyebrow / Nav / Button           Mulish 600–700
+   ------------------------------------------------------------------------ */
+@utility type-display-xl {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(2.75rem, 6vw, 5.75rem);
+  line-height: 1.04;
+  letter-spacing: -0.015em;
+}
+
+@utility type-display-lg {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(2.375rem, 4.6vw, 4.5rem);
+  line-height: 1.06;
+  letter-spacing: -0.01em;
+}
+
+@utility type-display-md {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(2.125rem, 3.4vw, 3.375rem);
+  line-height: 1.1;
+  letter-spacing: -0.005em;
+}
+
+@utility type-display-sm {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  line-height: 1.22;
+}
+
+@utility type-h3 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: clamp(1.25rem, 1.6vw, 1.5rem);
+  line-height: 1.3;
+  letter-spacing: -0.005em;
+}
+
+@utility type-h4 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.35;
+}
+
+@utility type-lead {
+  font-size: clamp(1.0625rem, 1.25vw, 1.25rem);
+  line-height: 1.65;
+}
+
+@utility type-body {
+  font-size: 1rem;
+  line-height: 1.7;
+
+  @media (min-width: 48rem) {
+    font-size: 1.0625rem;
+  }
+}
+
+@utility type-small {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+@utility type-meta {
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+}
+
+@utility type-eyebrow {
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+@utility type-nav {
+  font-family: var(--font-heading);
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+}
+
+@utility type-button {
+  font-family: var(--font-heading);
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+/*
+ * Bagnard has no italic. Emphasis inside display headings is an upright
+ * colour turn (crimson on light, saffron on dark) instead of a faux slant.
+ */
+@layer base {
+  :where(.type-display-xl, .type-display-lg, .type-display-md, .type-display-sm) em {
+    font-style: normal;
+    color: var(--em-color);
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   Motion: pre-JS states and safety fallback (see src/animations)
+   `.js` is set by an inline script in the root layout before first paint.
+   `.motion-ready` is set once GSAP has taken over.
+   ------------------------------------------------------------------------ */
+.js [data-reveal],
+.js [data-stagger-item],
+.js [data-hero-item] {
+  opacity: 0;
+}
+
+.js:not(.motion-ready) [data-reveal],
+.js:not(.motion-ready) [data-stagger-item],
+.js:not(.motion-ready) [data-hero-item] {
+  animation: motion-fallback 0.6s ease 2.5s forwards;
+}
+
+/* Hero image starts slightly zoomed so the GSAP settle has no jump on hydration */
+@media (prefers-reduced-motion: no-preference) {
+  .js [data-hero-media] {
+    transform: scale(1.06);
+  }
+
+  .js:not(.motion-ready) [data-hero-media] {
+    animation: hero-fallback 1.6s ease 2.5s forwards;
+  }
+}
+
+@keyframes hero-fallback {
+  to {
+    transform: none;
+  }
+}
+
+@keyframes motion-fallback {
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js [data-reveal],
+  .js [data-stagger-item],
+  .js [data-hero-item] {
+    opacity: 1;
+    animation: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/*
+ * Hero headline + lead: CSS-only entrance so they paint (and count as LCP)
+ * at first paint, independent of JavaScript hydration.
+ */
+@media (prefers-reduced-motion: no-preference) {
+  .hero-rise {
+    animation: hero-rise 1.3s var(--ease-out-expo) 0.1s both;
+  }
+
+  .hero-rise-late {
+    animation-delay: 0.3s;
+  }
+}
+
+@keyframes hero-rise {
+  from {
+    opacity: 0;
+    transform: translateY(1.75rem);
+  }
+}
+
+/* SplitText line masks */
+.split-line-mask {
+  overflow: clip;
+  padding-bottom: 0.08em;
+  margin-bottom: -0.08em;
+}
+
+/* ---------------------------------------------------------------------------
+   Lenis (mirrors lenis/dist/lenis.css)
+   ------------------------------------------------------------------------ */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis:not(.lenis-autoToggle).lenis-stopped {
+  overflow: clip;
+}
+
+.lenis [data-lenis-prevent],
+.lenis [data-lenis-prevent-wheel],
+.lenis [data-lenis-prevent-touch] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+/* Native horizontal rails (events, mobile) */
+.rail {
+  scroll-padding-inline: var(--gutter);
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+  overscroll-behavior-x: contain;
+}
+
+.rail::-webkit-scrollbar {
+  display: none;
+}
+
+.rail > * {
+  scroll-snap-align: start;
+}
+
+/* ---------------------------------------------------------------------------
+   Header: announcement bar + mega menu (see components/navbar)
+   ------------------------------------------------------------------------ */
+.announcement {
+  grid-template-rows: 1fr;
+  transition: grid-template-rows 0.5s var(--ease-out-expo);
+}
+
+#site-header[data-scrolled] .announcement,
+html[data-announcement='dismissed'] .announcement {
+  grid-template-rows: 0fr;
+}
+
+html[data-announcement='dismissed'] .announcement {
+  visibility: hidden;
+}
+
+.mega-panel {
+  visibility: hidden;
+  pointer-events: none;
+  transition: visibility 0s linear 0.5s;
+}
+
+.mega-panel[data-state='open'] {
+  visibility: visible;
+  pointer-events: auto;
+  transition-delay: 0s;
+}
+
+.mega-panel-inner {
+  clip-path: inset(0 0 100% 0);
+  transition: clip-path 0.5s var(--ease-out-expo);
+}
+
+.mega-panel[data-state='open'] .mega-panel-inner {
+  clip-path: inset(0 0 0 0);
+  transition-duration: 0.65s;
+}
+
+.mega-stagger {
+  opacity: 0;
+  transform: translateY(0.75rem);
+  transition:
+    opacity 0.25s ease,
+    transform 0.6s var(--ease-out-expo);
+}
+
+.mega-panel[data-state='open'] .mega-stagger {
+  opacity: 1;
+  transform: none;
+  transition-duration: 0.5s, 0.8s;
+}
+
+.mega-panel[data-state='open'] .mega-stagger:nth-child(1) { transition-delay: 0.08s; }
+.mega-panel[data-state='open'] .mega-stagger:nth-child(2) { transition-delay: 0.14s; }
+.mega-panel[data-state='open'] .mega-stagger:nth-child(3) { transition-delay: 0.2s; }
+
+#site-header[data-switching] .mega-panel,
+#site-header[data-switching] .mega-panel-inner {
+  transition: none;
+}
+
+/* ---------------------------------------------------------------------------
+   Hero film (components/hero/HeroVideo.tsx)
+   The source film is letterboxed inside a 16:9 frame, so the embed is sized
+   to cover the hero with the bars cropped away.
+   ------------------------------------------------------------------------ */
+.hero-video-frame {
+  container-type: size;
+}
+
+.hero-video-cover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: max(100cqw, 222.3cqh);
+  aspect-ratio: 16 / 9;
+  transform: translate(-50%, -50%);
+}
+
+.hero-video-cover iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }

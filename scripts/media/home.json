@@ -1,0 +1,58 @@
+[
+  {
+    "key": "homeTileWorkshops",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/5b7723ee-809a-4ce1-9fd0-20ab3546f76b/Radiantly+Alive+2020-2300+%281%29.jpg",
+    "file": "public/assets/workshops/home-workshops-and-events.jpg",
+    "maxWidth": 1600,
+    "alt": "Students seated in a circle on their mats during a workshop in an open-air shala"
+  },
+  {
+    "key": "homeTileShalaRental",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/ec093b5a-dafd-4049-8439-6a7701915c07/Radiantly+Alive+Yoga+Ubud+Bali+Jungle+Shala+%285%29.jpg",
+    "file": "public/assets/studio/home-jungle-shala-rental.jpg",
+    "maxWidth": 1500,
+    "alt": "The empty Jungle Shala with rows of mats and glass walls onto the rainforest"
+  },
+  {
+    "key": "homeTileHealings",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/084de255-c5ce-4c19-91ec-906de89fb619/Radiantly+Alive+2020-7860.jpg",
+    "file": "public/assets/healings/home-studio-healings.jpg",
+    "maxWidth": 1600,
+    "alt": "A practitioner giving an energy healing to a woman resting on a treatment table"
+  },
+  {
+    "key": "badgeRys200",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/77b4f7c5-b280-45ca-ab41-d2866dc90fa4/200-RYS.png",
+    "file": "public/assets/brand/yoga-alliance-rys-200.png",
+    "maxWidth": 300,
+    "alt": "Yoga Alliance Registered Yoga School RYS 200"
+  },
+  {
+    "key": "badgeRys300",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/b6a47523-07ab-4eb1-87a1-fb409c9cf0c0/300-RYS.png",
+    "file": "public/assets/brand/yoga-alliance-rys-300.png",
+    "maxWidth": 300,
+    "alt": "Yoga Alliance Registered Yoga School RYS 300"
+  },
+  {
+    "key": "badgeYacep",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/4efedb21-df4e-40e9-be12-a1fd4f6110f1/YACEP.png",
+    "file": "public/assets/brand/yoga-alliance-yacep.png",
+    "maxWidth": 300,
+    "alt": "Yoga Alliance Continuing Education Provider YACEP"
+  },
+  {
+    "key": "badgeGoogleReviews",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/7aec1095-dd4a-4bd0-9100-c88ebbf240ae/greview-128.jpeg",
+    "file": "public/assets/brand/google-reviews-badge.jpg",
+    "maxWidth": 200,
+    "alt": "Google reviews"
+  },
+  {
+    "key": "badgeTripadvisor",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/485bde19-417b-4f40-a079-bcbbb1755d9e/trip-advisor-128.jpeg",
+    "file": "public/assets/brand/tripadvisor-badge.jpg",
+    "maxWidth": 200,
+    "alt": "Tripadvisor reviews"
+  }
+]

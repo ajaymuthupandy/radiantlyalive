@@ -1,0 +1,156 @@
+[
+  {
+    "key": "espHero",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/42d405e6-c46a-4236-8675-e14bbce5f8cf/38_MG_8042.jpg",
+    "file": "public/assets/trainings/esp-ytt-hero.jpg",
+    "maxWidth": 2500,
+    "alt": "Trainees dressed in white standing in a circle among the ancient rock-cut temples of Gunung Kawi, Bali"
+  },
+  {
+    "key": "espOpeningCircle",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/727c35f0-a0a3-4b5a-b133-d9a182210c0b/2024.07.YTT.200HR.Espanol.Radiantly+Alive+Yoga.Ubud.Bali.Opening+Ceremony+%2846%29.jpg",
+    "file": "public/assets/trainings/esp-ytt-opening-ceremony.jpg",
+    "maxWidth": 2300,
+    "alt": "A trainee with braided hair and a frangipani flower watching the opening ceremony around a Balinese flower mandala"
+  },
+  {
+    "key": "espRaVinyasaSadhana",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/33305c8f-b87c-42d3-a06a-6decbcdbe7e3/2024.08.YTT.200HR.Radiantly+Alive+Yoga.Ubud.Bali.Sadhana+%2860%29+%281%29.jpg",
+    "file": "public/assets/trainings/esp-ytt-ra-vinyasa-sadhana.jpg",
+    "maxWidth": 2300,
+    "alt": "Trainees reaching one arm skyward in a low lunge twist during morning sadhana in the jungle shala"
+  },
+  {
+    "key": "espSadhanaPractice",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/0987ae25-5487-48ba-8069-396a39879f44/2024.08.YTT.200HR.Radiantly+Alive+Yoga.Ubud.Bali.Sadhana+%2886%29.jpg",
+    "file": "public/assets/trainings/esp-ytt-sadhana-practice.jpg",
+    "maxWidth": 2300,
+    "alt": "Trainees resting on bolsters while a teacher offers hands-on support during a restorative practice"
+  },
+  {
+    "key": "espArtOfTeaching",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/1ecf4331-b7cb-4016-8378-23a458d7899b/2024.07.YTT.200HR.Espanol.Radiantly+Alive+Yoga.Ubud.Bali.Art+of+Teaching+%2842%29+%281%29.jpg",
+    "file": "public/assets/trainings/esp-ytt-art-of-teaching.jpg",
+    "maxWidth": 1500,
+    "alt": "A trainee practice-teaches a class while peers observe in the open-air shala"
+  },
+  {
+    "key": "espJungleShala",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/6262f1d5-ea59-4f4a-a1b7-b209bf0d3da3/radiantly%2Balive%2Byoga.jungle%2Bshala.ubud.bali.ytt.1%2B1440.jpg",
+    "file": "public/assets/studio/esp-ytt-jungle-shala.jpg",
+    "maxWidth": 2300,
+    "alt": "Trainees kneeling in a row on pink mats in the timber jungle shala at Radiantly Alive, Ubud"
+  },
+  {
+    "key": "espBookNow",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/a3bcc3b5-e3a5-4a4b-872a-e28978b5fb8d/2024.07.YTT.200HR.Espanol.Radiantly+Alive+Yoga.Ubud.Bali.Opening+Ceremony+%2818%29+%281%29.jpg",
+    "file": "public/assets/trainings/esp-ytt-reserva-tu-plaza.jpg",
+    "maxWidth": 2500,
+    "alt": "Two trainees sharing a heartfelt hug during the opening ceremony"
+  },
+  {
+    "key": "espDenise",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/7b51bc52-aedf-4367-8e2f-647dc9eb3450/IMG_2945.JPG",
+    "file": "public/assets/teachers/esp-denise-de-la-torre-ugarte.jpg",
+    "maxWidth": 1100,
+    "alt": "Denise De la Torre Ugarte smiling and extending her arm in a flowing movement among green foliage"
+  },
+  {
+    "key": "espAriksHomestay",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/af0c8cf6-4944-44dc-85c9-aabe0b89545f/242201842_898867991060008_4075709311388467744_n.jpg",
+    "file": "public/assets/general/esp-ariks-homestay.jpg",
+    "maxWidth": 1300,
+    "alt": "The garden path of Ariks Homestay lined with tropical plants and stone statues"
+  },
+  {
+    "key": "espKrisnaHouse",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/bd17e9ab-f119-48c5-b42b-cf689ecb8b48/86987323.jpg",
+    "file": "public/assets/general/esp-krisna-house.jpg",
+    "maxWidth": 1300,
+    "alt": "The outdoor pool at Krisna House lit up at dusk, framed by palm trees"
+  },
+  {
+    "key": "espChandraCafe",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/c81334cb-5a9e-4b8b-8652-a0c27bcde4b6/Radiantly+Alive+2020-8547.jpg",
+    "file": "public/assets/studio/esp-chandra-cafe-meals.jpg",
+    "maxWidth": 2300,
+    "alt": "Students chatting over drinks on the sofas of Chandra Cafe inside the studio"
+  },
+  {
+    "key": "espClosingCeremony",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/f618a003-8634-43af-8ed0-365f9dd36c85/2024.07.YTT.200HR.Espanol.Radiantly+Alive+Yoga.Ubud.Bali.Closing+Ceremony+%2815%29.jpg",
+    "file": "public/assets/trainings/esp-ytt-closing-ceremony.jpg",
+    "maxWidth": 1600,
+    "alt": "A woman in a headscarf offering to a ceremonial fire beside a mossy temple wall during the closing ceremony"
+  },
+  {
+    "key": "espTirtaEmpul",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/796f260e-e816-4203-a76c-cbbfae8aa965/2024.07.YTT.200HR.Espanol.Radiantly+Alive+Yoga.Ubud.Bali.Tirta+Empul+%2864%29.jpg",
+    "file": "public/assets/trainings/esp-ytt-tirta-empul.jpg",
+    "maxWidth": 800,
+    "alt": "A trainee purifying under a stone water spout at the Tirta Empul water temple"
+  },
+  {
+    "key": "espTeachingPractice",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/78095d40-3d03-4e28-a4b6-bf464d30c86d/2024.07.YTT.200HR.Espanol.Radiantly+Alive+Yoga.Ubud.Bali.Art+of+Teaching+%2854%29.jpg",
+    "file": "public/assets/trainings/esp-ytt-teaching-practice.jpg",
+    "maxWidth": 2300,
+    "alt": "Trainees laughing together while practising teaching cues in the shala"
+  },
+  {
+    "key": "espOpeningGroup",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/34619784-7e1e-40a3-9834-1abd5920e9f4/2024.07.YTT.200HR.Espanol.Radiantly+Alive+Yoga.Ubud.Bali.Opening+Ceremony+%2835%29.jpg",
+    "file": "public/assets/trainings/esp-ytt-opening-group.jpg",
+    "maxWidth": 1600,
+    "alt": "A Balinese priest in white preparing flower offerings for the opening ceremony"
+  },
+  {
+    "key": "espBaliLandscape",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/a81665c1-f956-4083-95c9-07a0de41baab/2024.07.YTT.200HR.Espanol.Radiantly+Alive+Yoga.Ubud.Bali.Closing+Ceremony+%283%29.jpg",
+    "file": "public/assets/trainings/esp-ytt-bali-landscape.jpg",
+    "maxWidth": 800,
+    "alt": "A lush jungle valley with mossy stone steps near Ubud"
+  },
+  {
+    "key": "espGraduation",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/6887169f-8a5b-443e-ab58-999bd450f900/2024.07.YTT.200HR.Espanol.Radiantly+Alive+Yoga.Ubud.Bali.Closing+Ceremony+%2874%29.jpg",
+    "file": "public/assets/trainings/esp-ytt-graduation.jpg",
+    "maxWidth": 2500,
+    "alt": "A teacher placing her hand on a trainee’s heart during the closing ceremony"
+  },
+  {
+    "key": "espHybridOnline",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/665779c2-7e5b-449f-b73c-1a86b24ff6cf/DSCF1579+%281%29.jpg",
+    "file": "public/assets/trainings/esp-hybrid-online-module.jpg",
+    "maxWidth": 1600,
+    "alt": "A woman practising a high lunge with arms raised in her living room, following an online class"
+  },
+  {
+    "key": "espHybridAsanaLab",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/36253965-9bb2-4eb2-ab09-9bc67eee2914/2025.10.YTT.200HR.Espanol..Radiantly+Alive+Yoga.Ubud.Asana+Lab+%2825%29.jpg",
+    "file": "public/assets/trainings/esp-hybrid-asana-lab.jpg",
+    "maxWidth": 1600,
+    "alt": "A teacher guiding a trainee’s arm into alignment in front of a whiteboard of notes"
+  },
+  {
+    "key": "espHybridWaterTemple",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/2bfcaa45-2c04-4f1d-a97d-bc688e6689bd/2025.11.YTT.200HR.Radiantly+Alive+Yoga.Ubud.Water+Temple+%2854%29.jpg",
+    "file": "public/assets/trainings/esp-hybrid-water-temple.jpg",
+    "maxWidth": 2500,
+    "alt": "Trainees with palms together standing waist-deep in the pools of a Balinese water temple"
+  },
+  {
+    "key": "espHybridOpening",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/4af30b28-a6ae-4318-ac04-94a979133dfb/2025.10.YTT.200HR.Espanol..Radiantly+Alive+Yoga.Ubud.Opening+Ceremony+%288%29.jpg",
+    "file": "public/assets/trainings/esp-hybrid-opening-ceremony.jpg",
+    "maxWidth": 1600,
+    "alt": "Trainees seated cross-legged on cushions around a flower mandala at the opening ceremony"
+  },
+  {
+    "key": "espHybridFlexible",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/1766047314970-WE5LT58FWCILPZDCH51C/unsplash-image-vFefVZLzQYU.jpg",
+    "file": "public/assets/online/esp-hybrid-flexible-learning.jpg",
+    "maxWidth": 2300,
+    "alt": "A woman meditating cross-legged at home in front of her laptop"
+  }
+]

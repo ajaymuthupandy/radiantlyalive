@@ -1,0 +1,515 @@
+[
+  {
+    "key": "heroJungleShala",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/91e27d7d-063f-46f9-9a2f-fac63550c45e/30.08.2026.Hot+Potato+Everyone.Denise-92.jpg",
+    "file": "public/assets/hero/hero-jungle-shala.jpg",
+    "maxWidth": 2500,
+    "alt": "Students meditating together in an open-air jungle shala at Radiantly Alive, Ubud"
+  },
+  {
+    "key": "introShalaPractice",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/6a94e3a0-9551-4e69-b2dc-ee07b9c1558e/Radiantly+Alive+2020-2349.jpg",
+    "file": "public/assets/general/intro-shala-practice.jpg",
+    "alt": "A class kneeling in stillness on red mats in a wooden shala surrounded by jungle"
+  },
+  {
+    "key": "teacherAssisting",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/67052f42-31d9-4902-9df3-06b9098815de/Teacher+Assisting+%283%29.jpg",
+    "file": "public/assets/general/teacher-assisting.jpg",
+    "maxWidth": 2500,
+    "alt": "A teacher offering a hands-on assist during a class in the Ubud studio"
+  },
+  {
+    "key": "ubudRiceTerraces",
+    "file": "public/assets/bali/ubud-rice-terraces.jpg",
+    "alt": "Terraced rice fields and coconut palms in the hills around Ubud, Bali"
+  },
+  {
+    "key": "ubudAerialFields",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/5a76da87-3751-423b-9551-b87b8c64dbb7/Radiantly+Alive+2020-0228+%281%29.jpg",
+    "file": "public/assets/bali/ubud-aerial-fields.jpg",
+    "maxWidth": 723,
+    "alt": "Aerial view of green rice fields stretching toward Mount Agung"
+  },
+  {
+    "key": "templePurification",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/c4e70194-6626-4146-9b79-3afda923f5a5/INSPIRE+3.jpg",
+    "file": "public/assets/bali/temple-purification.jpg",
+    "maxWidth": 2400,
+    "alt": "A woman receiving a water purification blessing at a Balinese temple spring"
+  },
+  {
+    "key": "communityEmbrace",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/870cef9b-f95d-4f24-b0d3-33ecbc09619a/Radiantly+Alive+2020-6036.jpg",
+    "file": "public/assets/community/community-embrace.jpg",
+    "maxWidth": 2400,
+    "crop": {
+      "left": 0,
+      "top": 0.08,
+      "width": 1,
+      "height": 0.843
+    },
+    "alt": "A group of students holding each other in a warm, tight embrace"
+  },
+  {
+    "key": "communityJoy",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/968efb6a-0742-4e37-92d7-a52684b62c83/2026.03.11.YTT.200HR.Radiantly.Alive.Yoga.Ubud.Opening.Ceremony+%2890%29.jpg",
+    "file": "public/assets/community/community-joy.jpg",
+    "maxWidth": 2500,
+    "alt": "Teachers and students laughing and posing together in the jungle shala"
+  },
+  {
+    "key": "ceremonyCircle",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/3c59a0c1-f2d1-4171-b91b-3d986116ba27/2024.01.YTT.L2.Radiantly+Alive+Yoga.Ubud.Opening+Ceremony++%2872%29.jpg",
+    "file": "public/assets/community/ceremony-circle.jpg",
+    "maxWidth": 2500,
+    "alt": "A teacher training opening ceremony circle around a flower mandala"
+  },
+  {
+    "key": "ceremonyMandala",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/86b013c7-b9d6-4f7f-a325-c485cc9c8b1e/2026.03.11.YTT.200HR.Radiantly.Alive.Yoga.Ubud.Opening.Ceremony+%2888%29.jpg",
+    "file": "public/assets/community/ceremony-mandala.jpg",
+    "maxWidth": 2500,
+    "alt": "Students seated around a Balinese flower mandala during an opening ceremony"
+  },
+  {
+    "key": "graduationWhite",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/c63f84ee-08dd-4f31-93c5-4ba27ab0f391/2025.11.YTT.200HR.Radiantly+Alive+Yoga.Ubud.Closing+Ceremony+%28126%29.jpg",
+    "file": "public/assets/community/graduation-white.jpg",
+    "alt": "A teacher training cohort dressed in white at their closing ceremony"
+  },
+  {
+    "key": "graduationDance",
+    "file": "public/assets/community/graduation-dance.jpg",
+    "alt": "Graduates dancing and laughing in white at a closing ceremony"
+  },
+  {
+    "key": "cohortPanorama",
+    "file": "public/assets/community/cohort-panorama.jpg",
+    "alt": "A full teacher training cohort cheering in front of an ancient stone wall"
+  },
+  {
+    "key": "openAirPractice",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/5b7723ee-809a-4ce1-9fd0-20ab3546f76b/Radiantly+Alive+2020-2300+%281%29.jpg",
+    "file": "public/assets/community/open-air-practice.jpg",
+    "maxWidth": 1200,
+    "alt": "Students sharing a quiet moment on their mats in an open-air shala"
+  },
+  {
+    "key": "trainingSadhana",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/67052f42-31d9-4902-9df3-06b9098815de/Teacher+Assisting+%283%29.jpg",
+    "file": "public/assets/trainings/training-sadhana.jpg",
+    "alt": "A lead teacher adjusting students during a morning sadhana practice"
+  },
+  {
+    "key": "trainingAssist",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/33075794-222a-4729-99c7-60e35666a582/SLIDE+9+-+Teacher+Guide+%283%29.jpg",
+    "file": "public/assets/trainings/training-assist.jpg",
+    "alt": "A teacher guiding a student into a forward fold with gentle touch"
+  },
+  {
+    "key": "trainingCeremony",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/48cb10ed-50b9-4eed-a5b8-29fe24a0ff71/2025.05.YTT.200HR.300HR.Radiantly+Alive+Yoga.Ubud.Opening+Ceremony+%2830%29+%281%29.jpg",
+    "file": "public/assets/trainings/training-ceremony.jpg",
+    "alt": "A large circle of trainees in the jungle shala during an opening ceremony"
+  },
+  {
+    "key": "trainingJungleShala",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/a4d39692-1033-4ec4-9483-54b5f6c2f97e/2020.YTT.Ubud.Radiantly+Alive+Yoga.jungle+shala.1.jpg",
+    "file": "public/assets/trainings/training-jungle-shala.jpg",
+    "alt": "Trainees in a standing practice inside the glass-walled jungle shala"
+  },
+  {
+    "key": "trainingArtOfTeaching",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/1eeb7c07-99a4-4f3f-aad8-4c7e1a3f69be/2024.07.YTT.200HR.Espanol.Radiantly+Alive+Yoga.Ubud.Bali.Art+of+Teaching+%2859%29.jpg",
+    "file": "public/assets/trainings/training-art-of-teaching.jpg",
+    "alt": "Trainees practising warrior poses during an art-of-teaching session"
+  },
+  {
+    "key": "trainingTeachingLab",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/2839f40d-1068-46c1-abcf-d67e3a56de92/2026.16.05.YTT.Radiantly.Alive.Yoga.300HR+Teach+200HR-132.jpg",
+    "file": "public/assets/trainings/training-teaching-lab.jpg",
+    "maxWidth": 1800,
+    "alt": "Advanced trainees teaching and laughing with a small group"
+  },
+  {
+    "key": "trainingAsanaExploration",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/be11ebbf-815c-4174-9795-5d7384719627/2026.14.05.YTT.Radiantly.Alive.Yoga.Asana.Exploration.Advance.Ade-30.jpg",
+    "file": "public/assets/trainings/training-asana-exploration.jpg",
+    "maxWidth": 1400,
+    "alt": "A teacher demonstrating a standing balance to trainees"
+  },
+  {
+    "key": "trainingAsanaLab",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/71d555ec-b4ae-49be-9b22-737107b8472c/2025.10.YTT.200HR.Espanol..Radiantly+Alive+Yoga.Ubud.Asana+Lab+%289%29.jpg",
+    "file": "public/assets/trainings/training-asana-lab.jpg",
+    "maxWidth": 1300,
+    "alt": "Two trainees working on a posture together in the asana lab"
+  },
+  {
+    "key": "trainingObservation",
+    "file": "public/assets/trainings/training-observation.jpg",
+    "alt": "Trainees observing and taking notes during a teaching practicum"
+  },
+  {
+    "key": "shalaRiver",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/cb5db4ad-1f04-4a76-bc14-4de073f6ae81/Radiantly+Alive+Yoga+Ubud+Bali+River+Shala+%2814%29.jpg",
+    "file": "public/assets/studio/shala-river.jpg",
+    "alt": "The River Shala, a spacious wooden shala with red mats and jungle views"
+  },
+  {
+    "key": "shalaRiverPortrait",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/e153e529-7da8-4902-800a-07c76562efba/Radiantly+Alive+Yoga+Ubud+Bali+River+Shala+%286%29.jpg",
+    "file": "public/assets/studio/shala-river-portrait.jpg",
+    "maxWidth": 1400,
+    "alt": "Inside the River Shala, with lanterns and a Ganesha shrine"
+  },
+  {
+    "key": "shalaJungle",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/ec093b5a-dafd-4049-8439-6a7701915c07/Radiantly+Alive+Yoga+Ubud+Bali+Jungle+Shala+%285%29.jpg",
+    "file": "public/assets/studio/shala-jungle.jpg",
+    "alt": "The Jungle Shala, with glass walls opening onto the rainforest"
+  },
+  {
+    "key": "shalaBamboo",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/00dfd804-7a9e-4abd-8e9b-644b4c3c9a43/Radiantly+Alive+Yoga+Ubud+Bali+Bamboo+Shala+%287%29.jpg",
+    "file": "public/assets/studio/shala-bamboo.jpg",
+    "maxWidth": 1400,
+    "alt": "A carved statue and offerings in the Bamboo Shala"
+  },
+  {
+    "key": "shalaUpper",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/345d658f-4234-452d-b838-85e31b44f8c7/Radiantly+Alive+Yoga+Ubud+Bali+Upper+Shala+%2810%29.jpg",
+    "file": "public/assets/studio/shala-upper.jpg",
+    "maxWidth": 1400,
+    "alt": "The Upper Shala, the largest practice space, with a high timber roof"
+  },
+  {
+    "key": "shalaSky",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/3b3b3ebb-f381-41f3-af76-116bdd7e6c20/Radiantly+Alive+Yoga+Ubud+Bali+Sky+Shala+%286%29.jpg",
+    "file": "public/assets/studio/shala-sky.jpg",
+    "maxWidth": 1400,
+    "alt": "The Sky Shala, set up with colourful aerial yoga hammocks"
+  },
+  {
+    "key": "savasanaShala",
+    "file": "public/assets/classes/savasana-shala.jpg",
+    "alt": "A class resting in savasana in an open-sided shala"
+  },
+  {
+    "key": "retreatMeditation",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/74c80819-0f47-46fb-8ef3-8b76f6684d2c/Radiantly%2BAlive%2B2020-1181-2%2B%281%29.jpeg",
+    "file": "public/assets/retreats/retreat-meditation.jpg",
+    "maxWidth": 1200,
+    "alt": "A woman meditating alone on a wooden deck overlooking the jungle"
+  },
+  {
+    "key": "retreatCoconut",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/2371ddf8-5a21-41a9-a0b9-a02b128f91b8/Radiantly+Alive+2020-1142.jpg",
+    "file": "public/assets/retreats/retreat-coconut.jpg",
+    "maxWidth": 1200,
+    "alt": "A woman relaxing by a pool with a fresh coconut"
+  },
+  {
+    "key": "retreatBalcony",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/177fd242-b79f-42ff-a45e-94060eb4da7a/Radiantly+Alive+2020-1577.jpg",
+    "file": "public/assets/retreats/retreat-balcony.jpg",
+    "maxWidth": 1200,
+    "alt": "A woman sipping tea on a balcony surrounded by greenery"
+  },
+  {
+    "key": "retreatMassage",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/dc3db2a9-5844-4ea0-9668-492e5f0ae0e4/Radiantly+Alive+2020+-5563.jpg",
+    "file": "public/assets/retreats/retreat-massage.jpg",
+    "maxWidth": 1200,
+    "alt": "A healing massage in a calm treatment room"
+  },
+  {
+    "key": "retreatCafe",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/7ca238b5-c53e-4c53-b27c-9a7139ac7d68/Radiantly+Alive+2020-3529.jpg",
+    "file": "public/assets/retreats/retreat-cafe.jpg",
+    "maxWidth": 1200,
+    "alt": "Reading the menu at the plant-based Chandra Cafe"
+  },
+  {
+    "key": "onlineHomeMeditation",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/8d483469-af37-460d-939f-5d212a4e11e1/DSCF1619.jpg",
+    "file": "public/assets/online/online-home-meditation.jpg",
+    "maxWidth": 2500,
+    "alt": "A woman meditating at home in front of a laptop streaming a class"
+  },
+  {
+    "key": "onlineHomePractice",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/54147257-3565-4cc1-b5c8-71d062da0209/DSCF1892+%281%29.jpg",
+    "file": "public/assets/online/online-home-practice.jpg",
+    "maxWidth": 2500,
+    "alt": "A man practising a low lunge in his living room with an online class"
+  },
+  {
+    "key": "onlineHomePortrait",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/b40722c6-b86b-4471-b276-366ea3ad0b37/DSCF1741.jpg",
+    "file": "public/assets/online/online-home-portrait.jpg",
+    "maxWidth": 1800,
+    "alt": "A woman with hands on her heart during an online practice at home"
+  },
+  {
+    "key": "onlineAsana",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/99753e4e-9ea5-462a-9dc9-f62d189654f1/asana.jpeg",
+    "file": "public/assets/online/online-asana.jpg",
+    "maxWidth": 1100,
+    "alt": "A practitioner in a twisted downward dog in a bright studio"
+  },
+  {
+    "key": "onlineMeditation",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/3a25f064-d711-471a-bc06-2bd5487d2068/meditation.jpeg",
+    "file": "public/assets/online/online-meditation.jpg",
+    "maxWidth": 1100,
+    "alt": "A woman in prayer pose with eyes closed"
+  },
+  {
+    "key": "onlineMobility",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/67812a4d-0d7d-4df8-ae0d-141dc2fc2127/mobility.jpeg",
+    "file": "public/assets/online/online-mobility.jpg",
+    "maxWidth": 1100,
+    "alt": "A practitioner in a supported shoulder-opening stretch using a block"
+  },
+  {
+    "key": "onlineSadhana",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/ec927152-913f-406a-9c3e-e877ad9f4700/sadhana.jpeg",
+    "file": "public/assets/online/online-sadhana.jpg",
+    "maxWidth": 1100,
+    "alt": "A group practising a flowing sequence in the shala"
+  },
+  {
+    "key": "healingHands",
+    "file": "public/assets/healings/healing-hands.jpg",
+    "alt": "A practitioner offering a gentle head and face healing treatment"
+  },
+  {
+    "key": "healingEnergy",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/084de255-c5ce-4c19-91ec-906de89fb619/Radiantly+Alive+2020-7860.jpg",
+    "file": "public/assets/healings/healing-energy.jpg",
+    "maxWidth": 2500,
+    "alt": "A healer holding her hands above a resting client in an energy session"
+  },
+  {
+    "key": "eventMysoreSeason",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/06ef39bf-6288-4997-a451-2254c0736cf9/2027.03.Bali+Mysore+Season.Kino.Radiantly+Alive+Ubud.Poster-06.jpg",
+    "file": "public/assets/workshops/event-mysore-season.jpg",
+    "maxWidth": 1600,
+    "alt": "Bali Mysore Season and three week immersion with Kino MacGregor and Tim Feldmann"
+  },
+  {
+    "key": "eventDhrupad",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/36403c27-70e3-424b-9d43-fb9d8b0cdd1c/2026.10.The+Mystical+Voice+of+Dhrupad.Kabir.Radiantly+Alive+Yoga.Poster-05.jpg",
+    "file": "public/assets/workshops/event-dhrupad.jpg",
+    "maxWidth": 1600,
+    "alt": "The Mystical Voice of Dhrupad, a three day immersive with Dhani Gundecha"
+  },
+  {
+    "key": "eventEnergyMedicine",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/d5bea1b1-b0c5-4a07-9b17-fbbdb79ebf08/2026.10.Energy+Medicine.Devi+Ma.Radiantly+Alive+Yoga.visual-05.jpg",
+    "file": "public/assets/workshops/event-energy-medicine.jpg",
+    "maxWidth": 1600,
+    "alt": "Shamanic Reiki Energy Medicine Level 1 with Devi Ma"
+  },
+  {
+    "key": "eventHimalayanKriya",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/f27acb51-f509-4a65-be13-f7d8e11640ac/2026.10.Himalayan+Kriya.Samten.Radiantly+Alive+Yoga.visual-05.jpg",
+    "file": "public/assets/workshops/event-himalayan-kriya.jpg",
+    "maxWidth": 1600,
+    "alt": "Himalayan Kriya Yoga Level 1 with Samten and Nora"
+  },
+  {
+    "key": "eventAshtangaIntensive",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/24be3d65-d2e1-4be3-b610-5c23e1b44197/2026.11.Ashtanga+Intensive.David+%26+Jelena.Radiantly+Alive+Yoga.Visual-05.jpg",
+    "file": "public/assets/workshops/event-ashtanga-intensive.jpg",
+    "maxWidth": 1600,
+    "alt": "Ashtanga Intensive with David Robson and Jelena Vasic"
+  },
+  {
+    "key": "eventIntegratedBody",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/f63bd39c-28bb-4c3e-8a0a-cf20c9e41acc/2026.12.The+Integrated+Body+Architecture.Brett+Wearne.Radiantly+Alive+Yoga.visual-05+%281%29.jpg",
+    "file": "public/assets/workshops/event-integrated-body.jpg",
+    "maxWidth": 1600,
+    "alt": "The Integrated Body with Brett Wearne"
+  },
+  {
+    "key": "workshopsStudio",
+    "file": "public/assets/workshops/workshops-studio.jpg",
+    "alt": "A workshop group practising beside a live musician in the jungle shala"
+  },
+  {
+    "key": "teamEmbrace",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/870cef9b-f95d-4f24-b0d3-33ecbc09619a/Radiantly+Alive+2020-6036.jpg",
+    "file": "public/assets/teachers/team-embrace.jpg",
+    "maxWidth": 2500,
+    "alt": "Radiantly Alive teachers in a group embrace"
+  },
+  {
+    "key": "teamStaff",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/99c30434-1c2a-4048-9cd5-d46a65a05c80/Radiantly+Alive+2020-8008.jpg",
+    "file": "public/assets/teachers/team-staff.jpg",
+    "maxWidth": 1900,
+    "alt": "The Radiantly Alive reception, housekeeping and office team"
+  },
+  {
+    "key": "teacherAde",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/d04ad1f4-45e2-456b-81d4-3ae1ea4811b3/1000129232.jpg",
+    "file": "public/assets/general/teacher-ade.jpg",
+    "maxWidth": 1100,
+    "alt": "Portrait of Ade, Ashtanga teacher"
+  },
+  {
+    "key": "teacherAlexandra",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/019bbd69-c1f4-456c-889d-6e94b5d9315e/Alex+prof+pict.jpg",
+    "file": "public/assets/general/teacher-alexandra.jpg",
+    "maxWidth": 1100,
+    "alt": "Portrait of Alexandra, yoga philosophy teacher"
+  },
+  {
+    "key": "teacherAnna",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/17275d50-fbd2-4f22-8bd7-9521ab888175/anna_portrait.jpg",
+    "file": "public/assets/general/teacher-anna.jpg",
+    "maxWidth": 1100,
+    "alt": "Portrait of Anna, vinyasa teacher"
+  },
+  {
+    "key": "teacherConstanza",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/fe61952b-febf-4932-9a1f-d1d5e0e55e06/ADE02783+%281%29.jpg",
+    "file": "public/assets/teachers/teacher-constanza.jpg",
+    "alt": "Constanza holding a singing bowl in a sound healing space"
+  },
+  {
+    "key": "teacherCorinne",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/cf27ba5b-3fe4-4807-ab5a-0a9938037bcb/Photo+Corinne+Winterberg.jpg",
+    "file": "public/assets/teachers/teacher-corinne.jpg",
+    "maxWidth": 1400,
+    "alt": "Portrait of Corinne, yoga and meditation teacher"
+  },
+  {
+    "key": "teacherDenise",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/d073d091-e66c-4f5e-86fa-d7f2c4884db0/Denise%2BDe%2BLa%2BTorre.jpeg",
+    "file": "public/assets/teachers/teacher-denise.jpg",
+    "maxWidth": 1400,
+    "alt": "Portrait of Denise, vinyasa and Inside Flow teacher"
+  },
+  {
+    "key": "teacherDominika",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/b888d462-ffd5-41ea-8719-4f7a06547630/7FC42817-55D0-460C-8825-E3BEE6664D2E.JPG",
+    "file": "public/assets/teachers/teacher-dominika.jpg",
+    "maxWidth": 1100,
+    "alt": "Dominika standing on a palm-lined road"
+  },
+  {
+    "key": "teacherEric",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/b76999c6-3d28-4039-8474-6df3f3cf1e7d/image2+%281%29.jpeg",
+    "file": "public/assets/teachers/teacher-eric.jpg",
+    "maxWidth": 1100,
+    "alt": "Portrait of Eric, Ashtanga, Hatha and Kundalini teacher"
+  },
+  {
+    "key": "teacherJoelle",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/7d1e99ee-edbf-46fa-869b-70fc8fdd247d/joelle.jpg",
+    "file": "public/assets/teachers/teacher-joelle.jpg",
+    "maxWidth": 1400,
+    "alt": "Portrait of Joëlle, vinyasa and yin teacher and training lead"
+  },
+  {
+    "key": "teacherLaila",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/4d1feda5-dcf6-4a05-ae31-bec9b2faaf14/laila.jpg",
+    "file": "public/assets/teachers/teacher-laila.jpg",
+    "maxWidth": 1100,
+    "alt": "Laila seated cross-legged against a warm wall"
+  },
+  {
+    "key": "teacherLucinda",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/1609fdc7-01a8-4620-b93a-a19f6fbbad44/DSC_0148+%281%29.jpg",
+    "file": "public/assets/teachers/teacher-lucinda.jpg",
+    "maxWidth": 1100,
+    "alt": "Portrait of Lucinda, teacher and exercise physiologist"
+  },
+  {
+    "key": "teacherMaximilien",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/cba49f52-256a-45bd-ba6f-d0d588e32f71/image1.jpeg",
+    "file": "public/assets/teachers/teacher-maximilien.jpg",
+    "maxWidth": 1100,
+    "alt": "Portrait of Maximilien in a bamboo shala"
+  },
+  {
+    "key": "teacherMichael",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/e701cc29-adc0-4ffc-a2cf-f925ad3fadb8/MichaelGreenBioPicture.jpg",
+    "file": "public/assets/teachers/teacher-michael.jpg",
+    "maxWidth": 1400,
+    "alt": "Portrait of Michael, meditation teacher and Ayurvedic practitioner"
+  },
+  {
+    "key": "teacherNalya",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/4222fbf6-cdf9-4c9f-97a0-f7048ec1af18/IMG_5456+3.jpg",
+    "file": "public/assets/teachers/teacher-nalya.jpg",
+    "maxWidth": 1100,
+    "alt": "Nalya in prayer pose in front of a carved Balinese door"
+  },
+  {
+    "key": "teacherNaomi",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/1e060553-b814-4dd7-a70b-b373b8c7e033/430A1188-Edit.jpeg",
+    "file": "public/assets/teachers/teacher-naomi.jpg",
+    "alt": "Dr. Naomi seated in a garden setting"
+  },
+  {
+    "key": "teacherNiken",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/85b5d10b-3687-4968-aaed-1d8d7f587d74/Headshot+photo.jpg",
+    "file": "public/assets/teachers/teacher-niken.jpg",
+    "maxWidth": 1100,
+    "alt": "Niken in prayer pose among tropical leaves"
+  },
+  {
+    "key": "teacherNiko",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/419d812f-d3b9-498e-bc0c-7c04989d8a30/_BAS7268.jpg",
+    "file": "public/assets/teachers/teacher-niko.jpg",
+    "maxWidth": 1100,
+    "alt": "Portrait of Niko, vinyasa and Inside Flow teacher"
+  },
+  {
+    "key": "teacherNirmoha",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/f63792ca-a4d1-40b6-9723-7eb08019d993/nirmoha.jpg",
+    "file": "public/assets/teachers/teacher-nirmoha.jpg",
+    "maxWidth": 1400,
+    "alt": "Portrait of Nirmoha, craniosacral and breathwork practitioner"
+  },
+  {
+    "key": "teacherNitin",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/0749cf14-4e14-4eed-9bf5-f7159277760b/IMG_6988.jpg",
+    "file": "public/assets/teachers/teacher-nitin.jpg",
+    "maxWidth": 1400,
+    "alt": "Nitin in prayer pose among tropical leaves"
+  },
+  {
+    "key": "teacherRicardo",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/124b1863-c591-4a71-92bb-8b6469b3849d/1000167559.jpg",
+    "file": "public/assets/teachers/teacher-ricardo.jpg",
+    "maxWidth": 1100,
+    "alt": "Portrait of Ricardo, vinyasa and hatha teacher"
+  },
+  {
+    "key": "teacherSamten",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/606e962e-ccd1-48d9-9975-6d198293639b/WhatsApp+Image+2025-03-21+at+7.14.37+AM.jpeg",
+    "file": "public/assets/teachers/teacher-samten.jpg",
+    "maxWidth": 1500,
+    "alt": "Portrait of Samten, Himalayan Kriya Yoga lineage holder"
+  },
+  {
+    "key": "teacherSaridewi",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/45062e35-27c3-4fe4-9cb2-260ae1f56c8b/IMG_5352.JPG.webp",
+    "file": "public/assets/teachers/teacher-saridewi.jpg",
+    "maxWidth": 1100,
+    "alt": "Saridewi standing in a garden beside the studio"
+  },
+  {
+    "key": "teacherZara",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/0079cb7e-ec96-49c8-89de-5435bc7b2e76/Zara+Healing+2.jpg",
+    "file": "public/assets/teachers/teacher-zara.jpg",
+    "maxWidth": 1400,
+    "alt": "Zara seated on a mat in the jungle shala"
+  }
+]

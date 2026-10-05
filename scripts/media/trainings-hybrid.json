@@ -1,0 +1,261 @@
+[
+  {
+    "key": "hybridHubHero",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/275cfea4-a314-44ac-bb02-6d61b84a2e9a/DSCF1741+%282%29.jpg",
+    "file": "public/assets/trainings/hybrid-hub-hero.jpg",
+    "maxWidth": 2500,
+    "alt": "A woman at a desk with a laptop and notebook, eyes closed and hands on her heart during an online yoga session at home"
+  },
+  {
+    "key": "hybridHubQuote",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/5e94bcee-6777-4fce-a7bc-dc431909d811/NL+%2820%29.png",
+    "file": "public/assets/trainings/hybrid-hub-quote.jpg",
+    "maxWidth": 2500,
+    "alt": "A teacher guiding three seated students in meditation in an open-air jungle shala"
+  },
+  {
+    "key": "hybridBaliHero",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/17897621-3991-4db2-b440-a0de6e6fd668/Original+image.jpg",
+    "file": "public/assets/trainings/hybrid-bali-hero.jpg",
+    "maxWidth": 2500,
+    "alt": "A woman in tree pose at a home desk with a laptop, set against the split temple gates of Bali and misty jungle hills"
+  },
+  {
+    "key": "hybridBaliGuide",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/1749020922322-X2NAU0N6O48MH0N3OJDE/learning.jpg",
+    "file": "public/assets/trainings/hybrid-bali-before-you-decide.jpg",
+    "maxWidth": 1600,
+    "alt": "Two trainees sitting on the shala floor studying their manuals and taking notes"
+  },
+  {
+    "key": "hybridBaliOnline",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/665779c2-7e5b-449f-b73c-1a86b24ff6cf/DSCF1579+%281%29.jpg",
+    "file": "public/assets/trainings/hybrid-bali-online-phase.jpg",
+    "maxWidth": 2300,
+    "alt": "A woman in a high lunge with arms raised, following a yoga class on the television in her living room"
+  },
+  {
+    "key": "hybridBaliJungleShala",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/911e3af1-1cc5-41c4-965b-15e52f55ff96/Radiantly+Alive+Yoga+Ubud+Bali+Jungle+Shala+%285%29.jpg",
+    "file": "public/assets/trainings/hybrid-bali-jungle-shala.jpg",
+    "maxWidth": 2000,
+    "alt": "An empty wooden shala with rows of red mats and floor-to-ceiling windows onto the jungle"
+  },
+  {
+    "key": "hybridBaliSadhana",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/84d38b1b-9777-45b8-9301-e868ab1c0a19/2024.01.YTT.L1.Radiantly+Alive+Yoga.Ubud.Sadhana+%2816%29.jpg",
+    "file": "public/assets/trainings/hybrid-bali-sadhana.jpg",
+    "maxWidth": 2500,
+    "alt": "A teacher offering a hands-on assist to trainees resting in child’s pose during a training practice in Ubud"
+  },
+  {
+    "key": "hybridMarlen",
+    "url": "https://images.squarespace-cdn.com/content/5e68798b81f578406bd7ac7b/a5ddafb7-1d72-4cbc-a123-23feed68f08c/marlen.png",
+    "file": "public/assets/teachers/marlen-apolonia-beckmann.jpg",
+    "maxWidth": 1100,
+    "alt": "Portrait of Marlen Apolonia Beckmann against a pale wall"
+  },
+  {
+    "key": "hybridNiko",
+    "url": "https://images.squarespace-cdn.com/content/5e68798b81f578406bd7ac7b/505c0f35-b171-416d-8467-49b36bffc2fe/niko-blossom.png",
+    "file": "public/assets/teachers/niko-kisic-hybrid.jpg",
+    "maxWidth": 1100,
+    "alt": "Niko Kisic seated cross-legged with hands in prayer, framed by a leaf shape"
+  },
+  {
+    "key": "hybridLucinda",
+    "url": "https://images.squarespace-cdn.com/content/5e68798b81f578406bd7ac7b/f14e146a-e130-4b38-ab37-dc45c14a4476/lucinda-.png",
+    "file": "public/assets/teachers/lucinda-muldoon-hybrid.jpg",
+    "maxWidth": 1100,
+    "alt": "Lucinda Muldoon in a seated pigeon variation holding her back foot, framed by a leaf shape"
+  },
+  {
+    "key": "hybridLaila",
+    "url": "https://images.squarespace-cdn.com/content/5e68798b81f578406bd7ac7b/4d1feda5-dcf6-4a05-ae31-bec9b2faaf14/laila.jpg",
+    "file": "public/assets/teachers/laila-el-idrissi-hybrid.jpg",
+    "maxWidth": 1100,
+    "alt": "Laila El Idrissi seated cross-legged against a warm terracotta wall"
+  },
+  {
+    "key": "hybridSamten",
+    "url": "https://images.squarespace-cdn.com/content/5e68798b81f578406bd7ac7b/4b4e702b-b802-4a27-8959-e9b1835469a0/Samten+Headshot+2.jpg",
+    "file": "public/assets/teachers/samten-kriya-hybrid.jpg",
+    "maxWidth": 1200,
+    "alt": "Samten Kriya smiling with her hands in a mudra in front of large tree roots"
+  },
+  {
+    "key": "hybridMoroccoHero",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/620ef7a9-aa6f-42e9-9d89-342aec51ecbc/surf-yoga-bluemindmorocco-sandra-khalid-2-scaled-e1575885711852.jpg",
+    "file": "public/assets/trainings/hybrid-morocco-hero.jpg",
+    "maxWidth": 2500,
+    "alt": "A woman seated on sand dunes at sunset with her arms raised toward the sky"
+  },
+  {
+    "key": "hybridMoroccoForYou",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/67bba183-2f77-4ba2-a9b0-d2936b643534/DSCF1692.jpg",
+    "file": "public/assets/trainings/hybrid-morocco-for-you.jpg",
+    "maxWidth": 2300,
+    "alt": "A woman in a high lunge with arms raised in a bright room, a laptop open on the cabinet behind her"
+  },
+  {
+    "key": "hybridMoroccoLaila",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/7c5b06d1-ae06-4b5e-9a41-2e64129712a6/IMG_6355.jpeg",
+    "file": "public/assets/teachers/laila-elidrissi-morocco.jpg",
+    "maxWidth": 1400,
+    "alt": "Laila Elidrissi smiling, lying on her front on a wooden floor with her chin resting on her hand"
+  },
+  {
+    "key": "hybridMoroccoGallery2",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/08b74f5a-29fd-4c9b-9ce1-42987f2bc5de/DSCF1831.jpg",
+    "file": "public/assets/trainings/hybrid-morocco-practice-2.jpg",
+    "maxWidth": 1800,
+    "alt": "A man seated on a cushion with arms open, following an online class on a laptop in his living room"
+  },
+  {
+    "key": "hybridMoroccoGallery3",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/57b49a91-4536-4c23-a8bf-541eb9208bea/DSCF1769.jpg",
+    "file": "public/assets/trainings/hybrid-morocco-practice-3.jpg",
+    "maxWidth": 2300,
+    "alt": "A student writing in her training manual beside a laptop during online study"
+  },
+  {
+    "key": "hybridMoroccoGallery4",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/b4917a76-597d-412d-8712-e554ef89a8eb/DSCF1704+%281%29.jpg",
+    "file": "public/assets/trainings/hybrid-morocco-practice-4.jpg",
+    "maxWidth": 1800,
+    "alt": "A woman in a low pigeon stretch on a mat at home, a laptop open behind her"
+  },
+  {
+    "key": "hybridMoroccoScene1",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/1771226769179-4KJ2N2PRBJ3GJCS28L9Q/unsplash-image-PktK6GuC3U4.jpg",
+    "file": "public/assets/trainings/hybrid-morocco-scene-1.jpg",
+    "maxWidth": 1800,
+    "alt": "Students seated on mats facing a teacher in a warm, draped yoga hall"
+  },
+  {
+    "key": "hybridMoroccoScene2",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/1771226812470-5ZIQ2R2AHMXN45IKEHQM/unsplash-image-X-OZDHpjBwk.jpg",
+    "file": "public/assets/trainings/hybrid-morocco-scene-2.jpg",
+    "maxWidth": 1800,
+    "alt": "A group practising standing poses with arms overhead on a beach at sunset"
+  },
+  {
+    "key": "hybridMoroccoPalais1",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/83572854-987d-4b7c-88b7-0189f378a612/201538194.jpg",
+    "file": "public/assets/trainings/hybrid-morocco-palais-claudio-bravo-1.jpg",
+    "maxWidth": 1024,
+    "alt": "A twin bedroom with orange throws and framed paintings at Palais Claudio Bravo"
+  },
+  {
+    "key": "hybridMoroccoPalais2",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/b6339221-1431-48c1-903f-b66efbbe1ea8/419886491.jpg",
+    "file": "public/assets/trainings/hybrid-morocco-palais-claudio-bravo-2.jpg",
+    "maxWidth": 700,
+    "alt": "A guest room with a red sofa, a Moroccan rug and a lantern at Palais Claudio Bravo"
+  },
+  {
+    "key": "hybridMoroccoPalais3",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/60bc75b2-d86f-4d38-bd74-7800eaec82d8/174895803.jpg",
+    "file": "public/assets/trainings/hybrid-morocco-palais-claudio-bravo-3.jpg",
+    "maxWidth": 2300,
+    "alt": "The swimming pool at Palais Claudio Bravo, framed by terracotta walls, palms and cypress trees"
+  },
+  {
+    "key": "hybridMoroccoPalais4",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/4eed1185-d331-4dba-8f4e-aca2d4d53c40/caption.jpg",
+    "file": "public/assets/trainings/hybrid-morocco-palais-claudio-bravo-4.jpg",
+    "maxWidth": 2300,
+    "alt": "Terracotta domes and walls of Palais Claudio Bravo behind a cactus garden and palm trees"
+  },
+  {
+    "key": "hybridMoroccoPalais5",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/5454d0aa-934e-46ee-a82c-7fbd6ccfc843/173914522.jpg",
+    "file": "public/assets/trainings/hybrid-morocco-palais-claudio-bravo-5.jpg",
+    "maxWidth": 2500,
+    "alt": "A pavilion and palm trees reflected in a still water basin at dusk"
+  },
+  {
+    "key": "hybridMoroccoPalais6",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/ce590ae1-1107-4192-ad9c-6b13bacae949/111288561.jpg",
+    "file": "public/assets/trainings/hybrid-morocco-palais-claudio-bravo-6.jpg",
+    "maxWidth": 1024,
+    "alt": "A long avenue lined with tall palm trees and orchards near Taroudant"
+  },
+  {
+    "key": "hybridMoroccoClasses",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/6a94e3a0-9551-4e69-b2dc-ee07b9c1558e/Radiantly+Alive+2020-2349.jpg",
+    "file": "public/assets/trainings/hybrid-benefit-unlimited-classes.jpg",
+    "maxWidth": 2300,
+    "alt": "Students kneeling in a row on mats in an open-air shala in Ubud"
+  },
+  {
+    "key": "hybridMoroccoReception",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/aad33186-71aa-4b42-9153-43e286531f5b/reception.jpg",
+    "file": "public/assets/trainings/hybrid-benefit-alumni-discount.jpg",
+    "maxWidth": 1400,
+    "alt": "A student with a yoga mat at the wooden reception desk of Radiantly Alive in Ubud"
+  },
+  {
+    "key": "hybridMoroccoOnlineStudio",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/c3f7497d-f630-4e92-80ed-60f28a408f9c/Onlie+Studio+%283%29.jpg",
+    "file": "public/assets/trainings/hybrid-benefit-online-studio.jpg",
+    "maxWidth": 2300,
+    "alt": "A woman laughing as she joins an online class on her laptop at home"
+  },
+  {
+    "key": "hybridMoroccoConnect",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/2aa24d32-8341-45b0-827a-1c8bf1cf645d/CONNECT+3.jpg",
+    "file": "public/assets/trainings/hybrid-morocco-connect.jpg",
+    "maxWidth": 2300,
+    "alt": "Two women smiling at each other with hands on their hearts in a garden"
+  },
+  {
+    "key": "hybridMoroccoBeach",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/1771568019241-8WL2W8OHMQ81FJQJYQHW/unsplash-image-a94qb09aMX8.jpg",
+    "file": "public/assets/trainings/hybrid-morocco-desert-meditation.jpg",
+    "maxWidth": 1667,
+    "alt": "A woman seated in meditation with hands in prayer at the foot of a red sandstone cliff"
+  },
+  {
+    "key": "hybridMoroccoContact",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/e3b85148-eeb6-4c18-9670-ec16e428332e/Screenshot+2024-10-14+at+09.54.16.png",
+    "file": "public/assets/trainings/hybrid-morocco-get-in-touch.jpg",
+    "maxWidth": 1600,
+    "alt": "A woman in a wide-legged forward fold on a wooden floor against a warm plaster wall"
+  },
+  {
+    "key": "hybridYttExperience",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/7e1cb0dc-8f13-47b0-9dce-beaccc985552/200H%2BYTT.Ubud.Radiantly%2BAlive%2BYoga.experience.11.jpg",
+    "file": "public/assets/trainings/hybrid-ytt-experience.jpg",
+    "maxWidth": 1500,
+    "alt": "Trainees standing in rows with palms together in a jungle shala in Ubud"
+  },
+  {
+    "key": "hybridYttCircle",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/3c131dcc-2be7-4579-a8a9-3c34e9344309/03_MG_7331.jpg",
+    "file": "public/assets/trainings/hybrid-ytt-gathering.jpg",
+    "maxWidth": 1800,
+    "alt": "Trainees seated in a circle on mats, sharing during a teacher training session"
+  },
+  {
+    "key": "hybridYttConnect",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/c737c4e6-ce3f-4a45-b00c-e2503cc759bd/CONNECT+1.jpg",
+    "file": "public/assets/trainings/hybrid-ytt-connection.jpg",
+    "maxWidth": 1200,
+    "alt": "Two trainees with frangipani flowers in their hair resting their foreheads together in an emotional moment"
+  },
+  {
+    "key": "hybridYttAssisting",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/0661ca99-fbde-43fd-8fd4-e533820c1e1c/Teacher+Assisting+%286%29.jpg",
+    "file": "public/assets/trainings/hybrid-ytt-teacher-assisting.jpg",
+    "maxWidth": 2300,
+    "alt": "A teacher demonstrating a hands-on assist in bridge pose while trainees watch"
+  },
+  {
+    "key": "hybridYttEmbrace",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/f59be428-371e-497a-9e4b-8935a8d1880f/vix_radiantly_alive_processed-08352.jpg",
+    "file": "public/assets/trainings/hybrid-ytt-embrace.jpg",
+    "maxWidth": 1800,
+    "alt": "Two women sharing a long embrace during a training in the studio"
+  }
+]

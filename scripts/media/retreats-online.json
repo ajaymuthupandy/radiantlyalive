@@ -1,0 +1,275 @@
+[
+  {
+    "key": "stayRetreatHero",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/02511e95-e559-4be2-849e-2474d2888ac7/Radiantly%2BAlive%2B2020-1181-2.jpeg",
+    "file": "public/assets/hero/wellness-retreat-bali-me-time.jpg",
+    "maxWidth": 2500,
+    "alt": "A woman meditating on a cushion on an open-air wooden deck overlooking the jungle in Ubud"
+  },
+  {
+    "key": "stayRetreatStillness",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/2371ddf8-5a21-41a9-a0b9-a02b128f91b8/Radiantly+Alive+2020-1142.jpg",
+    "file": "public/assets/retreats/wellness-retreat-inner-stillness.jpg",
+    "maxWidth": 2300,
+    "alt": "A woman relaxing on a sun lounger by a pool, holding a fresh coconut"
+  },
+  {
+    "key": "stayRetreatSelfCare",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/7ca238b5-c53e-4c53-b27c-9a7139ac7d68/Radiantly+Alive+2020-3529.jpg",
+    "file": "public/assets/retreats/wellness-retreat-self-care.jpg",
+    "maxWidth": 2500,
+    "alt": "A smiling woman reading a menu at a café table"
+  },
+  {
+    "key": "stayRetreatRenewal",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/177fd242-b79f-42ff-a45e-94060eb4da7a/Radiantly+Alive+2020-1577.jpg",
+    "file": "public/assets/retreats/wellness-retreat-renewal.jpg",
+    "maxWidth": 2500,
+    "alt": "A woman sitting cross-legged on a balcony daybed, sipping from a cup"
+  },
+  {
+    "key": "stayAddonTemples",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/c54d4bac-c345-42c8-98ff-040fd72e7bb5/_3GSwKAQ.jpeg",
+    "file": "public/assets/retreats/addon-temple-purification.jpg",
+    "maxWidth": 1200,
+    "alt": "A person bathing under the sacred spring spouts of a Balinese water temple"
+  },
+  {
+    "key": "stayAddonWaterfall",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/b2a78c9d-15bf-4bd3-896d-a41726057e44/Bildschirmfoto%2B2019-12-20%2Bum%2B15.49.09.png",
+    "file": "public/assets/retreats/addon-banyumala-waterfall.jpg",
+    "maxWidth": 1100,
+    "alt": "Sunrise over green terraced rice fields in the hills of northern Bali"
+  },
+  {
+    "key": "stayAddonJeep",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/fb908913-3bf9-4b3e-b4b9-7780c51397a9/sunrise-jeep-tour-kintamani-bali.jpg",
+    "file": "public/assets/retreats/addon-mount-batur-sunrise-jeep.jpg",
+    "maxWidth": 1100,
+    "alt": "Two people silhouetted against a golden sunrise above the clouds on Mount Batur"
+  },
+  {
+    "key": "stayAddonCycling",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/2e399c55-59ee-49c4-a806-2adad4595cff/kbd-activity-cycling_bali_06-kintamani.jpg",
+    "file": "public/assets/retreats/addon-kintamani-bicycle-ride.jpg",
+    "maxWidth": 1300,
+    "alt": "A cyclist riding along a lakeside path with Mount Batur in the background"
+  },
+  {
+    "key": "stayAddonTaro",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/24fd7c72-4d48-44ef-9a14-c4b9fa0242db/Foto%27s+Bali.jpg",
+    "file": "public/assets/retreats/addon-taro-village-offerings.jpg",
+    "maxWidth": 1300,
+    "alt": "Colourful Balinese canang offerings of flowers in palm-leaf trays"
+  },
+  {
+    "key": "stayAddonBatik",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/021f1355-8d6d-4e30-b102-67bc7d9a5dc9/Batik+Workshop_+Introductory+-+Thursday+June+22nd+5_30PM+to+7_30PM.jpg",
+    "file": "public/assets/retreats/addon-batik-painting.jpg",
+    "maxWidth": 1100,
+    "alt": "Hands applying wax to a batik design on fabric stretched in an embroidery hoop"
+  },
+  {
+    "key": "stayHealReiki",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/15f258fb-c42e-47b2-8b9a-689eeb01fbbf/Radiantly+Alive+2020-7863.jpg",
+    "file": "public/assets/healings/retreat-reiki-devi-ma.jpg",
+    "maxWidth": 1300,
+    "alt": "A healer holding her hands above a client lying on a treatment table in a jungle setting"
+  },
+  {
+    "key": "stayHealBalinese",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/dc3db2a9-5844-4ea0-9668-492e5f0ae0e4/Radiantly+Alive+2020+-5563.jpg",
+    "file": "public/assets/healings/retreat-balinese-healing-ketut-yoga.jpg",
+    "maxWidth": 1300,
+    "alt": "A therapist giving a back massage to a woman lying on a treatment table"
+  },
+  {
+    "key": "stayHealMassage",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/0293f332-9a56-47aa-95c7-51ada81e2e22/Massage%2BTherapy_Ketut%2BYoga.jpeg",
+    "file": "public/assets/healings/retreat-healing-massage-made-nawa.jpg",
+    "maxWidth": 1100,
+    "alt": "Hands massaging a woman’s shoulder in warm, low light"
+  },
+  {
+    "key": "stayHealCraniosacral",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/0e4dd2a8-d86c-484b-92fd-8bf1d15c6d18/Radiantly%2BAlive%2B2020%2B-5771.jpg",
+    "file": "public/assets/healings/retreat-craniosacral-nirmoha.jpg",
+    "maxWidth": 1300,
+    "alt": "A practitioner gently cradling the head of a client lying on a treatment table"
+  },
+  {
+    "key": "stayHealChiNeiTsang",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/0704da3d-856b-4950-bc1f-4e23b06f94a2/Abdominal%2Bmassage.jpeg",
+    "file": "public/assets/healings/retreat-chi-nei-tsang-abdominal-massage.jpg",
+    "maxWidth": 1200,
+    "alt": "Hands performing a gentle abdominal massage"
+  },
+  {
+    "key": "stayYogaClass",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/5ec1cf15-39f9-4367-8b3a-4afa149deb8e/Radiantly%2BAlive%2B2020-2415.jpeg",
+    "file": "public/assets/retreats/wellness-retreat-unlimited-yoga.jpg",
+    "maxWidth": 2300,
+    "alt": "Students standing in prayer position during a yoga class in an open-air jungle shala"
+  },
+  {
+    "key": "stayYogaClassTwo",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/1713855665797-7M02NDB9Y69EY40ZJM1J/Radiantly+Alive+2020-2418.jpg",
+    "file": "public/assets/retreats/wellness-retreat-unlimited-yoga-2.jpg",
+    "maxWidth": 800,
+    "alt": "A group practising warrior pose in a bright, open-sided yoga shala surrounded by trees"
+  },
+  {
+    "key": "stayChandraCafe",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/f83eb77e-5551-4aee-a039-f45de7bc9aa9/Radiantly%2BAlive%2B2020%2B-3951.jpeg",
+    "file": "public/assets/retreats/chandra-cafe-plant-based-lunch.jpg",
+    "maxWidth": 700,
+    "alt": "A pink dragon fruit smoothie bowl topped with banana, coconut and goji berries"
+  },
+  {
+    "key": "stayChandraCafeTwo",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/6984a06e-078d-46ca-a7dd-a4bc25941009/Radiantly%2BAlive%2B2020-3571.jpg",
+    "file": "public/assets/retreats/chandra-cafe-space.jpg",
+    "maxWidth": 2000,
+    "alt": "A smiling woman enjoying a meal at Chandra Café"
+  },
+  {
+    "key": "stayHotelAdiwana",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/47c67f3f-8bf0-45d6-aa4b-7272d7838d09/Swimming+Pool+kiri+dan+depan.JPG",
+    "file": "public/assets/retreats/hotel-adiwana-jembawan-pool.jpg",
+    "maxWidth": 1800,
+    "alt": "Aerial view of a jungle swimming pool and gardens at Adiwana Resort Jembawan"
+  },
+  {
+    "key": "stayHotelAdiwanaRoom",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/d552d102-24fb-4158-9be6-2a979df99d4d/Premier+Room+2.jpg",
+    "file": "public/assets/retreats/hotel-adiwana-jembawan-room.jpg",
+    "maxWidth": 1600,
+    "alt": "A spacious hotel bedroom with a large bed and wooden furnishings"
+  },
+  {
+    "key": "stayHotelUdaya",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/e0f09804-362f-4455-9fb4-d1378a60bb9b/DSC_1437-HDR%2BcopyAA.jpg",
+    "file": "public/assets/retreats/hotel-udaya-resort.jpg",
+    "maxWidth": 1700,
+    "alt": "A bright villa living room with a carved wooden table and glass doors opening onto greenery"
+  },
+  {
+    "key": "stayHotelUdayaTwo",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/c19fef8b-b3a5-4b65-acbd-2a0ae337c194/DSC_1579-HDR+copy-1+%281%29.JPG",
+    "file": "public/assets/retreats/hotel-udaya-resort-2.jpg",
+    "maxWidth": 1600,
+    "alt": "A freestanding bathtub beside tall windows overlooking palm trees"
+  },
+  {
+    "key": "stayHotelCalma",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/45735e75-ca57-4cef-b78e-6f32321dd2ff/82898234.jpg",
+    "file": "public/assets/retreats/hotel-calma-ubud.jpg",
+    "maxWidth": 2000,
+    "alt": "An infinity pool beside rice fields and palm trees at dusk"
+  },
+  {
+    "key": "stayHotelCalmaTwo",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/6c77549a-5066-455d-bba6-50c306bb9f26/DSC02745.JPG",
+    "file": "public/assets/retreats/hotel-calma-ubud-2.jpg",
+    "maxWidth": 1600,
+    "alt": "A canopy bed with white drapes under a high thatched ceiling"
+  },
+  {
+    "key": "stayOnlineMagicBali",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/ce971871-0a3d-4991-b369-5aa213648eb3/magic-of-bali-edited+%281%29.jpeg",
+    "file": "public/assets/online/online-studio-magic-of-bali.jpg",
+    "maxWidth": 2500,
+    "alt": "A collage of people practising yoga at home in front of laptops"
+  },
+  {
+    "key": "stayOnlineDevelop",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/3e15b134-e503-4d75-8a67-de373da61a8e/develop-your-practice.jpeg",
+    "file": "public/assets/online/online-studio-develop-your-practice.jpg",
+    "maxWidth": 1100,
+    "alt": "A practitioner in a side plank variation on a concrete floor"
+  },
+  {
+    "key": "stayOnlineGrowing",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/c3243738-a664-4577-a73a-96ca8ae321a6/keep-growing.jpeg",
+    "file": "public/assets/online/online-studio-keep-growing.jpg",
+    "maxWidth": 1100,
+    "alt": "A woman with arms wide open looking out over the sea"
+  },
+  {
+    "key": "stayOnlineCommunity",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/8cc09136-76d1-427a-897d-1879c3e4a8a8/bepart-of-community.png",
+    "file": "public/assets/online/online-studio-community.jpg",
+    "maxWidth": 1100,
+    "alt": "A large group of smiling yoga students with arms raised in a jungle shala"
+  },
+  {
+    "key": "stayOnlineDevices",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/1c78f52e-6049-4323-bc1d-d138602857c3/laptop-tablet-desktop-mobile-vector-1642863.jpeg",
+    "file": "public/assets/online/online-studio-devices.jpg",
+    "maxWidth": 2200,
+    "alt": "The Radiantly Alive Online community shown on a desktop, laptop, tablet and phone"
+  },
+  {
+    "key": "stayEventsHero",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/6262f1d5-ea59-4f4a-a1b7-b209bf0d3da3/radiantly%2Balive%2Byoga.jungle%2Bshala.ubud.bali.ytt.1%2B1440.jpg",
+    "file": "public/assets/hero/online-events-jungle-shala.jpg",
+    "maxWidth": 2500,
+    "alt": "Students kneeling on mats during a class in an open-air jungle shala"
+  },
+  {
+    "key": "stayEventYinPoster",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/a0097e61-620e-4627-be5d-497678937ba8/online-yin-yoga-alicia-casillas.jpeg",
+    "file": "public/assets/online/online-yin-yoga-training-alicia-casillas.jpg",
+    "maxWidth": 1200,
+    "alt": "Poster: Online Yin Yoga Teacher Training with Alicia Casillas"
+  },
+  {
+    "key": "stayEventWiseWomenPoster",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/8f2508ad-afe1-42f2-a2f0-77625ebe48e1/wise-womens-inmersion.jpeg",
+    "file": "public/assets/online/online-wise-womens-immersion-devi-ma.jpg",
+    "maxWidth": 1200,
+    "alt": "Poster: Wise Women’s Immersion ONLINE with Devi Ma"
+  },
+  {
+    "key": "stayEventReikiPoster",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/21630a2e-2468-480a-a92e-9f533d303029/2025.04.Reiki+Master+_+Teacher.Radiantly+Alive.visual-05.jpg",
+    "file": "public/assets/online/online-reiki-training-alicia-casillas.jpg",
+    "maxWidth": 1200,
+    "alt": "Poster: Reiki Online Training with Alicia Casillas"
+  },
+  {
+    "key": "stayHealingsHero",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/fa1d782f-bba2-45d7-9b70-5bcaabdc0167/Radiantly%2BAlive%2B2020%2B-5268+%281%29.jpeg",
+    "file": "public/assets/hero/online-healings.jpg",
+    "maxWidth": 2500,
+    "alt": "A healer gently cradling the head of a woman lying on a treatment table in the jungle"
+  },
+  {
+    "key": "stayHealerAmy",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/ba7eb064-22ef-456c-bceb-5aa423a90635/Amy%2BThiessen.jpeg",
+    "file": "public/assets/healings/healer-amy-thiessen.jpg",
+    "maxWidth": 1100,
+    "alt": "Amy Thiessen smiling in a white dress among rice fields"
+  },
+  {
+    "key": "stayHealerDeviMa",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/ab89b643-7879-453b-8037-40b2e551a060/Devi_Ma_Womens%2BImmersion.jpeg",
+    "file": "public/assets/healings/healer-devi-ma.jpg",
+    "maxWidth": 1400,
+    "alt": "Devi Ma holding a feather and a smoking bowl in a tropical garden"
+  },
+  {
+    "key": "stayHealerKetut",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/37ec1014-4d55-4f2d-9ace-fcc5b744c468/Radiantly%2BAlive%2B2020%2B-5616.jpg",
+    "file": "public/assets/healings/healer-ketut-yoga.jpg",
+    "maxWidth": 1400,
+    "alt": "Portrait of Ketut Yoga smiling, with palm trees behind him"
+  },
+  {
+    "key": "stayHealerNirmoha",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e68798b81f578406bd7ac7b/03ce18ff-cbb1-4137-8387-ba7853f04cc4/Nirmoha.jpg",
+    "file": "public/assets/healings/healer-nirmoha.jpg",
+    "maxWidth": 1400,
+    "alt": "Portrait of Nirmoha smiling in a red top among trees"
+  }
+]
