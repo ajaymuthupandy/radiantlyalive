@@ -30,12 +30,18 @@ export function BrandIntro() {
             <p className="type-display-sm max-w-[28ch] text-balance text-ink">{brandStory.belonging}</p>
           </blockquote>
           <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-3 md:mt-12" data-reveal>
-            <VideoModal
-              videoId={INTEGRATIONS.manifestoVideoId}
-              title={HERO_VIDEO.title}
-              label="Watch our Manifesto Video"
-              className="text-ink"
-            />
+            {/* Mobile swaps the manifesto video for a direct link to the teachers. */}
+            <Button href="/our-teachers" className="md:hidden">
+              Meet the teachers
+            </Button>
+            <div className="hidden md:block">
+              <VideoModal
+                videoId={INTEGRATIONS.manifestoVideoId}
+                title={HERO_VIDEO.title}
+                label="Watch our Manifesto Video"
+                className="text-ink"
+              />
+            </div>
             <span aria-hidden className="hidden h-10 w-px bg-ink/25 md:block" />
             <Button href="/our-teachers" variant="link" className="hidden md:inline-flex">
               Meet the teachers
@@ -44,8 +50,8 @@ export function BrandIntro() {
         </div>
       </div>
 
-      {/* Mobile: the photo follows the copy. Desktop: it fills the right half, edge to edge. */}
-      <div className="relative ml-[var(--gutter)] aspect-[4/3] [clip-path:ellipse(130%_120%_at_130%_45%)] md:aspect-[16/10] lg:absolute lg:inset-y-0 lg:right-0 lg:ml-0 lg:aspect-auto lg:w-[52%]">
+      {/* Mobile: the photo follows the copy, aligned to the gutters. Desktop: it fills the right half, edge to edge, behind a curve. */}
+      <div className="relative mx-[var(--gutter)] aspect-[4/3] overflow-hidden rounded-2xl md:aspect-[16/10] lg:absolute lg:inset-y-0 lg:right-0 lg:mx-0 lg:aspect-auto lg:w-[52%] lg:rounded-none lg:[clip-path:ellipse(130%_120%_at_130%_45%)]">
         <div className="absolute inset-0 overflow-hidden bg-sand" data-image-reveal>
           <Media
             asset="introShalaPractice"
