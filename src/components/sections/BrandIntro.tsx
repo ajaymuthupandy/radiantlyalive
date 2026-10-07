@@ -7,7 +7,7 @@ import { HERO_VIDEO, INTEGRATIONS } from '@/data/site'
 /** 01: the vision statement, then the "more than a studio" story beside an arch image. */
 export function BrandIntro() {
   return (
-    <section id="vision" aria-labelledby="intro-title" className="section-y max-md:pb-0 scroll-mt-[var(--header-height)] overflow-hidden">
+    <section id="vision" aria-labelledby="intro-title" className="section-y pb-0 scroll-mt-[var(--header-height)] overflow-hidden">
       <div className="container-x">
         <div className="grid gap-y-6 lg:grid-cols-12 lg:items-end lg:gap-x-10">
           <div className="lg:col-span-7">
@@ -24,7 +24,7 @@ export function BrandIntro() {
           </p>
         </div>
 
-        <div className="mt-10 grid gap-y-10 md:mt-14 md:grid-cols-12 md:items-center md:gap-x-10 lg:gap-x-14">
+        <div className="mt-10 grid gap-y-10 md:mt-14 md:grid-cols-12 md:items-end md:gap-x-10 lg:gap-x-14">
           <div className="relative md:col-span-6 lg:col-span-5">
             <div className="shape-arch relative aspect-[4/5] overflow-hidden bg-sand" data-image-reveal>
               <Media
