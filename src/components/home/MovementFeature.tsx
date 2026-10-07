@@ -23,17 +23,17 @@ export function MovementFeature() {
                 </p>
               ))}
             </div>
+            <blockquote className="measure mt-8 rounded-frame bg-plum p-7 text-cream md:mt-10 md:p-8" data-reveal>
+              <p className="type-lead text-pretty">{m.quote}</p>
+            </blockquote>
           </div>
 
-          <figure className="relative lg:col-span-5 lg:col-start-8">
+          <figure className="relative lg:col-span-5 lg:col-start-8 lg:self-center">
             <div className="shape-arch relative aspect-[4/5] overflow-hidden" data-image-reveal>
               <div data-parallax="0.08" className="absolute inset-x-0 -inset-y-[6%]">
                 <Media asset={m.image} fill frame={4 / 5} overscan={1.12} sizes="(min-width: 1024px) 40vw, 100vw" className="object-cover" />
               </div>
             </div>
-            <blockquote className="relative -mt-20 ml-6 max-w-[24rem] rounded-frame bg-plum p-7 text-cream md:-ml-10" data-reveal>
-              <p className="type-lead">{m.quote}</p>
-            </blockquote>
           </figure>
         </div>
 
