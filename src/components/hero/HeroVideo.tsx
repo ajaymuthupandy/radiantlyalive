@@ -113,6 +113,30 @@ export function HeroVideo({ desktop, mobile, youtubeId, youtubeStart, title, pos
     }
   }, [desktop, mobile])
 
+  // Native file: start it explicitly rather than trusting `autoPlay`. React sets
+  // `muted` only as a property, but iOS Safari checks the attribute before it
+  // allows inline autoplay. Where autoplay is still refused (iOS Low Power
+  // Mode, Android battery saver), retry on the visitor's first touch or scroll.
+  useEffect(() => {
+    const video = videoRef.current
+    if (mode !== 'native' || !video) return
+    video.muted = true
+    video.defaultMuted = true
+    video.setAttribute('muted', '')
+    video.setAttribute('playsinline', '')
+    video.setAttribute('webkit-playsinline', '')
+
+    const events = ['touchend', 'pointerdown', 'scroll', 'keydown'] as const
+    const detach = () => events.forEach((e) => window.removeEventListener(e, retry))
+    const attempt = () => video.play().then(detach)
+    const retry = () => {
+      attempt().catch(() => {})
+    }
+
+    attempt().catch(() => events.forEach((e) => window.addEventListener(e, retry, { passive: true })))
+    return detach
+  }, [mode])
+
   // YouTube background player.
   useEffect(() => {
     if (mode !== 'youtube' || !ytMountRef.current) return
