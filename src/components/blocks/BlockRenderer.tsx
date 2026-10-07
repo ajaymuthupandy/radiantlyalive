@@ -21,7 +21,7 @@ function Embed({ blockKey, ...b }: WithKey<EmbedBlock>) {
   return (
     <Shell id={b.id ?? 'schedule'} tone={b.tone ?? 'paper'} labelledBy={b.heading ? headingId : undefined}>
       <BlockHead id={headingId} eyebrow={b.eyebrow} heading={b.heading} lead={b.lead} tone={b.tone} />
-      <div className={cn((b.heading || b.lead) && 'mt-12 md:mt-16')}>
+      <div className={cn((b.heading || b.lead) && 'mt-8 md:mt-10')}>
         <LiveWidget
           widget={b.widget}
           strings={ui(b.lang)}
@@ -68,9 +68,9 @@ function Video({ blockKey, ...b }: WithKey<VideoBlock>) {
   return (
     <Shell id={b.id} tone={b.tone} labelledBy={b.heading ? headingId : undefined}>
       <BlockHead id={headingId} eyebrow={b.eyebrow} heading={b.heading} lead={b.lead} tone={b.tone} />
-      <ul className={cn('grid gap-6 lg:gap-8', b.videos.length > 1 && 'md:grid-cols-2', b.videos.length > 2 && 'lg:grid-cols-3', (b.heading || b.lead) && 'mt-12 md:mt-16')} data-stagger>
+      <ul className={cn('grid gap-6 lg:gap-8', b.videos.length > 1 && 'md:grid-cols-2', b.videos.length > 2 && 'lg:grid-cols-3', (b.heading || b.lead) && 'mt-8 md:mt-10')} data-stagger>
         {b.videos.map((v) => (
-          <li key={v.youtubeId} className={cn(b.videos.length === 1 && 'w-full lg:w-10/12')} data-stagger-item>
+          <li key={v.youtubeId} data-stagger-item>
             <LiteYouTube youtubeId={v.youtubeId} title={v.title} playLabel={ui(b.lang).play} />
           </li>
         ))}
@@ -84,10 +84,10 @@ function Component({ blockKey, ...b }: WithKey<ComponentBlock>) {
   return (
     <Shell id={b.id} tone={b.tone} labelledBy={b.heading ? headingId : undefined}>
       <BlockHead id={headingId} eyebrow={b.eyebrow} heading={b.heading} lead={b.lead} tone={b.tone} />
-      <div className={cn((b.heading || b.lead) && 'mt-12 md:mt-16')}>
+      <div className={cn((b.heading || b.lead) && 'mt-8 md:mt-10')}>
         {b.name === 'class-filter' && <ClassFilter />}
         {b.name === 'teacher-grid' && (
-          <ul className="grid gap-x-6 gap-y-14 sm:grid-cols-2 lg:grid-cols-4" data-stagger>
+          <ul className="grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4" data-stagger>
             {teachers.map((t) => (
               <li key={t.id} data-stagger-item>
                 <TeacherCard teacher={t} tone={isDark(b.tone) ? 'dark' : 'light'} />

@@ -32,7 +32,8 @@ export function Shell({ id, tone = 'canvas', labelledBy, className, tight, child
     <section
       id={id}
       aria-labelledby={labelledBy}
-      className={cn(tight ? 'section-y-tight' : 'section-y', 'scroll-mt-24 overflow-hidden', toneClass[tone], className)}
+      data-tone={tone}
+      className={cn(tight ? 'section-y-tight' : 'section-y', 'block-shell scroll-mt-24 overflow-hidden', toneClass[tone], className)}
     >
       <div className="container-x">{children}</div>
     </section>
@@ -53,6 +54,28 @@ interface HeadProps {
 export function BlockHead({ id, eyebrow, heading, lead, tone, align = 'left', className }: HeadProps) {
   if (!eyebrow && !heading && !lead) return null
   const dark = isDark(tone)
+
+  // Full-width left-aligned opener: heading and lead side by side so the row fills the container.
+  if (!className && align === 'left' && heading && lead) {
+    return (
+      <header className="grid gap-y-6 lg:grid-cols-12 lg:items-end lg:gap-x-10">
+        <div className="lg:col-span-7">
+          {eyebrow && (
+            <p className={cn('type-eyebrow', accentText(tone))} data-reveal>
+              {eyebrow}
+            </p>
+          )}
+          <h2 id={id} className={cn('type-display-md text-balance', eyebrow && 'mt-5')} data-text-reveal>
+            <Rich text={heading} />
+          </h2>
+        </div>
+        <p className={cn('type-lead text-pretty lg:col-span-5 lg:col-start-8', dark ? 'text-mist' : 'text-ink-soft')} data-reveal data-reveal-delay="0.12">
+          <Rich text={lead} />
+        </p>
+      </header>
+    )
+  }
+
   return (
     <header className={cn('max-w-[50rem]', align === 'center' && 'mx-auto text-center', className)}>
       {eyebrow && (

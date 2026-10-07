@@ -9,7 +9,7 @@ import { pad } from '@/lib/utils'
 export function TrainingFeature() {
   return (
     <section aria-labelledby="training-title" className="section-y surface-dark overflow-hidden bg-plum text-cream">
-      <div className="container-x grid gap-y-14 lg:grid-cols-12 lg:gap-x-10">
+      <div className="container-x grid gap-y-10 lg:grid-cols-12 lg:gap-x-10">
         <div className="relative order-2 lg:order-1 lg:col-span-5">
           <div className="relative aspect-[4/5] overflow-hidden rounded-frame lg:sticky lg:top-[calc(var(--header-height)+2rem)]" data-image-reveal>
             <div data-parallax="0.1" className="absolute inset-x-0 -inset-y-[8%]">

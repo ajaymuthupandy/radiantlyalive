@@ -30,7 +30,7 @@ export default function ContactPage() {
       />
 
       <section aria-labelledby="contact-form-title" className="section-y">
-        <div className="container-x grid gap-16 lg:grid-cols-12 lg:gap-10">
+        <div className="container-x grid gap-12 lg:grid-cols-12 lg:gap-10">
           <div className="lg:col-span-7">
             <h2 id="contact-form-title" className="type-display-md" data-text-reveal>
               Write to <em>us.</em>

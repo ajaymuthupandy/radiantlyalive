@@ -70,7 +70,7 @@ export function Cards({ blockKey, ...b }: WithKey<CardsBlock>) {
   return (
     <Shell id={b.id} tone={b.tone} labelledBy={b.heading ? headingId : undefined}>
       <BlockHead id={headingId} eyebrow={b.eyebrow} heading={b.heading} lead={b.lead} tone={b.tone} />
-      <ul className={cn('grid gap-x-6 gap-y-12 lg:gap-x-8', colsClass[cols], (b.heading || b.lead || b.eyebrow) && 'mt-12 md:mt-16')} data-stagger>
+      <ul className={cn('grid gap-x-6 gap-y-12 lg:gap-x-8', colsClass[cols], (b.heading || b.lead || b.eyebrow) && 'mt-8 md:mt-10')} data-stagger>
         {b.items.map((item, i) => {
           const title = (
             <h3 className="type-h3 text-balance">
@@ -158,7 +158,7 @@ export function Gallery({ blockKey, ...b }: WithKey<GalleryBlock>) {
   return (
     <Shell id={b.id} tone={b.tone} labelledBy={b.heading ? headingId : undefined}>
       <BlockHead id={headingId} eyebrow={b.eyebrow} heading={b.heading} tone={b.tone} />
-      <ul className={cn('grid auto-rows-[9rem] grid-cols-2 gap-3 sm:auto-rows-[12rem] md:grid-cols-8 md:auto-rows-[13rem] md:gap-4 lg:auto-rows-[15rem]', (b.heading || b.eyebrow) && 'mt-12 md:mt-16')} data-stagger>
+      <ul className={cn('grid auto-rows-[9rem] grid-cols-2 gap-3 sm:auto-rows-[12rem] md:grid-cols-8 md:auto-rows-[13rem] md:gap-4 lg:auto-rows-[15rem]', (b.heading || b.eyebrow) && 'mt-8 md:mt-10')} data-stagger>
         {images.map((key, i) => (
           <li key={key} className={cn('relative overflow-hidden rounded-frame bg-sand', layouts[i])} data-stagger-item>
             <Media asset={key} fill sizes={i === 0 ? '(min-width: 768px) 50vw, 100vw' : '(min-width: 768px) 25vw, 50vw'} className="object-cover" />
@@ -182,7 +182,7 @@ export function People({ blockKey, ...b }: WithKey<PeopleBlock>) {
         className={cn(
           'grid gap-x-6 gap-y-12 sm:grid-cols-2 lg:gap-x-8',
           cols === 4 ? 'lg:grid-cols-4' : 'lg:grid-cols-3',
-          (b.heading || b.lead || b.eyebrow) && 'mt-12 md:mt-16',
+          (b.heading || b.lead || b.eyebrow) && 'mt-8 md:mt-10',
         )}
         data-stagger
       >

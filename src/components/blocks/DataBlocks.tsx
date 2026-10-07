@@ -19,7 +19,7 @@ export function Table({ blockKey, ...b }: WithKey<TableBlock>) {
     <Shell id={b.id} tone={b.tone} labelledBy={b.heading ? headingId : undefined}>
       <BlockHead id={headingId} eyebrow={b.eyebrow} heading={b.heading} lead={b.lead} tone={b.tone} />
 
-      <div className="mt-14 hidden md:block" data-reveal>
+      <div className="mt-10 hidden md:block" data-reveal>
         <table className="w-full table-fixed border-collapse text-left">
           <caption className="sr-only">{b.heading ? b.heading.replace(/\*/g, '') : 'Comparison'}</caption>
           <thead>
@@ -84,7 +84,7 @@ export function Pricing({ blockKey, ...b }: WithKey<PricingBlock>) {
   return (
     <Shell id={b.id} tone={b.tone ?? 'paper'} labelledBy={b.heading ? headingId : undefined}>
       <BlockHead id={headingId} eyebrow={b.eyebrow} heading={b.heading} lead={b.lead} tone={b.tone} />
-      <div className={cn('mt-14 border-t', line)} data-stagger>
+      <div className={cn('mt-10 border-t', line)} data-stagger>
         {b.priceLabels && (
           <div className={cn('type-eyebrow hidden grid-cols-[1fr_repeat(var(--n),11rem)_10rem] gap-4 border-b py-4 md:grid', line, dark ? 'text-mist' : 'text-ink-soft')} style={{ '--n': b.priceLabels.length } as React.CSSProperties}>
             <span />

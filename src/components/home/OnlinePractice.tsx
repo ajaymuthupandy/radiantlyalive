@@ -8,7 +8,7 @@ export function OnlinePractice() {
 
   return (
     <section aria-labelledby="online-title" className="section-y surface-dark overflow-hidden bg-crimson text-cream">
-      <div className="container-x grid gap-y-14 lg:grid-cols-12 lg:items-center lg:gap-x-10">
+      <div className="container-x grid gap-y-10 lg:grid-cols-12 lg:items-center lg:gap-x-10">
         <div className="lg:col-span-5">
           <p className="type-eyebrow text-cream" data-reveal>
             {online.eyebrow}

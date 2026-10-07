@@ -43,6 +43,7 @@ export function ScrollAnimations() {
     const mm = gsap.matchMedia(root)
     mm.add(MQ.tabletUp, () => initParallax(root))
     mm.add(MQ.desktopUp, () => initHorizontalScroll(root))
+    mm.add(MQ.belowDesktop, () => initHorizontalScroll(root, 'horizontal-mobile'))
 
     html.classList.add('motion-ready')
 

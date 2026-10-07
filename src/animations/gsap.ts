@@ -14,6 +14,7 @@ export const MQ = {
   reduced: '(prefers-reduced-motion: reduce)',
   tabletUp: '(min-width: 768px) and (prefers-reduced-motion: no-preference)',
   desktopUp: '(min-width: 1024px) and (prefers-reduced-motion: no-preference)',
+  belowDesktop: '(max-width: 1023.98px) and (prefers-reduced-motion: no-preference)',
 } as const
 
 export function prefersReducedMotion() {

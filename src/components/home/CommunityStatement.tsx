@@ -25,7 +25,7 @@ export function CommunityStatement() {
         </div>
         <div aria-hidden className="absolute inset-0 -z-10 bg-shade/40" />
         <div aria-hidden className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_70%_60%_at_50%_50%,rgb(28_8_16/0.5),transparent_80%)]" />
-        <div className="container-x section-y flex min-h-[36rem] items-center justify-center text-center md:min-h-[46rem]">
+        <div className="container-x section-y flex min-h-[30rem] items-center justify-center text-center md:min-h-[38rem]">
           <h2 id="community-title" className="type-display-xl max-w-[15ch] text-balance" data-text-reveal>
             {lead} <em>{turn}</em>
           </h2>
@@ -33,7 +33,7 @@ export function CommunityStatement() {
       </section>
 
       <section aria-labelledby="stay-connected-title" className="section-y bg-paper">
-        <div className="container-x grid items-center gap-y-12 lg:grid-cols-12 lg:gap-x-16">
+        <div className="container-x grid items-center gap-y-10 lg:grid-cols-12 lg:gap-x-12">
           <div className="relative aspect-[4/5] overflow-hidden rounded-frame sm:aspect-[4/3] lg:col-span-5 lg:aspect-[4/5]" data-image-reveal>
             <Media asset={stay.image} fill frame={4 / 5} sizes="(min-width: 1024px) 40vw, 100vw" className="object-cover object-[50%_35%]" />
           </div>

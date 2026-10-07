@@ -20,6 +20,36 @@ export function Intro({ blockKey, ...b }: WithKey<IntroBlock>) {
   const center = b.align === 'center'
   const dark = isDark(b.tone)
   const headingId = `${blockKey}-title`
+
+  // Left-aligned intro with a heading: heading on the left, copy on the right, filling the row.
+  if (!center && b.heading && b.paragraphs?.length) {
+    return (
+      <Shell id={b.id} tone={b.tone} labelledBy={headingId}>
+        <div className="grid gap-y-8 lg:grid-cols-12 lg:gap-x-10">
+          <div className="lg:col-span-6">
+            {b.eyebrow && (
+              <p className={cn('type-eyebrow', accentText(b.tone))} data-reveal>
+                {b.eyebrow}
+              </p>
+            )}
+            <h2 id={headingId} className={cn('type-display-lg text-balance', b.eyebrow && 'mt-5')} data-text-reveal>
+              <Rich text={b.heading} />
+            </h2>
+          </div>
+          <div className="lg:col-span-6 lg:col-start-7 lg:pt-2">
+            <Paragraphs items={b.paragraphs} tone={b.tone} lead />
+            {b.note && (
+              <p className={cn('type-eyebrow mt-8', dark ? 'text-mist' : 'text-crimson')} data-reveal>
+                <Rich text={b.note} />
+              </p>
+            )}
+            <Ctas ctas={b.ctas} tone={b.tone} className="mt-8" />
+          </div>
+        </div>
+      </Shell>
+    )
+  }
+
   return (
     <Shell id={b.id} tone={b.tone} labelledBy={b.heading ? headingId : undefined}>
       <div className={cn('max-w-[60rem]', center && 'mx-auto text-center')}>
@@ -56,7 +86,7 @@ export function Split({ blockKey, ...b }: WithKey<SplitBlock>) {
   const headingId = `${blockKey}-title`
   return (
     <Shell id={b.id} tone={b.tone} labelledBy={headingId}>
-      <div className="grid items-center gap-y-12 md:grid-cols-12 md:gap-x-10 lg:gap-x-16">
+      <div className="grid items-center gap-y-10 md:grid-cols-12 md:gap-x-10 lg:gap-x-14">
         <div className={cn('relative md:col-span-6 lg:col-span-5', imageLeft ? 'md:order-1' : 'md:order-2 lg:col-start-8')}>
           {b.shape === 'natural' ? (
             <div className="overflow-hidden rounded-frame bg-sand" data-image-reveal>
@@ -118,7 +148,7 @@ export function Features({ blockKey, ...b }: WithKey<FeaturesBlock>) {
       <ol
         className={cn(
           'grid gap-px overflow-hidden border',
-          (b.eyebrow || b.heading || b.lead) && 'mt-12 md:mt-16',
+          (b.eyebrow || b.heading || b.lead) && 'mt-8 md:mt-10',
           dark ? 'border-cream/15 bg-cream/15' : 'border-ink/10 bg-ink/10',
           cols === 2 && 'md:grid-cols-2',
           cols === 3 && 'md:grid-cols-2 lg:grid-cols-3',
@@ -153,7 +183,7 @@ export function Lists({ blockKey, ...b }: WithKey<ListsBlock>) {
   return (
     <Shell id={b.id} tone={b.tone} labelledBy={b.heading ? headingId : undefined}>
       <BlockHead id={headingId} eyebrow={b.eyebrow} heading={b.heading} lead={b.lead} tone={b.tone} />
-      <div className={cn('grid gap-12 md:gap-16', b.lists.length > 1 && 'md:grid-cols-2', b.lists.length > 2 && 'lg:grid-cols-3', (b.heading || b.lead) && 'mt-12 md:mt-16')}>
+      <div className={cn('grid gap-12 md:gap-16', b.lists.length > 1 && 'md:grid-cols-2', b.lists.length > 2 && 'lg:grid-cols-3', (b.heading || b.lead) && 'mt-8 md:mt-10')}>
         {b.lists.map((list, i) => (
           <div key={i} data-reveal>
             {list.title && <h3 className={cn('type-eyebrow mb-6', accentText(b.tone))}>{list.title}</h3>}
@@ -171,7 +201,7 @@ export function Prose({ blockKey, ...b }: WithKey<ProseBlock>) {
     <Shell id={b.id} tone={b.tone} labelledBy={b.heading ? headingId : undefined}>
       <div className="mx-auto max-w-[46rem]">
         <BlockHead id={headingId} eyebrow={b.eyebrow} heading={b.heading} tone={b.tone} />
-        <div className={cn('space-y-12', b.heading && 'mt-12 md:mt-16')}>
+        <div className={cn('space-y-10', b.heading && 'mt-8 md:mt-10')}>
           {b.sections.map((section, i) => (
             <div key={i}>
               {section.heading && <h3 className="type-h3">{section.heading}</h3>}
@@ -221,7 +251,7 @@ export function Testimonials({ blockKey, ...b }: WithKey<TestimonialsBlock>) {
   return (
     <Shell id={b.id} tone={b.tone} labelledBy={b.heading ? headingId : undefined}>
       <BlockHead id={headingId} eyebrow={b.eyebrow} heading={b.heading} tone={b.tone} />
-      <ul className={cn('grid gap-x-12 gap-y-16 md:grid-cols-2', b.items.length > 2 && 'lg:grid-cols-3', (b.heading || b.eyebrow) && 'mt-12 md:mt-16')} data-stagger>
+      <ul className={cn('grid gap-x-10 gap-y-10 md:grid-cols-2', b.items.length > 2 && 'lg:grid-cols-3', (b.heading || b.eyebrow) && 'mt-8 md:mt-10')} data-stagger>
         {b.items.map((t, i) => (
           <li key={i} data-stagger-item>
             <figure className="flex h-full flex-col">

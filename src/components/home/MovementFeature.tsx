@@ -8,7 +8,7 @@ export function MovementFeature() {
   return (
     <section aria-labelledby="movement-title" className="section-y overflow-hidden bg-paper">
       <div className="container-x">
-        <div className="grid gap-y-14 lg:grid-cols-12 lg:gap-x-10">
+        <div className="grid gap-y-10 lg:grid-cols-12 lg:gap-x-10">
           <div className="lg:col-span-6">
             <p className="type-eyebrow text-crimson" data-reveal>
               {m.eyebrow}
@@ -37,7 +37,7 @@ export function MovementFeature() {
           </figure>
         </div>
 
-        <ol className="mt-16 grid gap-px overflow-hidden rounded-frame border border-ink/10 bg-ink/10 sm:grid-cols-2 lg:grid-cols-4 md:mt-20" data-stagger>
+        <ol className="mt-10 grid gap-px overflow-hidden rounded-frame border border-ink/10 bg-ink/10 sm:grid-cols-2 lg:grid-cols-4 md:mt-12" data-stagger>
           {m.stages.map((stage, i) => (
             <li key={stage.name} className="bg-paper p-6 md:p-8" data-stagger-item>
               <p className="type-eyebrow text-crimson">
@@ -49,7 +49,7 @@ export function MovementFeature() {
           ))}
         </ol>
 
-        <div className="mt-16 grid gap-y-8 border-t hairline pt-10 md:grid-cols-12 md:gap-x-10">
+        <div className="mt-10 grid gap-y-8 border-t hairline pt-10 md:grid-cols-12 md:gap-x-10">
           <div className="md:col-span-7">
             <h3 className="type-display-sm" data-reveal>
               {m.directory.heading}

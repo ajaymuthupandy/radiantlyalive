@@ -25,7 +25,7 @@ export function PageHero({ id, eyebrow, title, lead, image, imagePosition = 'obj
       id={id}
       aria-labelledby={`${id}-title`}
       className={cn(
-        'surface-dark relative isolate flex min-h-[38rem] items-end overflow-hidden text-cream md:min-h-[42rem] lg:min-h-[min(82svh,56rem)]',
+        'surface-dark relative isolate flex min-h-[32rem] items-end overflow-hidden text-cream md:min-h-[36rem] lg:min-h-[min(70svh,46rem)]',
         tone === 'crimson' ? 'bg-crimson' : 'bg-plum',
       )}
     >
@@ -37,7 +37,7 @@ export function PageHero({ id, eyebrow, title, lead, image, imagePosition = 'obj
       <div aria-hidden className={cn('absolute inset-0 -z-10 bg-gradient-to-t to-transparent', from)} />
       <div aria-hidden className="absolute inset-x-0 top-0 -z-10 h-40 bg-gradient-to-b from-shade/45 to-transparent" />
 
-      <div data-hero-content className="container-x w-full pt-[calc(var(--header-height)+4rem)] pb-12 md:pb-16">
+      <div data-hero-content className="container-x w-full pt-[calc(var(--header-height)+3rem)] pb-12 md:pb-16">
         {breadcrumb && (
           <nav aria-label="Breadcrumb" className="mb-6" data-hero-item>
             <Link href={breadcrumb.href} className="type-eyebrow text-mist transition-colors hover:text-cream">

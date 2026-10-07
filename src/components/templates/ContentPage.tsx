@@ -36,7 +36,7 @@ export function ContentPage({ page }: { page: PageContent }) {
       <section
         id={heroId}
         aria-labelledby={`${heroId}-title`}
-        className="surface-dark relative isolate flex min-h-[38rem] items-end overflow-hidden bg-plum text-cream md:min-h-[42rem] lg:min-h-[min(82svh,56rem)]"
+        className="surface-dark relative isolate flex min-h-[32rem] items-end overflow-hidden bg-plum text-cream md:min-h-[36rem] lg:min-h-[min(70svh,46rem)]"
       >
         <div data-hero-media className="absolute inset-0 -z-10">
           <div data-hero-parallax className="absolute inset-x-0 -top-[4%] -bottom-[10%]">
@@ -54,7 +54,7 @@ export function ContentPage({ page }: { page: PageContent }) {
         <div aria-hidden className="absolute inset-0 -z-10 bg-gradient-to-t from-plum via-plum/45 to-transparent" />
         <div aria-hidden className="absolute inset-x-0 top-0 -z-10 h-40 bg-gradient-to-b from-shade/45 to-transparent" />
 
-        <div data-hero-content className="container-x w-full pt-[calc(var(--header-height)+4rem)] pb-12 md:pb-16">
+        <div data-hero-content className="container-x w-full pt-[calc(var(--header-height)+3rem)] pb-12 md:pb-16">
           {page.parent && (
             <nav aria-label="Breadcrumb" className="mb-6" data-hero-item>
               <ol className="type-eyebrow flex flex-wrap items-center gap-2 text-mist">
