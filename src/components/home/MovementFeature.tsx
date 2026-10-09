@@ -28,8 +28,8 @@ export function MovementFeature() {
             </blockquote>
           </div>
 
-          <figure className="relative mx-auto w-full max-w-md lg:col-span-5 lg:max-w-none">
-            <div className="shape-arch relative aspect-[5/6] overflow-hidden" data-image-reveal>
+          <figure className="relative lg:col-span-5">
+            <div className="shape-arch relative mx-auto aspect-[5/6] w-full max-w-md overflow-hidden lg:mr-0 lg:max-w-none lg:w-[min(100%,calc((100svh-10rem)*5/6))]" data-image-reveal>
               <div data-parallax="0.08" className="absolute inset-x-0 -inset-y-[6%]">
                 <Media asset={m.image} fill frame={5 / 6} overscan={1.12} sizes="(min-width: 1024px) 40vw, 28rem" className="object-cover" />
               </div>
