@@ -8,31 +8,29 @@ export function MovementFeature() {
   return (
     <section aria-labelledby="movement-title" className="section-y overflow-hidden bg-paper">
       <div className="container-x">
-        <div className="grid gap-y-10 lg:grid-cols-12 lg:items-center lg:gap-x-8 xl:gap-x-14">
-          <div className="lg:col-span-7">
+        <div className="grid gap-y-10 lg:grid-cols-12 lg:gap-x-10 xl:gap-x-12">
+          <div className="lg:col-span-6 lg:py-4">
             <p className="type-eyebrow text-crimson" data-reveal>
               {m.eyebrow}
             </p>
             <h2 id="movement-title" className="type-display-lg mt-5 text-balance" data-text-reveal>
               Radiantly Alive Movement <em>&amp; Leadership Path</em>
             </h2>
-            <div className="type-body measure mt-6 space-y-4 text-pretty text-ink-soft">
-              {m.paragraphs.map((p) => (
-                <p key={p} data-reveal>
+            <div className="type-body measure mt-6 space-y-4 text-pretty">
+              {m.paragraphs.map((p, i) => (
+                <p key={p} className={i === m.paragraphs.length - 1 ? 'text-ink' : 'text-ink-soft'} data-reveal>
                   {p}
                 </p>
               ))}
             </div>
-            <blockquote className="mt-8 w-full max-w-[38.75rem] rounded-frame bg-plum p-7 text-cream md:mt-10 md:px-9 md:py-8" data-reveal>
-              <p className="type-lead text-pretty">{m.quote}</p>
+            <blockquote className="mt-8 rounded-frame bg-plum px-7 py-7 text-cream md:mt-10 md:px-10 md:py-9" data-reveal>
+              <p className="border-l-2 border-saffron/80 pl-6 font-display text-xl leading-relaxed text-pretty md:text-[1.375rem]">{m.quote}</p>
             </blockquote>
           </div>
 
-          <figure className="relative lg:col-span-5">
-            <div className="shape-arch relative mx-auto aspect-[5/6] w-full max-w-md overflow-hidden lg:mr-0 lg:max-w-none lg:w-[min(100%,calc((100svh-10rem)*5/6))]" data-image-reveal>
-              <div data-parallax="0.08" className="absolute inset-x-0 -inset-y-[6%]">
-                <Media asset={m.image} fill frame={5 / 6} overscan={1.12} sizes="(min-width: 1024px) 40vw, 28rem" className="object-cover" />
-              </div>
+          <figure className="relative aspect-[4/3] overflow-hidden rounded-frame lg:col-span-6 lg:aspect-auto" data-image-reveal>
+            <div data-parallax="0.06" className="absolute inset-x-0 -inset-y-[5%]">
+              <Media asset={m.image} fill frame={1} overscan={1.1} sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
             </div>
           </figure>
         </div>
