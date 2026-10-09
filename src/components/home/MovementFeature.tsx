@@ -9,7 +9,7 @@ export function MovementFeature() {
     <section aria-labelledby="movement-title" className="section-y overflow-hidden bg-paper">
       <div className="container-x">
         <div className="grid gap-y-10 lg:grid-cols-12 lg:items-center lg:gap-x-8 xl:gap-x-14">
-          <div className="lg:col-span-6">
+          <div className="lg:col-span-7">
             <p className="type-eyebrow text-crimson" data-reveal>
               {m.eyebrow}
             </p>
@@ -28,10 +28,10 @@ export function MovementFeature() {
             </blockquote>
           </div>
 
-          <figure className="relative lg:col-span-6">
-            <div className="shape-arch relative aspect-[4/5] overflow-hidden" data-image-reveal>
+          <figure className="relative mx-auto w-full max-w-md lg:col-span-5 lg:max-w-none">
+            <div className="shape-arch relative aspect-[5/6] overflow-hidden" data-image-reveal>
               <div data-parallax="0.08" className="absolute inset-x-0 -inset-y-[6%]">
-                <Media asset={m.image} fill frame={4 / 5} overscan={1.12} sizes="(min-width: 1024px) 48vw, 100vw" className="object-cover" />
+                <Media asset={m.image} fill frame={5 / 6} overscan={1.12} sizes="(min-width: 1024px) 40vw, 28rem" className="object-cover" />
               </div>
             </div>
           </figure>
