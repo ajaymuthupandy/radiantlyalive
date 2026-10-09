@@ -5,7 +5,7 @@ import { movement as m } from '@/content/home'
 /** RA Movement: the Leadership Path (Seed → Bud → Blossom → Pod) and the teacher directory. Numbered because the stages are a real progression. */
 export function MovementFeature() {
   return (
-    <section aria-labelledby="movement-title" className="section-y overflow-hidden">
+    <section aria-labelledby="movement-title" className="overflow-hidden pb-[var(--section-space-tight)]">
       <div className="container-x border-t hairline pt-[var(--section-space-tight)]">
         <div className="grid gap-y-10 lg:grid-cols-12 lg:gap-x-10 xl:gap-x-12">
           <div className="lg:col-span-6 lg:py-4">

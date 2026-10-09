@@ -20,7 +20,7 @@ export function StudioHome() {
           </p>
         </div>
 
-        <div className="relative mt-10 aspect-[4/3] overflow-hidden rounded-frame md:mt-12 md:aspect-[2/1] lg:aspect-[13/5]" data-image-reveal>
+        <div className="relative mt-8 aspect-[4/3] overflow-hidden rounded-frame md:mt-10 md:aspect-[5/2] lg:aspect-[3/1]" data-image-reveal>
           <div data-parallax="0.12" className="absolute inset-x-0 -inset-y-[10%]">
             <Media asset={studioHome.image} fill sizes="(min-width: 1440px) 1360px, 100vw" className="object-cover object-[60%_62%]" />
           </div>
@@ -30,13 +30,13 @@ export function StudioHome() {
       {/* Offerings: rail on phones, grid from 768px */}
       <ul
         aria-label="At the studio"
-        className="rail mt-4 flex gap-3 overflow-x-auto px-[var(--gutter)] pb-2 md:mx-auto md:mt-6 md:grid md:max-w-[var(--container-max)] md:grid-cols-3 md:gap-6 md:overflow-visible md:pb-0"
+        className="rail mt-4 flex gap-3 overflow-x-auto px-[var(--gutter)] pb-2 md:mx-auto md:mt-6 md:grid md:max-w-[var(--container-max)] md:grid-cols-3 md:gap-x-6 md:gap-y-8 md:overflow-visible md:pb-0"
         data-stagger
       >
         {studioHome.offerings.map((item) => (
           <li key={item.href} className="w-[78%] shrink-0 xs:w-[62%] md:w-auto" data-stagger-item>
             <Link href={item.href} className="group block">
-              <span className="relative block aspect-[4/5] overflow-hidden rounded-frame bg-sand">
+              <span className="relative block aspect-[4/5] overflow-hidden rounded-frame bg-sand md:aspect-[3/2]">
                 <Media
                   asset={item.image}
                   fill
@@ -44,7 +44,7 @@ export function StudioHome() {
                   className="object-cover transition-transform duration-[1.4s] ease-[var(--ease-out-expo)] group-hover:scale-[1.04]"
                 />
               </span>
-              <span className="type-display-sm mt-4 block underline decoration-transparent underline-offset-[0.2em] transition-colors group-hover:decoration-ink/40">
+              <span className="type-display-sm mt-3 block underline decoration-transparent underline-offset-[0.2em] transition-colors group-hover:decoration-ink/40">
                 {item.label}
               </span>
             </Link>

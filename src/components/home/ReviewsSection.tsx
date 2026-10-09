@@ -13,7 +13,7 @@ export function ReviewsSection() {
   const others = testimonials.filter((t) => t.id !== featured.id).slice(0, 2)
 
   return (
-    <section aria-labelledby="reviews-title" className="section-y">
+    <section aria-labelledby="reviews-title" className="pb-[var(--section-space)]">
       <div className="container-x border-t hairline pt-[var(--section-space-tight)]">
         <div className="flex flex-wrap items-end justify-between gap-x-8 gap-y-6">
           <h2 id="reviews-title" className="type-display-lg text-balance" data-text-reveal>
@@ -36,8 +36,8 @@ export function ReviewsSection() {
           </ul>
         </div>
 
-        <div className="mt-12 grid gap-x-12 gap-y-14 md:mt-16 lg:grid-cols-12">
-          <figure className="lg:col-span-5" data-reveal>
+        <div className="mt-10 grid gap-x-12 gap-y-12 lg:grid-cols-12">
+          <figure className="lg:col-span-5" data-slide="left">
             <span aria-hidden className="block font-display text-7xl leading-[0.6] text-crimson">
               “
             </span>

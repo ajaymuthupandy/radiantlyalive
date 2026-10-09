@@ -23,16 +23,19 @@ export function initStagger(root: ParentNode) {
 /**
  * `data-counter="900"`: counts up once on entry. The final value is rendered
  * on the server, so no-JS and reduced-motion users always see the real number.
+ * `data-counter-suffix="+"` and `data-counter-prefix` are kept around the number.
  */
 export function initCounters(root: ParentNode) {
   root.querySelectorAll<HTMLElement>('[data-counter]').forEach((el) => {
     const target = Number(el.dataset.counter)
     const decimals = Number(el.dataset.counterDecimals ?? 0)
+    const prefix = el.dataset.counterPrefix ?? ''
+    const suffix = el.dataset.counterSuffix ?? ''
     if (!Number.isFinite(target)) return
 
     const state = { value: 0 }
     const render = () => {
-      el.textContent = state.value.toFixed(decimals)
+      el.textContent = prefix + state.value.toFixed(decimals) + suffix
     }
     render()
     gsap.to(state, {

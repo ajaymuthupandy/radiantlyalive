@@ -26,7 +26,7 @@ export function OnlinePractice() {
           </div>
         </div>
 
-        <div className="grid grid-cols-5 gap-3 md:gap-4 lg:col-span-7 lg:col-start-6">
+        <div className="grid grid-cols-5 gap-3 md:gap-4 lg:col-span-7 lg:col-start-6" data-slide="right">
           <div className="relative col-span-3 row-span-2 aspect-[3/4] overflow-hidden rounded-frame" data-image-reveal>
             <Media asset={tall} fill frame={3 / 4} sizes="(min-width: 1024px) 34vw, 60vw" className="object-cover" />
           </div>

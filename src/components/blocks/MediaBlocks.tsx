@@ -253,7 +253,7 @@ export function CtaBand({ blockKey, ...b }: WithKey<CtaBlock>) {
       </div>
       <div aria-hidden className="absolute inset-0 -z-10 bg-shade/50" />
       <div aria-hidden className="absolute inset-0 -z-10 bg-gradient-to-t from-plum via-plum/30 to-transparent" />
-      <div className="container-x section-y flex min-h-[34rem] flex-col items-center justify-center text-center md:min-h-[40rem]">
+      <div className="container-x section-y flex min-h-[24rem] flex-col items-center justify-center text-center md:min-h-[30rem]">
         {b.eyebrow && (
           <p className="type-eyebrow text-mist" data-reveal>
             {b.eyebrow}

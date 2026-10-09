@@ -3,6 +3,13 @@ import { Button } from '@/components/ui/Button'
 import { Media } from '@/components/ui/Media'
 import { teacherTrainings as t } from '@/content/home'
 
+/** "900+" → count up to 900 and keep the "+"; "4.9/5" → count to 4.9 and keep "/5". */
+function counter(value: string) {
+  const m = value.match(/^(\d+(?:\.(\d+))?)(.*)$/)
+  if (!m) return {}
+  return { 'data-counter': m[1], 'data-counter-decimals': m[2]?.length ?? 0, 'data-counter-suffix': m[3] }
+}
+
 /** Teacher trainings: the programmes, the proof behind them and one way in. */
 export function TrainingFeature() {
   return (
@@ -65,7 +72,9 @@ export function TrainingFeature() {
             {t.proof.map((p) => (
               <div key={p.label} className="flex flex-col" data-stagger-item>
                 <dt className="type-small order-2 mt-2 text-mist">{p.label}</dt>
-                <dd className="type-display-sm order-1 leading-none">{p.value}</dd>
+                <dd className="type-display-sm order-1 leading-none" {...counter(p.value)}>
+                  {p.value}
+                </dd>
               </div>
             ))}
           </dl>

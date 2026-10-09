@@ -2,7 +2,6 @@
 
 import { useId, useState } from 'react'
 import Link from 'next/link'
-import { ArrowRight } from 'lucide-react'
 import { SOURCE_ORIGIN } from '@/data/site'
 
 type Status = 'idle' | 'sending' | 'done' | 'error'
@@ -45,42 +44,44 @@ export function NewsletterForm() {
   }
 
   return (
-    <form onSubmit={onSubmit} className="w-full" noValidate={false}>
-      <label htmlFor={id} className="type-h3 text-cream">
-        The newsletter
-      </label>
-      <p className="type-small mt-2 text-mist">Class news, training dates and the occasional story from Ubud.</p>
-      <div className="mt-5 flex items-center border-b border-cream/30 focus-within:border-saffron">
-        <input
-          id={id}
-          name="email"
-          type="email"
-          required
-          autoComplete="email"
-          placeholder="Email Address"
-          className="type-body min-h-12 w-full bg-transparent text-cream placeholder:text-cream/70 focus:outline-none"
-        />
-        <button
-          type="submit"
-          disabled={status === 'sending'}
-          className="grid size-12 shrink-0 place-items-center rounded-full text-cream transition-colors hover:bg-cream/10 disabled:opacity-50"
-        >
-          <ArrowRight className="size-5" strokeWidth={1.5} aria-hidden />
-          <span className="sr-only">Sign Up</span>
-        </button>
+    <form onSubmit={onSubmit} className="grid gap-y-4 sm:grid-cols-3 sm:gap-x-10" noValidate={false}>
+      <div>
+        <label htmlFor={id} className="type-label block text-mist">
+          The newsletter
+        </label>
+        <p className="type-small mt-4 text-cream/85">Class news, training dates and the occasional story from Ubud.</p>
       </div>
-      <p className="type-small mt-3 text-mist empty:hidden" role="status" aria-live="polite">
-        {status === 'done' && 'We’re just getting started – see you in your inbox (and on the mat)!'}
-        {status === 'error' && 'Something went wrong. Please try again in a moment.'}
-        {status === 'idle' && !ENDPOINT && 'Opens our newsletter sign-up page to confirm.'}
-      </p>
-      <p className="type-small mt-2 text-mist/80">
-        By signing up, you agree to receive emails from Radiantly Alive. You can unsubscribe at any time. Read more in our{' '}
-        <Link href="/radiantly-alive-privacy-policy" className="underline underline-offset-4 hover:text-cream">
-          Privacy Policy
-        </Link>
-        .
-      </p>
+      <div className="sm:col-span-2">
+        <div className="flex items-center border-b border-cream/30 focus-within:border-saffron">
+          <input
+            id={id}
+            name="email"
+            type="email"
+            required
+            autoComplete="email"
+            placeholder="Your email address"
+            className="type-body min-h-12 w-full bg-transparent text-cream placeholder:text-cream/60 focus:outline-none"
+          />
+          <button
+            type="submit"
+            disabled={status === 'sending'}
+            className="type-button shrink-0 px-1 py-3 text-cream underline decoration-cream/40 underline-offset-4 transition-colors hover:decoration-cream disabled:opacity-50"
+          >
+            Sign up
+          </button>
+        </div>
+        <p className="type-small mt-3 text-mist empty:hidden" role="status" aria-live="polite">
+          {status === 'done' && 'Thank you. See you in your inbox, and on the mat.'}
+          {status === 'error' && 'Something went wrong. Please try again in a moment.'}
+        </p>
+        <p className="type-small mt-2 text-mist/80">
+          {!ENDPOINT && 'Opens our sign-up page to confirm. '}You can unsubscribe at any time. See our{' '}
+          <Link href="/radiantly-alive-privacy-policy" className="underline underline-offset-4 hover:text-cream">
+            privacy policy
+          </Link>
+          .
+        </p>
+      </div>
     </form>
   )
 }

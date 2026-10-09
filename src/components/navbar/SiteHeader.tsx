@@ -170,7 +170,8 @@ export function SiteHeader({ announcement }: { announcement?: ReactNode }) {
         {announcement}
 
         <header className="relative border-b border-cream/10 bg-plum text-cream">
-          <div className="container-x flex h-[var(--header-height)] items-center gap-10">
+          {/* Three zones on one line: logo left, sections centred, actions right. */}
+          <div className="container-x grid h-[var(--header-height)] grid-cols-[1fr_auto] items-center gap-x-8 lg:grid-cols-[1fr_auto_1fr]">
             <Link
               href="/"
               data-header-home
@@ -181,14 +182,14 @@ export function SiteHeader({ announcement }: { announcement?: ReactNode }) {
                 setOpenId(null)
                 scrollToTop()
               }}
-              className="shrink-0 rounded-sm"
+              className="flex items-center justify-self-start rounded-sm"
               aria-label="Radiantly Alive, home"
             >
               <Logo />
             </Link>
 
             <nav aria-label="Main" className="hidden h-full lg:block">
-              <ul className="flex h-full items-center gap-7">
+              <ul className="flex h-full items-center gap-10">
                 {HEADER_NAV.map((group) => {
                   const open = openId === group.id
                   const panel = hasPanel(group)
@@ -196,7 +197,7 @@ export function SiteHeader({ announcement }: { announcement?: ReactNode }) {
                   return (
                     <li
                       key={group.id}
-                      className="flex h-full items-center gap-0.5"
+                      className="relative flex h-full items-center"
                       onPointerEnter={(e) => {
                         if (e.pointerType !== 'mouse') return
                         schedule(() => setOpenId(panel ? group.id : null), openId ? 0 : OPEN_DELAY)
@@ -206,15 +207,15 @@ export function SiteHeader({ announcement }: { announcement?: ReactNode }) {
                         href={group.href}
                         aria-current={active ? 'true' : undefined}
                         className={cn(
-                          'type-nav flex h-full items-center whitespace-nowrap transition-[box-shadow] duration-300',
-                          active || open
-                            ? 'shadow-[inset_0_-2px_0_0_var(--color-saffron)]'
-                            : 'shadow-[inset_0_-2px_0_0_transparent] hover:shadow-[inset_0_-2px_0_0_var(--color-cream)]',
+                          'type-nav relative py-2 whitespace-nowrap',
+                          'after:absolute after:inset-x-0 after:bottom-0 after:h-0.5 after:origin-left after:transition-transform after:duration-500 after:ease-[var(--ease-out-expo)]',
+                          active || open ? 'after:scale-x-100 after:bg-saffron' : 'after:scale-x-0 after:bg-cream hover:after:scale-x-100',
                         )}
                       >
                         {group.label}
                       </Link>
                       {panel && (
+                        // Keyboard and touch disclosure. It takes no space, so every label sits on the same rhythm.
                         <button
                           ref={(el) => {
                             triggerRefs.current[group.id] = el
@@ -225,13 +226,9 @@ export function SiteHeader({ announcement }: { announcement?: ReactNode }) {
                           aria-label={`${group.label} menu`}
                           onClick={() => setOpenId(open ? null : group.id)}
                           onKeyDown={(e) => onTriggerKeyDown(e, group.id)}
-                          className="grid size-7 place-items-center rounded-full text-cream/60 transition-colors hover:text-cream"
+                          className="absolute top-1/2 -right-6 grid size-6 -translate-y-1/2 place-items-center rounded-full text-cream opacity-0 focus-visible:opacity-100"
                         >
-                          <ChevronDown
-                            aria-hidden
-                            strokeWidth={1.75}
-                            className={cn('size-3.5 transition-transform duration-300', open && 'rotate-180')}
-                          />
+                          <ChevronDown aria-hidden strokeWidth={1.75} className={cn('size-3.5 transition-transform', open && 'rotate-180')} />
                         </button>
                       )}
                     </li>
@@ -240,16 +237,16 @@ export function SiteHeader({ announcement }: { announcement?: ReactNode }) {
               </ul>
             </nav>
 
-            <div className="ml-auto flex items-center gap-6">
+            <div className="flex items-center justify-self-end gap-7">
               <Link
                 href={HEADER_SCHEDULE.href}
-                className="type-nav hidden underline decoration-transparent underline-offset-4 transition-colors hover:decoration-cream md:inline"
+                className="type-nav hidden py-2 underline decoration-transparent underline-offset-[0.5em] transition-colors hover:decoration-cream md:inline"
               >
                 {HEADER_SCHEDULE.label}
               </Link>
               <Link
                 href={HEADER_CTA.href}
-                className="type-button hidden min-h-11 items-center rounded-control bg-saffron px-5 whitespace-nowrap text-ink transition-colors duration-300 hover:bg-saffron-deep sm:inline-flex"
+                className="type-nav hidden h-10 items-center rounded-control bg-saffron px-5 whitespace-nowrap text-ink transition-colors duration-300 hover:bg-saffron-deep sm:inline-flex"
               >
                 {HEADER_CTA.label}
               </Link>

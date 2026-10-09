@@ -7,7 +7,7 @@ import { teachers } from '@/data/teachers'
 /** Resident teachers as a portrait rail. */
 export function TeachersRail() {
   return (
-    <section aria-labelledby="teachers-title" className="section-y overflow-hidden">
+    <section aria-labelledby="teachers-title" className="overflow-hidden pt-[var(--section-space)] pb-[var(--section-space-tight)]">
       <div className="container-x flex flex-wrap items-end justify-between gap-x-8 gap-y-6">
         <h2 id="teachers-title" className="type-display-lg" data-text-reveal>
           {s.heading}
@@ -26,10 +26,11 @@ export function TeachersRail() {
         id="teachers-rail"
         tabIndex={0}
         aria-label="Resident teachers"
-        className="rail mt-12 flex gap-4 overflow-x-auto px-[max(var(--gutter),calc((100%_-_var(--container-max))/2_+_var(--gutter)))] pb-4 focus-visible:outline-offset-[-4px] md:mt-16 md:gap-6"
+        className="rail mt-8 flex gap-4 overflow-x-auto px-[max(var(--gutter),calc((100%_-_var(--container-max))/2_+_var(--gutter)))] pb-2 focus-visible:outline-offset-[-4px] md:mt-10 md:gap-6"
+        data-stagger
       >
         {teachers.map((teacher) => (
-          <li key={teacher.id} className="w-[68%] shrink-0 xs:w-[46%] md:w-[30%] lg:w-[22%]">
+          <li key={teacher.id} className="w-[68%] shrink-0 xs:w-[46%] md:w-[30%] lg:w-[22%]" data-stagger-item>
             <figure className="group">
               <div className="relative aspect-[4/5] overflow-hidden rounded-frame bg-sand">
                 <Media

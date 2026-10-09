@@ -9,6 +9,7 @@ import { initImageReveal } from '@/animations/imageReveal'
 import { initParallax } from '@/animations/parallax'
 import { initCounters, initStagger } from '@/animations/stagger'
 import { initHorizontalScroll } from '@/animations/horizontalScroll'
+import { initScrollEffects } from '@/animations/scrollEffects'
 
 /**
  * Wires declarative `data-*` animation hooks (rendered by Server Components)
@@ -38,6 +39,7 @@ export function ScrollAnimations() {
       initImageReveal(root)
       initStagger(root)
       initCounters(root)
+      initScrollEffects(root)
     }, root)
 
     const mm = gsap.matchMedia(root)

@@ -38,8 +38,8 @@
   /* Layout */
   --container-max: 90rem;
   --gutter: clamp(1.25rem, 4vw, 3.5rem);
-  --section-space: clamp(3.5rem, 6vw, 5.5rem);
-  --section-space-tight: clamp(2.75rem, 4.5vw, 4rem);
+  --section-space: clamp(3rem, 5vw, 4.5rem);
+  --section-space-tight: clamp(2.25rem, 3.5vw, 3rem);
   --header-height: 4.5rem;
 
   /* Stacking order: content < sticky UI < scrim < header < dialogs < skip link */
@@ -255,13 +255,15 @@
    ------------------------------------------------------------------------ */
 .js [data-reveal],
 .js [data-stagger-item],
-.js [data-hero-item] {
+.js [data-hero-item],
+.js [data-slide] {
   opacity: 0;
 }
 
 .js:not(.motion-ready) [data-reveal],
 .js:not(.motion-ready) [data-stagger-item],
-.js:not(.motion-ready) [data-hero-item] {
+.js:not(.motion-ready) [data-hero-item],
+.js:not(.motion-ready) [data-slide] {
   animation: motion-fallback 0.6s ease 2.5s forwards;
 }
 
@@ -291,7 +293,8 @@
 @media (prefers-reduced-motion: reduce) {
   .js [data-reveal],
   .js [data-stagger-item],
-  .js [data-hero-item] {
+  .js [data-hero-item],
+  .js [data-slide] {
     opacity: 1;
     animation: none;
   }
