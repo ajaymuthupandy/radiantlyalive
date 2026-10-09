@@ -25,16 +25,16 @@ export function StudioHome() {
           </div>
           <div className="md:border-l md:border-crimson md:pl-8 lg:pl-12">
             <span aria-hidden className="mb-5 block h-px w-12 bg-crimson md:hidden" />
-            <p className="type-h3 max-w-[34ch] text-balance" data-reveal>
+            <p className="type-display-sm max-w-[26ch] text-balance" data-reveal>
               {studioHome.subheading}
             </p>
-            <p className="type-body mt-3 max-w-[60ch] text-pretty text-ink-soft" data-reveal data-reveal-delay="0.1">
+            <p className="type-body mt-4 max-w-[60ch] text-pretty text-ink-soft" data-reveal data-reveal-delay="0.1">
               {studioHome.body}
             </p>
           </div>
         </div>
 
-        <div className="relative mt-8 aspect-[4/3] overflow-hidden rounded-frame md:mt-10 md:aspect-[2/1] lg:aspect-[12/5]" data-image-reveal>
+        <div className="relative mt-8 aspect-[4/3] overflow-hidden rounded-frame md:mt-10 md:aspect-[2/1] lg:aspect-[13/5]" data-image-reveal>
           <div data-parallax="0.12" className="absolute inset-x-0 -inset-y-[10%]">
             <Media asset={studioHome.image} fill sizes="(min-width: 1440px) 1360px, 100vw" className="object-cover object-[60%_62%]" />
           </div>
