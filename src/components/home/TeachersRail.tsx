@@ -32,7 +32,7 @@ export function TeachersRail() {
         {teachers.map((teacher) => (
           <li key={teacher.id} className="w-[68%] shrink-0 xs:w-[46%] md:w-[30%] lg:w-[22%]" data-stagger-item>
             <figure className="group">
-              <div className="relative aspect-[4/5] overflow-hidden rounded-frame bg-sand">
+              <div className="shape-arch relative aspect-[3/4] overflow-hidden bg-sand">
                 <Media
                   asset={teacher.image}
                   fill
@@ -41,7 +41,7 @@ export function TeachersRail() {
                 />
               </div>
               <figcaption className="mt-4">
-                <span className="type-h3 block">{teacher.name}</span>
+                <span className="type-display-sm block">{teacher.name}</span>
                 <span className="type-small mt-1 block text-ink-soft">{teacher.role}</span>
               </figcaption>
             </figure>

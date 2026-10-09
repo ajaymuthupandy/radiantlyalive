@@ -8,6 +8,8 @@ import { gsap } from './gsap'
  *   full width while the image inside settles from a slight zoom (scrubbed).
  * - `data-rule`: a hairline draws in from the left when it enters.
  * - `data-slide="left|right"`: the element slides in from that side.
+ * - `data-draw` (on an <svg>): its strokes draw in like a pen line.
+ * - `data-arch`: an arched frame rises open from the bottom edge.
  */
 export function initScrollEffects(root: ParentNode) {
   root.querySelectorAll<HTMLElement>('[data-window]').forEach((frame) => {
@@ -38,5 +40,30 @@ export function initScrollEffects(root: ParentNode) {
       { autoAlpha: 0, x: from },
       { autoAlpha: 1, x: 0, duration: 1.3, ease: 'expo.out', scrollTrigger: { trigger: el, start: 'top 85%', once: true } },
     )
+  })
+
+  root.querySelectorAll<SVGSVGElement>('svg[data-draw]').forEach((svg) => {
+    const paths = Array.from(svg.querySelectorAll<SVGPathElement>('path'))
+    paths.forEach((p) => {
+      const len = p.getTotalLength()
+      gsap.set(p, { strokeDasharray: len, strokeDashoffset: len })
+    })
+    gsap.to(paths, {
+      strokeDashoffset: 0,
+      duration: 1.6,
+      ease: 'power2.inOut',
+      stagger: 0.12,
+      scrollTrigger: { trigger: svg, start: 'top 90%', once: true },
+    })
+  })
+
+  root.querySelectorAll<HTMLElement>('[data-arch]').forEach((frame) => {
+    const img = frame.querySelector('img')
+    const tl = gsap.timeline({
+      scrollTrigger: { trigger: frame, start: 'top 88%', once: true },
+      defaults: { duration: 1.6, ease: 'expo.out' },
+    })
+    tl.fromTo(frame, { clipPath: 'inset(100% 0% 0% 0% round 50% 50% 0 0)' }, { clipPath: 'inset(0% 0% 0% 0% round 0% 0% 0 0)', clearProps: 'clipPath' })
+    if (img) tl.fromTo(img, { scale: 1.15 }, { scale: 1, duration: 2 }, 0)
   })
 }

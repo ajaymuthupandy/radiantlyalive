@@ -50,7 +50,7 @@ export function MobileMenu({ open, pathname, onClose }: MobileMenuProps) {
           role="dialog"
           aria-modal="true"
           aria-label="Site menu"
-          className="fixed inset-0 z-[var(--z-dialog)] flex flex-col overflow-y-auto overscroll-contain bg-plum text-cream lg:hidden"
+          className="fixed inset-0 z-[var(--z-dialog)] flex flex-col overflow-y-auto overscroll-contain bg-plum text-cream xl:hidden"
           initial={reduce ? { opacity: 0 } : { clipPath: 'inset(0 0 100% 0)' }}
           animate={reduce ? { opacity: 1 } : { clipPath: 'inset(0 0 0% 0)' }}
           exit={reduce ? { opacity: 0 } : { clipPath: 'inset(0 0 100% 0)' }}

@@ -64,14 +64,14 @@ There are eight roles. If a style isn't in this table, it doesn't go on the page
 
 | Utility | Family / weight | Size | Use |
 | --- | --- | --- | --- |
-| `type-display-xl` | Bagnard 400 | 2.75 → 5.5rem | Hero h1 only |
-| `type-display-lg` | Bagnard 400 | 2.25 → 3.75rem | Every section h2 and page h1 |
-| `type-display-sm` | Bagnard 400 | 1.5 → 2rem | Card titles, pull quotes, stats |
-| `type-h3` | Mulish 600 | 1.1875rem | List headings, menu items, names |
-| `type-lead` / `type-body` | Mulish 400 | 1.0625–1.1875rem / 1–1.0625rem | Opening paragraph / all other copy |
-| `type-small` | Mulish 400 | 0.875rem | Meta, captions, roles, credits |
-| `type-nav` / `type-button` | Mulish 600 / 700 | 0.9375rem | Navigation / buttons |
-| `type-label` | Mulish 700, 0.12em caps | 0.75rem | Footer column titles only |
+| `type-display-xl` | Bagnard 400 | 3 → 6rem | Hero h1 only |
+| `type-display-lg` | Bagnard 400 | 2.5 → 4.375rem | Every section h2 and page h1 |
+| `type-display-sm` | Bagnard 400 | 1.625 → 2.25rem | Card titles, names, index lines, pull quotes, stats |
+| `type-h3` | Mulish 600 | 1.3125rem | List headings, menu items |
+| `type-lead` / `type-body` | Mulish 400 | 1.1875–1.375rem / 1.0625–1.125rem | Opening paragraph / all other copy |
+| `type-small` | Mulish 400 | 0.9375rem | Meta, captions, roles, credits (the smallest size on the site) |
+| `type-nav` / `type-button` | Mulish 600 / 700 | 1rem | Navigation / buttons |
+| `type-label` | Mulish 700, 0.14em caps | 0.8125rem | Footer column titles only |
 
 `type-eyebrow` is a quiet sentence-case kicker (Mulish 600, 0.875rem). It appears only where a block has no heading; `BlockRenderer` drops a block's eyebrow when the block has a heading, because the kicker would only repeat it.
 
@@ -83,6 +83,14 @@ Rules:
 - Year counts derive from `SITE.foundingYear` via `yearsRunning()` (`src/data/site.ts`), never hard-coded.
 
 ---
+
+### Hand-made details
+
+- **The shala arch** (`shape-arch`) frames portrait photographs: the intro, the studio index, the trainings photo, teacher portraits.
+- **The lotus mark** (`components/brand/Flourish.tsx`) is a hand-drawn line used as a chapter mark (intro, graduates, footer). It draws itself in on scroll (`data-draw`).
+- **Paper grain:** a 5% noise texture over the page (`body::after`), so flat colour reads as printed material.
+- **Captions** under photographs say what and where, as in print.
+- **Drop cap** on the intro's story paragraph.
 
 ## 3. Spacing and layout
 
@@ -154,7 +162,7 @@ The official emblem is inlined as a vector (`src/components/brand/Logo.tsx`) and
 ### Header, announcement bar and menus
 
 - **Announcement bar:** `shade`, `type-small`, one underlined link, no arrow.
-- **Header:** solid `plum` from the first frame with a 1px `cream/10` rule. Four sections (Trainings, Studio, Retreats, Online) in `type-nav`. Each label is a real link to its hub page, and the active section has a saffron underline. Groups with more than one destination have a small chevron button for keyboard and touch. On the right sit a quiet "Schedule" text link and the saffron "Book a class". RA Movement lives in the footer and the mobile menu.
+- **Header:** solid `plum`, set like a letterhead from 1280px: four sections (Trainings, Studio, Retreats, Online) on the left in `type-nav`, the emblem and name centred, "Schedule" and "Book a class" on the right. Below 1280px: logo left, menu button right. Each label is a real link to its hub page, and the active section has a saffron underline. Groups with more than one destination have a small chevron button for keyboard and touch. On the right sit a quiet "Schedule" text link and the saffron "Book a class". RA Movement lives in the footer and the mobile menu.
 - **Panels:** open on hover after 150ms of intent, or via the chevron. They hold the destinations (`type-h3` + `type-small` description, sub-links as plain underlined text) and at most one featured item. They close on Escape, outside click, route change and after 48px of scroll.
 - **Mobile:** full-screen `plum` dialog, groups in `type-display-sm`, links in `type-h3`, full-width saffron "Book a class".
 

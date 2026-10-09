@@ -44,44 +44,39 @@ export function NewsletterForm() {
   }
 
   return (
-    <form onSubmit={onSubmit} className="grid gap-y-4 sm:grid-cols-3 sm:gap-x-10" noValidate={false}>
-      <div>
-        <label htmlFor={id} className="type-label block text-mist">
-          The newsletter
-        </label>
-        <p className="type-small mt-4 text-cream/85">Class news, training dates and the occasional story from Ubud.</p>
+    <form onSubmit={onSubmit} noValidate={false}>
+      <label htmlFor={id} className="sr-only">
+        Email address
+      </label>
+      <div className="flex items-center gap-3 border-b border-cream/40 focus-within:border-saffron">
+        <input
+          id={id}
+          name="email"
+          type="email"
+          required
+          autoComplete="email"
+          placeholder="Your email address"
+          className="type-body min-h-13 w-full bg-transparent text-cream placeholder:text-cream/60 focus:outline-none"
+        />
+        <button
+          type="submit"
+          disabled={status === 'sending'}
+          className="type-button shrink-0 py-3 text-cream underline decoration-cream/40 underline-offset-4 transition-colors hover:decoration-cream disabled:opacity-50"
+        >
+          Sign up
+        </button>
       </div>
-      <div className="sm:col-span-2">
-        <div className="flex items-center border-b border-cream/30 focus-within:border-saffron">
-          <input
-            id={id}
-            name="email"
-            type="email"
-            required
-            autoComplete="email"
-            placeholder="Your email address"
-            className="type-body min-h-12 w-full bg-transparent text-cream placeholder:text-cream/60 focus:outline-none"
-          />
-          <button
-            type="submit"
-            disabled={status === 'sending'}
-            className="type-button shrink-0 px-1 py-3 text-cream underline decoration-cream/40 underline-offset-4 transition-colors hover:decoration-cream disabled:opacity-50"
-          >
-            Sign up
-          </button>
-        </div>
-        <p className="type-small mt-3 text-mist empty:hidden" role="status" aria-live="polite">
-          {status === 'done' && 'Thank you. See you in your inbox, and on the mat.'}
-          {status === 'error' && 'Something went wrong. Please try again in a moment.'}
-        </p>
-        <p className="type-small mt-2 text-mist/80">
-          {!ENDPOINT && 'Opens our sign-up page to confirm. '}You can unsubscribe at any time. See our{' '}
-          <Link href="/radiantly-alive-privacy-policy" className="underline underline-offset-4 hover:text-cream">
-            privacy policy
-          </Link>
-          .
-        </p>
-      </div>
+      <p className="type-small mt-3 text-mist empty:hidden" role="status" aria-live="polite">
+        {status === 'done' && 'Thank you. See you in your inbox, and on the mat.'}
+        {status === 'error' && 'Something went wrong. Please try again in a moment.'}
+      </p>
+      <p className="type-small mt-2 text-center text-mist/80">
+        {!ENDPOINT && 'Opens our sign-up page to confirm. '}Unsubscribe any time. See our{' '}
+        <Link href="/radiantly-alive-privacy-policy" className="underline underline-offset-4 hover:text-cream">
+          privacy policy
+        </Link>
+        .
+      </p>
     </form>
   )
 }

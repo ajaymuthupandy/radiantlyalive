@@ -20,13 +20,13 @@ export const studioHome = {
   image: 'teacherAssisting' satisfies MediaKey,
   /** The six tiles of the source "Your Yoga Home" section, in order, with their own photographs. */
   offerings: [
-    { label: 'Class schedule', href: '/classes', image: 'trainingArtOfTeaching' },
-    { label: 'Workshops & events', href: '/studio-workshops-events-ubud', image: 'homeTileWorkshops' },
-    { label: 'Short trainings', href: '/short-trainings-overview', image: 'trainingAssist' },
-    { label: 'Retreats', href: '/retreats', image: 'templePurification' },
-    { label: 'Shala rental', href: '/shala-rental', image: 'homeTileShalaRental' },
-    { label: 'Healings', href: '/healing-studio', image: 'homeTileHealings' },
-  ] satisfies { label: string; href: string; image: MediaKey }[],
+    { label: 'Class schedule', text: 'Daily classes, passes and class descriptions', href: '/classes', image: 'trainingArtOfTeaching' },
+    { label: 'Workshops & events', text: 'Workshops, sound journeys and ceremonies', href: '/studio-workshops-events-ubud', image: 'homeTileWorkshops' },
+    { label: 'Short trainings', text: 'Immersions with visiting teachers', href: '/short-trainings-overview', image: 'trainingAssist' },
+    { label: 'Retreats', text: 'Me-time, your way: a wellness retreat in Bali', href: '/retreats', image: 'templePurification' },
+    { label: 'Shala rental', text: 'Five shalas for your retreat or training', href: '/shala-rental', image: 'homeTileShalaRental' },
+    { label: 'Healings', text: 'Physical, emotional and spiritual healing', href: '/healing-studio', image: 'homeTileHealings' },
+  ] satisfies { label: string; text: string; href: string; image: MediaKey }[],
 } as const
 
 export const teacherTrainings = {

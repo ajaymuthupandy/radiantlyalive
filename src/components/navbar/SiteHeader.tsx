@@ -24,8 +24,9 @@ const HEADER_NAV = MAIN_NAV.filter((g) => g.inHeader)
 const hasPanel = (group: NavGroup) => group.links.length > 1
 
 /**
- * Site header: a quiet announcement bar, then a solid plum bar with the
- * logo, four linked sections, a schedule link and one call to action.
+ * Site header: a quiet announcement bar, then a solid plum bar set like a
+ * letterhead: four linked sections on the left, the emblem and name in the
+ * centre, the schedule and "Book a class" on the right.
  *
  * - Each top-level label is a real link to its hub page. Hovering it (with
  *   intent) opens a short panel of destinations; keyboard and touch users
@@ -170,26 +171,10 @@ export function SiteHeader({ announcement }: { announcement?: ReactNode }) {
         {announcement}
 
         <header className="relative border-b border-cream/10 bg-plum text-cream">
-          {/* Three zones on one line: logo left, sections centred, actions right. */}
-          <div className="container-x grid h-[var(--header-height)] grid-cols-[1fr_auto] items-center gap-x-8 lg:grid-cols-[1fr_auto_1fr]">
-            <Link
-              href="/"
-              data-header-home
-              onClick={(e) => {
-                // Already home: a same-URL link is a no-op, so return to the top instead.
-                if (pathname !== '/') return
-                e.preventDefault()
-                setOpenId(null)
-                scrollToTop()
-              }}
-              className="flex items-center justify-self-start rounded-sm"
-              aria-label="Radiantly Alive, home"
-            >
-              <Logo />
-            </Link>
-
-            <nav aria-label="Main" className="hidden h-full lg:block">
-              <ul className="flex h-full items-center gap-10">
+          {/* Letterhead layout: sections on the left, the emblem and name centred, booking on the right. Phones: logo left, menu right. */}
+          <div className="container-x grid h-[var(--header-height)] grid-cols-[1fr_auto] items-center gap-x-8 xl:grid-cols-[1fr_auto_1fr]">
+            <nav aria-label="Main" className="hidden h-full justify-self-start xl:block">
+              <ul className="flex h-full items-center gap-9">
                 {HEADER_NAV.map((group) => {
                   const open = openId === group.id
                   const panel = hasPanel(group)
@@ -237,6 +222,23 @@ export function SiteHeader({ announcement }: { announcement?: ReactNode }) {
               </ul>
             </nav>
 
+            <Link
+              href="/"
+              data-header-home
+              onClick={(e) => {
+                // Already home: a same-URL link is a no-op, so return to the top instead.
+                if (pathname !== '/') return
+                e.preventDefault()
+                setOpenId(null)
+                scrollToTop()
+              }}
+              className="flex items-center justify-self-start rounded-sm xl:justify-self-center"
+              aria-label="Radiantly Alive, home"
+            >
+              <Logo />
+            </Link>
+
+
             <div className="flex items-center justify-self-end gap-7">
               <Link
                 href={HEADER_SCHEDULE.href}
@@ -256,7 +258,7 @@ export function SiteHeader({ announcement }: { announcement?: ReactNode }) {
                 onClick={() => setMobileOpen(true)}
                 aria-expanded={mobileOpen}
                 aria-controls="mobile-menu"
-                className="-mr-2.5 grid size-11 place-items-center rounded-full transition-colors hover:bg-cream/10 lg:hidden"
+                className="-mr-2.5 grid size-11 place-items-center rounded-full transition-colors hover:bg-cream/10 xl:hidden"
               >
                 <Menu className="size-6" strokeWidth={1.5} aria-hidden />
                 <span className="sr-only">Open menu</span>
@@ -265,7 +267,7 @@ export function SiteHeader({ announcement }: { announcement?: ReactNode }) {
           </div>
 
           {/* Desktop panels: all rendered (crawlable), only the open one is interactive */}
-          <div className="hidden lg:block" onKeyDown={onPanelKeyDown}>
+          <div className="hidden xl:block" onKeyDown={onPanelKeyDown}>
             {HEADER_NAV.filter(hasPanel).map((group) => (
               <MegaMenuPanel
                 key={group.id}
@@ -284,7 +286,7 @@ export function SiteHeader({ announcement }: { announcement?: ReactNode }) {
         aria-hidden
         onClick={() => setOpenId(null)}
         className={cn(
-          'fixed inset-0 z-[var(--z-scrim)] hidden bg-shade/20 transition-opacity duration-300 lg:block',
+          'fixed inset-0 z-[var(--z-scrim)] hidden bg-shade/20 transition-opacity duration-300 xl:block',
           menuOpen ? 'opacity-100' : 'pointer-events-none opacity-0',
         )}
       />

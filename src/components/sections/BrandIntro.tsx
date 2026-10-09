@@ -1,47 +1,82 @@
-import { Media } from '@/components/ui/Media'
-import { Button } from '@/components/ui/Button'
-import { brandStory } from '@/data/studio'
+import { Flourish } from "@/components/brand/Flourish";
+import { Button } from "@/components/ui/Button";
+import { Media } from "@/components/ui/Media";
+import { brandStory } from "@/data/studio";
 
 /**
- * The vision statement beside a two-photograph composition: a class in the
- * shala, overlapped by a smaller frame of the Jungle Shala, as a printed
- * spread would set them. Each photograph enters from its own side.
+ * The vision, set like the opening spread of a printed booklet: an arched
+ * photograph of practice on the left (the shala's own arch), the statement
+ * and a drop-capped paragraph on the right, with a small second photograph
+ * tucked under the text.
  */
 export function BrandIntro() {
   return (
-    <section id="vision" aria-labelledby="intro-title" className="section-y scroll-mt-[var(--header-height)] overflow-hidden">
-      <div className="container-x grid items-center gap-y-12 lg:grid-cols-12 lg:gap-x-10">
-        <div className="lg:col-span-5">
-          <h2 id="intro-title" className="type-display-lg max-w-[14ch] text-balance" data-text-reveal>
+    <section
+      id="vision"
+      aria-labelledby="intro-title"
+      className="section-y scroll-mt-[var(--header-height)] overflow-hidden"
+    >
+      <div className="container-x grid items-start gap-y-12 lg:grid-cols-12 lg:gap-x-12">
+        <figure className="lg:col-span-5">
+          <div
+            className="shape-arch relative aspect-[4/5] overflow-hidden bg-sand"
+            data-arch
+          >
+            <Media
+              asset="introShalaPractice"
+              fill
+              sizes="(min-width: 1024px) 38vw, 92vw"
+              className="object-cover object-[62%_50%]"
+            />
+          </div>
+          <figcaption className="type-small mt-3 text-ink-soft">
+            Practice in one of our five shalas, Ubud.
+          </figcaption>
+        </figure>
+
+        <div className="lg:col-span-7 lg:pt-10">
+          <Flourish className="-ml-1 text-crimson/70" />
+          <h2
+            id="intro-title"
+            className="type-display-lg mt-6 max-w-[16ch] text-balance"
+            data-text-reveal
+          >
             {brandStory.vision}
           </h2>
-          <p className="type-lead mt-6 max-w-[34rem] text-pretty" data-reveal>
+          <p className="type-lead mt-7 max-w-[36rem] text-pretty" data-reveal>
             {brandStory.visionDetail}
           </p>
-          <p className="type-body mt-4 max-w-[34rem] text-pretty text-ink-soft" data-reveal data-reveal-delay="0.1">
-            {brandStory.rooted}
-          </p>
-          <div className="mt-7" data-reveal data-reveal-delay="0.2">
-            <Button href="/our-teachers" variant="link">
-              Meet the teachers
-            </Button>
-          </div>
-        </div>
 
-        <div className="relative pb-14 lg:col-span-7 lg:pl-8">
-          <div className="relative ml-auto aspect-[5/4] w-[88%] overflow-hidden rounded-frame bg-sand" data-image-reveal>
-            <div data-parallax="0.08" className="absolute inset-x-0 -inset-y-[6%]">
-              <Media asset="introShalaPractice" fill sizes="(min-width: 1024px) 50vw, 90vw" className="object-cover object-[60%_50%]" />
+          <div className="mt-8 grid gap-8 md:grid-cols-[1fr_13rem] md:items-start">
+            <div>
+              <p
+                className="type-body max-w-[34rem] text-pretty text-ink-soft first-letter:float-left first-letter:mt-1.5 first-letter:mr-3 first-letter:font-display first-letter:text-[4.25rem] first-letter:leading-[0.78] first-letter:text-ink"
+                data-reveal
+              >
+                {brandStory.rooted}
+              </p>
+              <div className="mt-7" data-reveal>
+                <Button href="/our-teachers" variant="link">
+                  Meet the teachers
+                </Button>
+              </div>
             </div>
+            <figure className="hidden md:block" data-slide="right">
+              <div className="relative aspect-[4/5] overflow-hidden rounded-frame bg-sand">
+                <Media
+                  asset="shalaJungle"
+                  fill
+                  sizes="208px"
+                  className="object-cover"
+                />
+              </div>
+              <figcaption className="type-small mt-2 text-ink-soft">
+                The Jungle Shala
+              </figcaption>
+            </figure>
           </div>
-          <figure className="absolute bottom-0 left-0 w-[42%] lg:left-8" data-slide="left">
-            <div className="relative aspect-[4/5] overflow-hidden rounded-frame border-[6px] border-canvas bg-sand">
-              <Media asset="shalaJungle" fill sizes="(min-width: 1024px) 22vw, 40vw" className="object-cover" />
-            </div>
-            <figcaption className="type-small mt-2 text-ink-soft">The Jungle Shala</figcaption>
-          </figure>
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -35,9 +35,9 @@ interface LogoProps {
  */
 export function Logo({ className }: LogoProps) {
   return (
-    <span className={cn('inline-flex items-center gap-2.5', className)}>
-      <LogoMark className="size-7" />
-      <span className="font-display text-[1.1875rem] leading-none whitespace-nowrap">Radiantly Alive</span>
+    <span className={cn('inline-flex items-center gap-3', className)}>
+      <LogoMark className="size-8 md:size-9" />
+      <span className="font-display text-[1.3125rem] leading-none whitespace-nowrap md:text-[1.5rem]">Radiantly Alive</span>
     </span>
   )
 }

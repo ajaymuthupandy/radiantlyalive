@@ -17,7 +17,7 @@ export function TrainingFeature() {
       <div className="container-x grid gap-y-10 lg:grid-cols-12 lg:gap-x-10">
         {/* Image stretches to the copy column's height so the CTA row lands level with the proof stats' baseline. */}
         <div className="relative order-2 flex flex-col gap-y-10 lg:order-1 lg:col-span-5">
-          <div className="relative aspect-[4/5] overflow-hidden rounded-frame lg:aspect-auto lg:min-h-[28rem] lg:flex-1" data-image-reveal>
+          <div className="shape-arch relative aspect-[4/5] overflow-hidden lg:aspect-auto lg:min-h-[30rem] lg:flex-1" data-arch>
             <div data-parallax="0.1" className="absolute inset-x-0 -inset-y-[8%]">
               <Media asset={t.image} fill frame={4 / 5} overscan={1.16} sizes="(min-width: 1024px) 40vw, 100vw" className="object-cover" />
             </div>
