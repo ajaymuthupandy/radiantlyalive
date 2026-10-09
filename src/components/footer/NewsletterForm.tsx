@@ -45,11 +45,11 @@ export function NewsletterForm() {
   }
 
   return (
-    <form onSubmit={onSubmit} className="w-full max-w-[28rem]" noValidate={false}>
+    <form onSubmit={onSubmit} className="w-full" noValidate={false}>
       <label htmlFor={id} className="type-eyebrow text-saffron">
         Join the community
       </label>
-      <p className="type-small mt-3 text-mist">
+      <p className="type-small mt-4 text-mist">
         Get insider updates, expert tips, and early access to classes and retreats.
       </p>
       <div className="mt-5 flex items-center border-b border-cream/30 focus-within:border-saffron">
@@ -71,7 +71,7 @@ export function NewsletterForm() {
           <span className="sr-only">Sign Up</span>
         </button>
       </div>
-      <p className="type-meta mt-3 min-h-5 text-mist" role="status" aria-live="polite">
+      <p className="type-meta mt-3 text-mist empty:hidden" role="status" aria-live="polite">
         {status === 'done' && 'We’re just getting started – see you in your inbox (and on the mat)!'}
         {status === 'error' && 'Something went wrong. Please try again in a moment.'}
         {status === 'idle' && !ENDPOINT && 'Opens our newsletter sign-up page to confirm.'}
