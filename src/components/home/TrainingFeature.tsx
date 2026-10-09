@@ -10,11 +10,31 @@ export function TrainingFeature() {
   return (
     <section aria-labelledby="training-title" className="section-y surface-dark overflow-hidden bg-plum text-cream">
       <div className="container-x grid gap-y-10 lg:grid-cols-12 lg:gap-x-10">
-        <div className="relative order-2 lg:order-1 lg:col-span-5">
-          <div className="relative aspect-[4/5] overflow-hidden rounded-frame lg:sticky lg:top-[calc(var(--header-height)+2rem)]" data-image-reveal>
+        {/* Image stretches to the copy column's height so the CTA row lands level with the proof stats' baseline. */}
+        <div className="relative order-2 flex flex-col gap-y-10 lg:order-1 lg:col-span-5">
+          <div className="relative aspect-[4/5] overflow-hidden rounded-frame lg:aspect-auto lg:min-h-[28rem] lg:flex-1" data-image-reveal>
             <div data-parallax="0.1" className="absolute inset-x-0 -inset-y-[8%]">
               <Media asset={t.image} fill frame={4 / 5} overscan={1.16} sizes="(min-width: 1024px) 40vw, 100vw" className="object-cover" />
             </div>
+          </div>
+
+          <div className="flex flex-wrap items-center justify-between gap-x-8 gap-y-6" data-reveal>
+            <Button href={t.cta.href} tone="dark">
+              {t.cta.label}
+            </Button>
+            <a
+              href={t.reviewsHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 rounded-full transition-opacity hover:opacity-90"
+              aria-label="Yoga Alliance registered school: RYS 200, RYS 300 and YACEP (opens Yoga Alliance reviews in a new tab)"
+            >
+              {t.badges.map((badge) => (
+                <span key={badge} className="grid size-16 place-items-center rounded-full bg-cream p-1">
+                  <Media asset={badge} alt="" sizes="64px" className="size-full object-contain" />
+                </span>
+              ))}
+            </a>
           </div>
         </div>
 
@@ -64,25 +84,6 @@ export function TrainingFeature() {
               </div>
             ))}
           </dl>
-
-          <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-6" data-reveal>
-            <Button href={t.cta.href} tone="dark">
-              {t.cta.label}
-            </Button>
-            <a
-              href={t.reviewsHref}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-3 rounded-full transition-opacity hover:opacity-90"
-              aria-label="Yoga Alliance registered school: RYS 200, RYS 300 and YACEP (opens Yoga Alliance reviews in a new tab)"
-            >
-              {t.badges.map((badge) => (
-                <span key={badge} className="grid size-16 place-items-center rounded-full bg-cream p-1">
-                  <Media asset={badge} alt="" sizes="64px" className="size-full object-contain" />
-                </span>
-              ))}
-            </a>
-          </div>
         </div>
       </div>
     </section>
