@@ -232,20 +232,20 @@ export const page: PageContent = {
       type: 'pricing',
       id: 'payment',
       tone: 'paper',
-      heading: 'Investment - Save Your Spot Now!',
+      heading: 'Investment – Save Your Spot Now!',
       tiers: [
         {
           label: 'Early Bird',
           badge: 'Sale',
           prices: ['IDR 50 million', '$ 2,950'],
-          note: 'Available for the first 10 participants or until 60 days before the training starts. +3% online payment processing fee. Sale Price: $2,950.00 Original Price: $3,250.00 · 2027 | Online ─ Aug 27 - Dec 2 | In-person ─ Dec 3 - 12',
+          note: 'Available for the first 10 participants or until 60 days before the training starts. +3% online payment processing fee. Sale Price: $2,950.00 Original Price: $3,250.00 · 2027 | Online ─ Aug 27 – Dec 2 | In-person ─ Dec 3 – 12',
           href: '/tt-classes-retreats/p/200hr-hybrid-yoga-teacher-training-morocco-eb',
           ctaLabel: 'Purchase',
         },
         {
           label: 'Regular Price',
           prices: ['IDR 55 million', '$3,250'],
-          note: 'Secure your spot with a $1,000 deposit. +3% online payment processing fee. · 2027 | Online ─ Aug 27 - Dec 2 | In-person ─ Dec 3 - 12',
+          note: 'Secure your spot with a $1,000 deposit. +3% online payment processing fee. · 2027 | Online ─ Aug 27 – Dec 2 | In-person ─ Dec 3 – 12',
           href: '/tt-classes-retreats/p/200hr-hybrid-yoga-teacher-training-morocco-regular',
           ctaLabel: 'Purchase',
         },

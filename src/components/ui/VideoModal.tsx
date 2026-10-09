@@ -75,7 +75,7 @@ export function VideoModal({ videoId, title, label, className }: VideoModalProps
         <span className="relative grid size-12 place-items-center rounded-full border border-current/40 transition-colors duration-500 group-hover:border-current group-hover:bg-cream group-hover:text-plum">
           <Play className="ml-0.5 size-4 fill-current" aria-hidden />
         </span>
-        <span className="type-eyebrow">{label}</span>
+        <span className="type-button">{label}</span>
       </button>
 
       {canPortal &&

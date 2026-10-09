@@ -56,7 +56,7 @@ function CardImage({ item, aspect, cols }: { item: CardItem; aspect: CardsBlock[
         className="object-cover transition-transform duration-[1.2s] ease-[var(--ease-out-expo)] group-hover:scale-[1.04]"
       />
       {item.badge && (
-        <span className="type-eyebrow absolute top-4 left-4 rounded-full bg-paper/95 px-3 py-1.5 text-plum">{item.badge}</span>
+        <span className="type-small absolute top-4 left-4 rounded-full bg-cream/95 px-3 py-1 font-semibold text-ink">{item.badge}</span>
       )}
     </div>
   )
@@ -114,7 +114,7 @@ export function Cards({ blockKey, ...b }: WithKey<CardsBlock>) {
                         <SmartLink
                           href={link.href}
                           className={cn(
-                            'type-meta inline-flex min-h-9 items-center gap-1.5 rounded-full border px-3.5 font-medium transition-colors',
+                            'type-small inline-flex min-h-9 items-center gap-1.5 rounded-full border px-3.5 font-medium transition-colors',
                             dark ? 'border-cream/25 hover:border-cream hover:bg-cream hover:text-plum' : 'border-ink/15 hover:border-plum hover:bg-plum hover:text-cream',
                           )}
                         >
@@ -255,7 +255,7 @@ export function CtaBand({ blockKey, ...b }: WithKey<CtaBlock>) {
       <div aria-hidden className="absolute inset-0 -z-10 bg-gradient-to-t from-plum via-plum/30 to-transparent" />
       <div className="container-x section-y flex min-h-[34rem] flex-col items-center justify-center text-center md:min-h-[40rem]">
         {b.eyebrow && (
-          <p className="type-eyebrow text-saffron" data-reveal>
+          <p className="type-eyebrow text-mist" data-reveal>
             {b.eyebrow}
           </p>
         )}

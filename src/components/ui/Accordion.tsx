@@ -35,7 +35,7 @@ export function Accordion({ items, tone = 'light' }: { items: AccordionItem[]; t
                 onClick={() => setOpen(isOpen ? null : i)}
                 className="flex w-full items-center justify-between gap-6 py-6 text-left"
               >
-                <span className={cn('type-h4', dark ? 'text-cream' : 'text-ink')}>
+                <span className={cn('type-h3', dark ? 'text-cream' : 'text-ink')}>
                   {item.question}
                 </span>
                 <span

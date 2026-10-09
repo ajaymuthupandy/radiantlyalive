@@ -37,7 +37,7 @@ export function LiteYouTube({ youtubeId, title, playLabel }: { youtubeId: string
               <Play aria-hidden className="ml-1 size-6 fill-current" />
             </span>
           </span>
-          <span className="absolute inset-x-0 bottom-0 p-5 type-h4 text-left">{title}</span>
+          <span className="absolute inset-x-0 bottom-0 p-5 type-h3 text-left">{title}</span>
           <span className="sr-only">
             {playLabel}: {title}
           </span>

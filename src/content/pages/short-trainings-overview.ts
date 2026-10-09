@@ -26,7 +26,7 @@ export const page: PageContent = {
       items: [
         {
           image: 'eventMysoreSeason',
-          eyebrow: '2027 | March 16 - April 4',
+          eyebrow: '2027 | March 16 – April 4',
           title: 'Bali Mysore Season & Three Week Immersion',
           text: "Three weeks of Mysore-method Ashtanga with two of the tradition's most recognised teachers. Deposits are already open.",
           note: '**Faculties:** Kino MacGregor and Tim Feldmann',
@@ -45,7 +45,7 @@ export const page: PageContent = {
       items: [
         {
           image: 'eventDhrupad',
-          eyebrow: '2026 | October 6 - 8',
+          eyebrow: '2026 | October 6 – 8',
           title: '3 Day Immersive: The Mystical Voice of Dhrupad',
           note: '**Faculty:** Dhani Gundecha',
           href: '/3day-immersive-mystical-voice-dhrupad-dhani',
@@ -53,7 +53,7 @@ export const page: PageContent = {
         },
         {
           image: 'eventEnergyMedicine',
-          eyebrow: '2026 | October 19 - 20',
+          eyebrow: '2026 | October 19 – 20',
           title: 'Shamanic Reiki Energy Medicine Lv. 1',
           note: '**Faculty:** Devi Ma',
           href: '/energy-medicine-reiki-with-devi-ma',
@@ -61,7 +61,7 @@ export const page: PageContent = {
         },
         {
           image: 'eventHimalayanKriya',
-          eyebrow: '2026 | October 20 - 27',
+          eyebrow: '2026 | October 20 – 27',
           title: 'Himalayan Kriya Yoga Lv. 1',
           note: '**Faculties:** Samten & Nora',
           href: '/himalayan-kriya-yoga-level-1-teacher-training-samten-nora',
@@ -69,7 +69,7 @@ export const page: PageContent = {
         },
         {
           image: 'eventAshtangaIntensive',
-          eyebrow: '2026 | November 23 - 29',
+          eyebrow: '2026 | November 23 – 29',
           title: 'Ashtanga Intensive',
           note: '**Faculties:** David Robson & Jelena Vasic',
           href: '/ashtanga-intensive-david-jelena',
@@ -77,7 +77,7 @@ export const page: PageContent = {
         },
         {
           image: 'eventIntegratedBody',
-          eyebrow: '2026 | December 2 - 7',
+          eyebrow: '2026 | December 2 – 7',
           title: 'The Integrated Body: Architecture of Ease & The Art of Self-Healing',
           note: '**Faculty:** Brett Wearne',
           href: '/integrated-body-architecture-ease-art-self-healing-brett',

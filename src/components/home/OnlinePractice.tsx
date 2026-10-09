@@ -2,28 +2,25 @@ import { Button } from '@/components/ui/Button'
 import { Media } from '@/components/ui/Media'
 import { online } from '@/content/home'
 
-/** "Practice Wherever You Are": the online studio, set in the brand's crimson. */
+/** The online studio, on the site's one dark surface. */
 export function OnlinePractice() {
   const [tall, top, bottom] = online.images
 
   return (
-    <section aria-labelledby="online-title" className="section-y surface-dark overflow-hidden bg-crimson text-cream">
+    <section aria-labelledby="online-title" className="section-y surface-dark overflow-hidden bg-plum text-cream">
       <div className="container-x grid gap-y-10 lg:grid-cols-12 lg:items-center lg:gap-x-10">
         <div className="lg:col-span-5">
-          <p className="type-eyebrow text-cream" data-reveal>
-            {online.eyebrow}
-          </p>
-          <h2 id="online-title" className="type-display-lg mt-5 text-balance" data-text-reveal>
-            Practice <em>Wherever You Are</em>
+          <h2 id="online-title" className="type-display-lg text-balance" data-text-reveal>
+            {online.heading}
           </h2>
-          <p className="type-lead mt-6 max-w-[34rem] text-pretty text-cream/90" data-reveal>
+          <p className="type-lead mt-6 max-w-[34rem] text-pretty text-mist" data-reveal>
             {online.body}
           </p>
-          <div className="mt-10 flex flex-wrap gap-3 max-xs:flex-col" data-reveal>
+          <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-3" data-reveal>
             <Button href={online.cta.href} tone="dark">
               {online.cta.label}
             </Button>
-            <Button href={online.secondary.href} variant="secondary" tone="dark">
+            <Button href={online.secondary.href} variant="link" tone="dark">
               {online.secondary.label}
             </Button>
           </div>

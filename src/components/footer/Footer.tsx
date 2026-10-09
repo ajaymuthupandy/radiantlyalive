@@ -18,8 +18,8 @@ export function Footer() {
             <Link href="/" aria-label="Radiantly Alive, home" className="inline-block rounded-sm text-cream">
               <Logo />
             </Link>
-            <p className="type-display-md mt-6 max-w-[18ch] text-balance">
-              Come for Yoga <em>Stay for Family</em>
+            <p className="type-lead mt-6 max-w-[34ch] text-pretty text-mist">
+              A yoga studio on Jl. Jembawan in Ubud, teaching daily classes and teacher trainings since {SITE.foundingYear}.
             </p>
           </div>
           <div className="lg:col-span-6 lg:col-start-7">
@@ -30,8 +30,8 @@ export function Footer() {
         {/* Navigation + contact */}
         <div className="grid grid-cols-2 gap-x-6 gap-y-10 py-12 lg:grid-cols-12 lg:gap-x-10">
           <address className="col-span-2 not-italic lg:col-span-6">
-            <p className="type-eyebrow text-saffron">Let’s connect</p>
-            <a href={`mailto:${SITE.email}`} className="type-display-sm mt-4 inline-block transition-colors hover:text-saffron">
+            <p className="type-label text-mist">Write to us</p>
+            <a href={`mailto:${SITE.email}`} className="type-display-sm mt-4 inline-block underline decoration-cream/25 underline-offset-[0.2em] transition-colors hover:decoration-cream">
               {SITE.email}
             </a>
             <p className="type-small mt-4 text-mist">
@@ -43,7 +43,7 @@ export function Footer() {
               href={SITE.mapsUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="type-meta mt-2 inline-flex min-h-10 items-center text-cream underline decoration-cream/30 underline-offset-4 hover:decoration-saffron"
+              className="type-small mt-2 inline-flex min-h-10 items-center text-cream underline decoration-cream/30 underline-offset-4 hover:decoration-cream"
             >
               Open in Google Maps<span className="sr-only"> (opens in a new tab)</span>
             </a>
@@ -52,11 +52,11 @@ export function Footer() {
 
           {FOOTER_NAV.map((group) => (
             <nav key={group.title} aria-label={group.title} className="lg:col-span-2 lg:first-of-type:col-start-7">
-              <p className="type-eyebrow text-saffron">{group.title}</p>
+              <p className="type-label text-mist">{group.title}</p>
               <ul className="mt-4">
                 {group.links.map((link) => (
                   <li key={link.href}>
-                    <SmartLink href={link.href} className="type-small inline-flex min-h-9 items-center py-1 leading-snug text-cream/85 transition-colors hover:text-saffron">
+                    <SmartLink href={link.href} className="type-small inline-flex min-h-9 items-center py-1 leading-snug text-cream/85 transition-colors hover:text-cream hover:underline hover:underline-offset-4">
                       {link.label}
                     </SmartLink>
                   </li>
@@ -66,11 +66,11 @@ export function Footer() {
           ))}
 
           <nav aria-label="RA Movement" className="lg:col-span-2">
-            <p className="type-eyebrow text-saffron">RA Movement</p>
+            <p className="type-label text-mist">RA Movement</p>
             <ul className="mt-4">
               {MAIN_NAV.find((g) => g.id === 'movement')!.links.map((link) => (
                 <li key={link.href}>
-                  <SmartLink href={link.href} className="type-small inline-flex min-h-9 items-center py-1 leading-snug text-cream/85 transition-colors hover:text-saffron">
+                  <SmartLink href={link.href} className="type-small inline-flex min-h-9 items-center py-1 leading-snug text-cream/85 transition-colors hover:text-cream hover:underline hover:underline-offset-4">
                     {link.label}
                   </SmartLink>
                 </li>
@@ -81,10 +81,10 @@ export function Footer() {
 
         {/* Legal */}
         <div className="flex flex-col gap-4 border-t border-cream/15 pt-6 text-mist sm:flex-row sm:items-center sm:justify-between">
-          <p className="type-meta">
+          <p className="type-small">
             © {year} {SITE.legalName}. Yoga Alliance RYS-200 &amp; RYS-500.
           </p>
-          <ul className="type-meta flex flex-wrap gap-x-6 gap-y-1">
+          <ul className="type-small flex flex-wrap gap-x-6 gap-y-1">
             {LEGAL_NAV.map((link) => (
               <li key={link.href}>
                 <SmartLink href={link.href} className="inline-flex min-h-10 items-center hover:text-cream">

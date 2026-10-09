@@ -1,4 +1,5 @@
 import type { PageContent } from '../types'
+import { yearsRunning } from '@/data/site'
 
 const SOURCE = 'https://www.radiantlyalive.com/200hr-yoga-teacher-training-ra-vinyasa-ubud'
 
@@ -46,7 +47,7 @@ export const page: PageContent = {
       type: 'intro',
       eyebrow: 'WHAT GRADUATES CARRY WITH THEM',
       heading: 'Words from people *who were here*',
-      paragraphs: ['From 1,000+ graduates across 80 countries. Collected over 14 years of immersions in Ubud.'],
+      paragraphs: [`From 1,000+ graduates across 80 countries. Collected over ${yearsRunning()} years of immersions in Ubud.`],
       note: '◆ Yoga Alliance RYS-200 ◆ E-RYT 500 Faculty ◆ 1,000+ Alumni Network ◆ 150+ Yoga Alliance Reviews',
     },
     {
@@ -56,19 +57,19 @@ export const page: PageContent = {
           quote:
             'The YTT is expansive, heart-opening, and such a journey for me. It’s like I’ve been waiting my whole life for this moment. I truly believe I’ve discovered the beginning of a sense of purpose, and I know I’ll be supported throughout this next chapter of my life. I feel an overwhelming amount of gratitude because there’s so much I’ve learned here, and there’s so much I’ve learned about myself that I want to share with the world.',
           name: 'Kelly Ford',
-          context: 'USA - Nov 2025',
+          context: 'USA – Nov 2025',
         },
         {
           quote:
             'I chose Radiantly Alive because of its focus on community and being grounded. You can really feel how authentic the teachers and the studio are. I felt safe here from the beginning.',
           name: 'Zeedan',
-          context: 'Sudan/Croatia - Jan 2026',
+          context: 'Sudan/Croatia – Jan 2026',
         },
         {
           quote:
-            'To be honest, I wasn’t sure about becoming a teacher before the training, but after the training, I feel ready and excited to become one. I think the journey helps me release what need to be released, building my confidence, and guide me to see yoga as a holistic way of living - not only asanas.',
+            'To be honest, I wasn’t sure about becoming a teacher before the training, but after the training, I feel ready and excited to become one. I think the journey helps me release what need to be released, building my confidence, and guide me to see yoga as a holistic way of living – not only asanas.',
           name: 'Sandra',
-          context: 'Indonesia - May 2026',
+          context: 'Indonesia – May 2026',
         },
       ],
     },
@@ -112,22 +113,22 @@ export const page: PageContent = {
       columns: 2,
       items: [
         {
-          label: '01 — Faculty',
+          label: '01 – Faculty',
           title: 'Faculty who live what they teach',
           text: 'Our lead instructors have been practising and teaching for 10+ years. They’re not brought in for the training month then gone. They’re here year-round, in the shala, in the community, in the work.',
         },
         {
-          label: '02 — Cohort',
+          label: '02 – Cohort',
           title: 'Small cohorts. Real relationships.',
           text: 'Maximum 32 students, in average 24 per cohort. A faculty team of 5–7. You will be known here, not managed, not processed. The people you train alongside will likely be people you carry with you long after Bali.',
         },
         {
-          label: '03 — Studio',
+          label: '03 – Studio',
           title: 'A real studio. Not a temporary one.',
-          text: 'Radiantly Alive has been rooted in Ubud since 2010. You’re not training in a venue hired for a month. You’re immersed in an active studio — with the depth and accumulated quiet that only comes with time.',
+          text: 'Radiantly Alive has been rooted in Ubud since 2010. You’re not training in a venue hired for a month. You’re immersed in an active studio – with the depth and accumulated quiet that only comes with time.',
         },
         {
-          label: '04 — Community',
+          label: '04 – Community',
           title: 'The community doesn’t close at graduation.',
           text: '900+ alumni across 80+ countries. Regular RA gatherings in Berlin, Barcelona, Paris, Amsterdam, and beyond. You leave with a network that’s still in motion, not a certificate you file away.',
         },
@@ -143,32 +144,32 @@ export const page: PageContent = {
       tone: 'paper',
       items: [
         {
-          label: '01 — Module',
+          label: '01 – Module',
           title: 'The Inner Journey',
           text: 'Self-inquiry, authentic expression, personal development. Build self-confidence, clarity, and a mindset that thrives on transformation.',
         },
         {
-          label: '02 — Module',
+          label: '02 – Module',
           title: 'Teaching lab: voice, sequencing & presence',
           text: 'Find your teaching voice. Intelligent sequencing, effective cueing, creative theming. Learn to hold a room with clarity, compassion, and the kind of presence people feel.',
         },
         {
-          label: '03 — Module',
+          label: '03 – Module',
           title: 'Asana & alignment',
           text: 'Deep exploration of foundational and advanced postures. Safe alignment principles, hands-on assists, and how to adapt intelligently for every body in the room.',
         },
         {
-          label: '04 — Module',
+          label: '04 – Module',
           title: 'Anatomy & biomechanics',
           text: 'Functional anatomy grounded in how real bodies actually move. Identify misalignments, modify with confidence, and teach from genuine understanding, not memorised rules.',
         },
         {
-          label: '05 — Module',
+          label: '05 – Module',
           title: 'Yoga philosophy & history',
           text: 'The Eight Limbs, Patanjali’s Yoga Sutras, the Bhagavad Gita, and Balinese mythology. Living philosophy you’ll carry into every class long after the training ends.',
         },
         {
-          label: '06 — Module',
+          label: '06 – Module',
           title: 'Pranayama, meditation & yoga business',
           text: 'Daily breath and meditation practice. Plus practical guidance on building a teaching career: personal brand, studio setup, social presence, long-term sustainability.',
         },
@@ -259,7 +260,7 @@ export const page: PageContent = {
       people: [
         {
           name: 'Denise de la Torre Ugarte',
-          role: 'Lead Teacher - November Cohort',
+          role: 'Lead Teacher – November Cohort',
           image: 'espDenise',
           bio: [
             'Denise is a Vinyasa Yoga and Inside Flow teacher, certified Health Coach, educator, and teacher trainer specializing in creative sequencing, intelligent transitions, alignment, and the art of teaching. Since 2017, she has been guiding students through dynamic and transformative practices that integrate movement, music, and mindful awareness.',
@@ -267,7 +268,7 @@ export const page: PageContent = {
         },
         {
           name: 'Niko Kisic',
-          role: 'Lead Teacher - January Cohort',
+          role: 'Lead Teacher – January Cohort',
           image: 'teacherNiko',
           bio: [
             'From Peru, 1,000+ hours of training. Came to yoga after a decade of competitive rowing, brings rigour, depth, and lived experience.',
@@ -276,7 +277,7 @@ export const page: PageContent = {
         },
         {
           name: 'Zara Miranda',
-          role: 'Lead Teacher - March Cohort',
+          role: 'Lead Teacher – March Cohort',
           image: 'teacherZara',
           bio: [
             'Zara trained originally in Ashtanga and Vinyasa Flow in India, later continuing her studies with globally recognised teacher Eoin Finn. Her teaching integrates discipline, awareness, and stillness.',
@@ -341,15 +342,15 @@ export const page: PageContent = {
       columns: 3,
       items: [
         {
-          title: 'Deepen — Advanced training & mentorship',
+          title: 'Deepen – Advanced training & mentorship',
           text: 'Continue your education through specialist programmes and one-on-one mentorship from senior RA faculty; anatomy, philosophy, sequencing, and beyond.',
         },
         {
-          title: 'Connect — A global network of teachers',
+          title: 'Connect – A global network of teachers',
           text: 'Join 500+ RA teachers across 80+ countries. Assist trainings in Bali, co-facilitate global events, grow alongside people who share your values and your practice.',
         },
         {
-          title: 'Lead — lead, teach & carry the work forward',
+          title: 'Lead – lead, teach & carry the work forward',
           text: 'The most dedicated graduates are invited to teach, assist, and eventually lead RA trainings, becoming the next generation of Radiantly Alive faculty, worldwide.',
         },
       ],
@@ -403,7 +404,7 @@ export const page: PageContent = {
           values: ['Led by Denise de la Torre Ugarte', 'Led by Niko Kisic', 'Led by Zara Miranda', 'Led by Laila El Idrissi'],
         },
       ],
-      note: 'Looking further ahead? Additional 2027 cohorts are already open. August 2 - 25 | Led by Joëlle Sleebos · November 1 - 24 | Led by Lucinda Muldoon [message us for the full training calendar](#contact).',
+      note: 'Looking further ahead? Additional 2027 cohorts are already open. August 2 – 25 | Led by Joëlle Sleebos · November 1 – 24 | Led by Lucinda Muldoon [message us for the full training calendar](#contact).',
     },
     {
       type: 'pricing',
@@ -428,9 +429,9 @@ export const page: PageContent = {
         },
       ],
       notes: [
-        '**[200H RA Vinyasa YTT | Ubud - Early Bird Price](/tt-classes-retreats/p/200-hr-ytt-full-immersion-eb)** · $2,250.00',
-        '**[200H RA Vinyasa YTT | Ubud - Regular Price](/tt-classes-retreats/p/200-hr-ytt-full-immersion-regular)** · from $500.00',
-        'Dates: 2026 | November 2 - 25 · 2027 | January 11 - February 03 · 2027 | March 01 - 24 · 2027 | May 03 - 26 · 2027 | August 02 - 25 · 2027 | November 01 - 24',
+        '**[200H RA Vinyasa YTT | Ubud – Early Bird Price](/tt-classes-retreats/p/200-hr-ytt-full-immersion-eb)** · $2,250.00',
+        '**[200H RA Vinyasa YTT | Ubud – Regular Price](/tt-classes-retreats/p/200-hr-ytt-full-immersion-regular)** · from $500.00',
+        'Dates: 2026 | November 2 – 25 · 2027 | January 11 – February 03 · 2027 | March 01 – 24 · 2027 | May 03 – 26 · 2027 | August 02 – 25 · 2027 | November 01 – 24',
         'All prices are in Indonesian Rupiah. The deposit is non-refundable but transferable to another cohort with 60 days notice.',
       ],
     },

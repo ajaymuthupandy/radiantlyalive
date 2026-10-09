@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next'
-import { Inter, Mulish } from 'next/font/google'
+import { Mulish } from 'next/font/google'
 import localFont from 'next/font/local'
 import { Footer } from '@/components/footer/Footer'
 import { ScrollAnimations } from '@/components/motion/ScrollAnimations'
@@ -21,19 +21,11 @@ const display = localFont({
   fallback: ['Georgia', 'Times New Roman', 'serif'],
 })
 
-/** Mulish: House of Om's heading/UI face (H3, H4, navigation, buttons, eyebrows). */
-const heading = Mulish({
+/** Mulish: the only sans. Body, UI, buttons, navigation, small headings. */
+const sans = Mulish({
   subsets: ['latin', 'latin-ext'],
-  weight: ['600', '700'],
+  weight: ['400', '600', '700'],
   variable: '--font-mulish',
-  display: 'swap',
-})
-
-/** Inter: House of Om's text face. */
-const sans = Inter({
-  subsets: ['latin', 'latin-ext'],
-  weight: ['400', '500', '600'],
-  variable: '--font-inter',
   display: 'swap',
 })
 
@@ -76,14 +68,14 @@ const jsFlag = `document.documentElement.classList.add('js');${announcementScrip
 
 export default function RootLayout({ children }: LayoutProps<'/'>) {
   return (
-    <html lang="en" className={`${display.variable} ${heading.variable} ${sans.variable}`} suppressHydrationWarning>
+    <html lang="en" className={`${display.variable} ${sans.variable}`} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: jsFlag }} />
       </head>
       <body>
         <a
           href="#main"
-          className="type-button fixed top-3 left-3 z-[var(--z-skip)] -translate-y-[200%] rounded-control bg-saffron px-5 py-3 text-crimson transition-transform focus:translate-y-0"
+          className="type-button fixed top-3 left-3 z-[var(--z-skip)] -translate-y-[200%] rounded-control bg-saffron px-5 py-3 text-ink transition-transform focus:translate-y-0"
         >
           Skip to content
         </a>

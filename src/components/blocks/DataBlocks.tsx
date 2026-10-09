@@ -68,7 +68,7 @@ export function Table({ blockKey, ...b }: WithKey<TableBlock>) {
       </ul>
 
       {b.note && (
-        <p className={cn('type-meta mt-8', dark ? 'text-mist' : 'text-ink-soft')}>
+        <p className={cn('type-small mt-8', dark ? 'text-mist' : 'text-ink-soft')}>
           <Rich text={b.note} />
         </p>
       )}
@@ -110,7 +110,7 @@ export function Pricing({ blockKey, ...b }: WithKey<PricingBlock>) {
                   {tier.badge && <span className={cn('type-eyebrow ml-3 align-middle', accentText(b.tone))}>{tier.badge}</span>}
                 </p>
                 {tier.note && (
-                  <p className={cn('type-meta mt-1', dark ? 'text-mist' : 'text-ink-soft')}>
+                  <p className={cn('type-small mt-1', dark ? 'text-mist' : 'text-ink-soft')}>
                     <Rich text={tier.note} />
                   </p>
                 )}
@@ -126,7 +126,7 @@ export function Pricing({ blockKey, ...b }: WithKey<PricingBlock>) {
                   href={tier.href}
                   className={cn(
                     'type-button col-span-2 inline-flex min-h-12 items-center justify-center gap-2 rounded-control px-5 transition-colors md:col-span-1',
-                    dark ? 'bg-saffron text-plum hover:bg-cream' : 'bg-plum text-cream hover:bg-crimson',
+                    'bg-saffron text-ink hover:bg-saffron-deep',
                   )}
                 >
                   {tier.ctaLabel ?? ui(b.lang).purchase}
@@ -161,7 +161,7 @@ export function Schedule({ blockKey, ...b }: WithKey<ScheduleBlock>) {
         <ol className={cn('border-t lg:col-span-7', line)} data-stagger>
           {b.items.map((item, i) => (
             <li key={i} className={cn('grid gap-2 border-b py-6 sm:grid-cols-[9rem_1fr] sm:gap-6', line)} data-stagger-item>
-              <p className={cn('type-h4', accentText(b.tone))}>{item.time}</p>
+              <p className={cn('type-h3', accentText(b.tone))}>{item.time}</p>
               <div>
                 <h3 className="type-h3">
                   <Rich text={item.title} />
@@ -177,7 +177,7 @@ export function Schedule({ blockKey, ...b }: WithKey<ScheduleBlock>) {
         </ol>
       </div>
       {b.note && (
-        <p className={cn('type-meta mt-8 lg:ml-[calc(5/12*100%)]', dark ? 'text-mist' : 'text-ink-soft')}>
+        <p className={cn('type-small mt-8 lg:ml-[calc(5/12*100%)]', dark ? 'text-mist' : 'text-ink-soft')}>
           <Rich text={b.note} />
         </p>
       )}
@@ -192,7 +192,7 @@ export function Faq({ blockKey, ...b }: WithKey<FaqBlock>) {
       <div className="grid gap-12 lg:grid-cols-12">
         <BlockHead
           id={headingId}
-          eyebrow={b.eyebrow ?? ui(b.lang).faqEyebrow}
+          eyebrow={b.heading ? undefined : (b.eyebrow ?? ui(b.lang).faqEyebrow)}
           heading={b.heading ?? ui(b.lang).faqHeading}
           lead={b.lead}
           tone={b.tone}

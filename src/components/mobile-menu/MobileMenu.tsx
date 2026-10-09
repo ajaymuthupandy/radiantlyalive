@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 import { AnimatePresence, motion, useReducedMotion } from 'motion/react'
-import { ArrowRight, Plus, X } from 'lucide-react'
+import { Plus, X } from 'lucide-react'
 import { Logo } from '@/components/brand/Logo'
 import { SmartLink } from '@/components/ui/SmartLink'
 import { SocialLinks } from '@/components/ui/SocialIcons'
@@ -70,7 +70,7 @@ export function MobileMenu({ open, pathname, onClose }: MobileMenuProps) {
               className="shrink-0 rounded-sm"
               aria-label="Radiantly Alive, home"
             >
-              <Logo compact />
+              <Logo />
             </Link>
             <button type="button" onClick={onClose} className="-mr-2.5 grid size-11 place-items-center rounded-full hover:bg-cream/10">
               <X className="size-6" strokeWidth={1.5} aria-hidden />
@@ -98,7 +98,7 @@ export function MobileMenu({ open, pathname, onClose }: MobileMenuProps) {
                         onClick={() => setExpanded(isOpen ? null : group.id)}
                         className={cn(
                           'type-display-sm flex w-full items-center justify-between gap-4 py-4 text-left',
-                          currentGroup === group.id && 'text-saffron',
+                          currentGroup === group.id && 'underline decoration-saffron decoration-2 underline-offset-8',
                         )}
                       >
                         {group.label}
@@ -136,12 +136,12 @@ export function MobileMenu({ open, pathname, onClose }: MobileMenuProps) {
               <Link
                 href={HEADER_CTA.href}
                 onClick={onClose}
-                className="type-button flex min-h-12 w-full items-center justify-center rounded-control bg-saffron px-6 text-plum transition-colors hover:bg-cream"
+                className="type-button flex min-h-12 w-full items-center justify-center rounded-control bg-saffron px-6 text-ink transition-colors hover:bg-saffron-deep"
               >
                 {HEADER_CTA.label}
               </Link>
               <div className="flex flex-wrap items-center justify-between gap-4 border-t border-cream/15 pt-6">
-                <a href={`mailto:${SITE.email}`} className="type-meta text-mist hover:text-cream">
+                <a href={`mailto:${SITE.email}`} className="type-small text-mist hover:text-cream">
                   {SITE.email}
                 </a>
                 <SocialLinks className="-mr-3" />
@@ -162,23 +162,22 @@ function MobileLink({ link, pathname, onNavigate }: { link: NavLink; pathname: s
         href={link.href}
         onClick={onNavigate}
         aria-current={active ? 'page' : undefined}
-        className="type-h4 group flex min-h-11 items-center justify-between gap-3 py-1.5 text-cream/90 transition-colors hover:text-cream aria-[current=page]:text-saffron"
+        className="type-h3 flex min-h-11 items-center py-1.5 text-cream/90 transition-colors hover:text-cream aria-[current=page]:text-cream"
       >
         <span>
           {link.label}
-          {link.description && <span className="type-meta mt-0.5 block font-normal text-mist">{link.description}</span>}
+          {link.description && <span className="type-small mt-0.5 block font-normal text-mist">{link.description}</span>}
         </span>
-        <ArrowRight aria-hidden strokeWidth={1.5} className="size-4 shrink-0 text-mist transition-transform group-hover:translate-x-1" />
       </SmartLink>
       {link.children && (
-        <ul className="mb-2 ml-1 flex flex-wrap gap-2 border-l border-cream/15 py-1 pl-4">
+        <ul className="mb-2 flex flex-wrap gap-x-5">
           {link.children.map((child) => (
             <li key={child.href} lang={child.lang}>
               <SmartLink
                 href={child.href}
                 onClick={onNavigate}
                 aria-current={isActivePath(pathname, child.href) ? 'page' : undefined}
-                className="type-meta inline-flex min-h-10 items-center rounded-full border border-cream/20 px-4 font-medium text-cream/85 hover:border-cream hover:text-cream aria-[current=page]:border-saffron aria-[current=page]:text-saffron"
+                className="type-small inline-flex min-h-10 items-center text-mist underline decoration-mist/30 underline-offset-4 hover:text-cream hover:decoration-cream"
               >
                 {child.label}
               </SmartLink>

@@ -39,7 +39,7 @@ export function Intro({ blockKey, ...b }: WithKey<IntroBlock>) {
           <div className="lg:col-span-6 lg:col-start-7 lg:pt-2">
             <Paragraphs items={b.paragraphs} tone={b.tone} lead />
             {b.note && (
-              <p className={cn('type-eyebrow mt-8', dark ? 'text-mist' : 'text-crimson')} data-reveal>
+              <p className={cn('type-small mt-8 font-semibold', dark ? 'text-mist' : 'text-ink-soft')} data-reveal>
                 <Rich text={b.note} />
               </p>
             )}
@@ -70,7 +70,7 @@ export function Intro({ blockKey, ...b }: WithKey<IntroBlock>) {
           className={cn('mt-8', center && 'mx-auto')}
         />
         {b.note && (
-          <p className={cn('type-eyebrow mt-10', dark ? 'text-mist' : 'text-crimson')} data-reveal>
+          <p className={cn('type-small mt-10 font-semibold', dark ? 'text-mist' : 'text-ink-soft')} data-reveal>
             <Rich text={b.note} />
           </p>
         )}
@@ -121,13 +121,13 @@ export function Split({ blockKey, ...b }: WithKey<SplitBlock>) {
               {b.eyebrow}
             </p>
           )}
-          <h2 id={headingId} className={cn('type-display-md text-balance', b.eyebrow && 'mt-5')} data-text-reveal>
+          <h2 id={headingId} className={cn('type-display-lg text-balance', b.eyebrow && 'mt-5')} data-text-reveal>
             <Rich text={b.heading} />
           </h2>
           <Paragraphs items={b.paragraphs} tone={b.tone} className="mt-6" />
           <Bullets items={b.bullets} tone={b.tone} className="mt-6" />
           {b.note && (
-            <p className={cn('type-meta mt-7 font-semibold', accentText(b.tone))} data-reveal>
+            <p className={cn('type-small mt-7 font-semibold', accentText(b.tone))} data-reveal>
               <Rich text={b.note} />
             </p>
           )}
@@ -157,7 +157,7 @@ export function Features({ blockKey, ...b }: WithKey<FeaturesBlock>) {
         data-stagger
       >
         {b.items.map((item, i) => (
-          <li key={i} className={cn('flex flex-col p-6 md:p-8', dark ? (b.tone === 'crimson' ? 'bg-crimson' : 'bg-plum') : b.tone === 'paper' ? 'bg-paper' : 'bg-canvas')} data-stagger-item>
+          <li key={i} className={cn('flex flex-col p-6 md:p-8', dark ? 'bg-plum' : 'bg-canvas')} data-stagger-item>
             {(b.numbered || item.label) && (
               <p className={cn('type-eyebrow', accentText(b.tone))}>{item.label ?? pad(i + 1)}</p>
             )}
@@ -216,7 +216,7 @@ export function Prose({ blockKey, ...b }: WithKey<ProseBlock>) {
 }
 
 export function Quote({ blockKey, ...b }: WithKey<QuoteBlock>) {
-  const tone = b.tone ?? 'crimson'
+  const tone = b.tone ?? 'plum'
   const dark = isDark(tone)
   return (
     <Shell id={b.id} tone={tone} labelledBy={`${blockKey}-quote`}>
@@ -227,17 +227,17 @@ export function Quote({ blockKey, ...b }: WithKey<QuoteBlock>) {
           </div>
         )}
         <div className={cn(b.image ? 'md:col-span-6 md:col-start-7' : 'mx-auto max-w-[56rem] text-center')}>
-          <span aria-hidden className={cn('block font-display text-8xl leading-[0.5]', accentText(tone))}>
+          <span aria-hidden className={cn('block font-display text-8xl leading-[0.5]', dark ? 'text-mist' : 'text-crimson')}>
             “
           </span>
           <blockquote id={`${blockKey}-quote`} className="mt-6">
-            <p className="type-display-md text-balance" data-text-reveal>
+            <p className="type-display-sm text-balance" data-text-reveal>
               <Rich text={b.quote} />
             </p>
           </blockquote>
           <figcaption className={cn('mt-10', dark ? 'text-mist' : 'text-ink-soft')} data-reveal>
             <span className={cn('type-small block font-semibold', dark ? 'text-cream' : 'text-ink')}>{b.name}</span>
-            {b.context && <span className="type-meta mt-1 block">{b.context}</span>}
+            {b.context && <span className="type-small mt-1 block">{b.context}</span>}
           </figcaption>
         </div>
       </figure>
@@ -255,7 +255,7 @@ export function Testimonials({ blockKey, ...b }: WithKey<TestimonialsBlock>) {
         {b.items.map((t, i) => (
           <li key={i} data-stagger-item>
             <figure className="flex h-full flex-col">
-              <span aria-hidden className={cn('block font-display text-7xl leading-[0.6]', accentText(b.tone))}>
+              <span aria-hidden className={cn('block font-display text-7xl leading-[0.6]', dark ? 'text-mist' : 'text-crimson')}>
                 “
               </span>
               <blockquote className="mt-4 flex-1">
@@ -265,7 +265,7 @@ export function Testimonials({ blockKey, ...b }: WithKey<TestimonialsBlock>) {
               </blockquote>
               <figcaption className={cn('mt-8 border-t pt-5', dark ? 'border-cream/15' : 'hairline')}>
                 <p className="type-small font-semibold">{t.name}</p>
-                {t.context && <p className={cn('type-meta mt-1', dark ? 'text-mist' : 'text-ink-soft')}>{t.context}</p>}
+                {t.context && <p className={cn('type-small mt-1', dark ? 'text-mist' : 'text-ink-soft')}>{t.context}</p>}
               </figcaption>
             </figure>
           </li>
@@ -289,8 +289,8 @@ export function StatsRow({ blockKey, ...b }: WithKey<StatsBlock>) {
       <dl className={cn('grid grid-cols-2 gap-y-10', b.items.length >= 5 ? 'md:grid-cols-3 lg:grid-cols-5' : b.items.length === 4 ? 'lg:grid-cols-4' : 'md:grid-cols-3')} data-stagger>
         {b.items.map((s) => (
           <div key={s.label} className={cn('flex flex-col border-l pl-5 md:pl-7', dark ? 'border-cream/20' : 'border-ink/15')} data-stagger-item>
-            <dt className={cn('type-meta order-2 mt-2 max-w-[18ch]', dark ? 'text-mist' : 'text-ink-soft')}>{s.label}</dt>
-            <dd className={cn('type-display-md order-1 leading-none', dark ? 'text-cream' : 'text-ink')}>{s.value}</dd>
+            <dt className={cn('type-small order-2 mt-2 max-w-[18ch]', dark ? 'text-mist' : 'text-ink-soft')}>{s.label}</dt>
+            <dd className={cn('type-display-lg order-1 leading-none', dark ? 'text-cream' : 'text-ink')}>{s.value}</dd>
           </div>
         ))}
       </dl>

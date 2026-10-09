@@ -15,7 +15,7 @@ export const page: PageContent = {
   path: '/200hour-yoga-teacher-training-spanish',
   title: 'Profesorado de Vinyasa Yoga 200 horas en Español | Formación Híbrida',
   description:
-    'Formación Híbrida: Profesorado de Vinyasa Yoga de 200 horas en Español, online + presencial en Ubud - Bali, del 05 de Marzo al 13 de Junio 2027. Vive la magia de Bali y profundiza en tu práctica desde adentro hacia afuera.',
+    'Formación Híbrida: Profesorado de Vinyasa Yoga de 200 horas en Español, online + presencial en Ubud – Bali, del 05 de Marzo al 13 de Junio 2027. Vive la magia de Bali y profundiza en tu práctica desde adentro hacia afuera.',
   lang: 'es',
   parent: { label: 'Yoga Teacher Trainings', href: '/yoga-teacher-training-2026-1' },
   hero: {
@@ -26,7 +26,7 @@ export const page: PageContent = {
     ctas: [{ label: 'Descubre todos los detalles aquí', href: '#mi-seccion' }],
     facts: [
       { label: 'Fechas', value: '05 de Marzo – 13 de Junio 2027' },
-      { label: 'Formato', value: 'Online + presencial en Ubud - Bali' },
+      { label: 'Formato', value: 'Online + presencial en Ubud – Bali' },
       { label: 'Formación', value: '200 horas en Español' },
       { label: 'Certificación', value: 'Yoga Alliance' },
     ],
@@ -39,7 +39,7 @@ export const page: PageContent = {
       tone: 'paper',
       items: [
         {
-          label: '100 Horas - A Distancia (Online) | Del 05 de Marzo al 03 de Junio',
+          label: '100 Horas – A Distancia (Online) | Del 05 de Marzo al 03 de Junio',
           title: 'Lecciones Pregrabadas [50 horas]',
           bullets: [
             'Aprende a tu ritmo, donde y cuando quieras.',
@@ -48,7 +48,7 @@ export const page: PageContent = {
           ],
         },
         {
-          label: '100 Horas - A Distancia (Online) | Del 05 de Marzo al 03 de Junio',
+          label: '100 Horas – A Distancia (Online) | Del 05 de Marzo al 03 de Junio',
           title: 'Clases Online en Vivo [30 horas]',
           bullets: [
             'Conéctate en tiempo real con tus profesores y tu comunidad para profundizar, practicar y compartir.',
@@ -56,12 +56,12 @@ export const page: PageContent = {
           ],
         },
         {
-          label: '100 Horas - A Distancia (Online) | Del 05 de Marzo al 03 de Junio',
+          label: '100 Horas – A Distancia (Online) | Del 05 de Marzo al 03 de Junio',
           title: 'Estudio Personal y Tareas [20 horas]',
           bullets: ['Integra el aprendizaje con reflexión, autoestudio y práctica guiada.', 'Prepara cuerpo y mente para tu nueva faceta como maestro de yoga.'],
         },
         {
-          label: '100 Horas - Inmersión Presencial en Bali | Del 04 al 13 de Junio',
+          label: '100 Horas – Inmersión Presencial en Bali | Del 04 al 13 de Junio',
           title: 'Inmersión Presencial en Bali [100 horas / 10 días]',
           bullets: ['Vive la transformación.', 'Una experiencia intensiva de práctica, mentoría y conexión en el corazón de Ubud.'],
         },
@@ -436,17 +436,17 @@ export const page: PageContent = {
       type: 'schedule',
       heading: 'Horario de muestra',
       items: [
-        { time: '7:00 - 8:30', title: 'Sadhana' },
-        { time: '8:30 - 9:00', title: 'Análisis de la clase' },
-        { time: '9:00 - 9:45', title: 'Desayuno' },
-        { time: '9:45 - 11:15', title: 'Filosofía del Yoga / Anatomía' },
-        { time: '11:15 - 11:30', title: 'Break' },
-        { time: '11:30 - 13:15', title: 'Exploración de Asana' },
-        { time: '13:15 - 14:15', title: 'Almuerzo' },
-        { time: '14:15 - 15:45', title: 'Ajustes' },
-        { time: '15:45 - 16:00', title: 'Break' },
-        { time: '16:00 - 17:45', title: 'Arte de Enseñar' },
-        { time: '17:45 - 19:00', title: 'Viaje al Interior' },
+        { time: '7:00 – 8:30', title: 'Sadhana' },
+        { time: '8:30 – 9:00', title: 'Análisis de la clase' },
+        { time: '9:00 – 9:45', title: 'Desayuno' },
+        { time: '9:45 – 11:15', title: 'Filosofía del Yoga / Anatomía' },
+        { time: '11:15 – 11:30', title: 'Break' },
+        { time: '11:30 – 13:15', title: 'Exploración de Asana' },
+        { time: '13:15 – 14:15', title: 'Almuerzo' },
+        { time: '14:15 – 15:45', title: 'Ajustes' },
+        { time: '15:45 – 16:00', title: 'Break' },
+        { time: '16:00 – 17:45', title: 'Arte de Enseñar' },
+        { time: '17:45 – 19:00', title: 'Viaje al Interior' },
       ],
       note: 'Nota: El horario de muestra es orientativo y puede estar sujeto a cambios. Todos los detalles finales se confirmarán antes del inicio de la formación.',
     },
@@ -591,8 +591,8 @@ export const page: PageContent = {
         },
       ],
       notes: [
-        '2027 | Online ─ March 5 - June 3 | In-person ─ June 4 - 13',
-        'Profesorado 2027 de Yoga 200HRs - Hybrid | Early Bird: $1,500.00 · Profesorado de Yoga 200HRs - Hybrid | Regular Price: $1,750.00',
+        '2027 | Online ─ March 5 – June 3 | In-person ─ June 4 – 13',
+        'Profesorado 2027 de Yoga 200HRs – Hybrid | Early Bird: $1,500.00 · Profesorado de Yoga 200HRs – Hybrid | Regular Price: $1,750.00',
         `Contáctanos por WhatsApp [aquí](${WHATSAPP}) o envíanos un correo a [ra.ytt@radiantlyalive.com](mailto:ra.ytt@radiantlyalive.com) para obtener más información.`,
         TERMINOS,
       ],
@@ -819,7 +819,7 @@ export const page: PageContent = {
       type: 'cta',
       eyebrow: 'Profesorado de Yoga en español de 200hrs certificado por Yoga Alliance',
       heading: 'Vive la magia de Bali y profundiza en tu práctica *desde adentro hacia afuera*.',
-      text: '05 de Marzo – 13 de Junio 2027 · Online + presencial en Ubud - Bali',
+      text: '05 de Marzo – 13 de Junio 2027 · Online + presencial en Ubud – Bali',
       image: 'espHybridWaterTemple',
       ctas: [
         { label: 'Conversa con nosotros ahora', href: WHATSAPP },

@@ -1,4 +1,3 @@
-import { ArrowRight } from 'lucide-react'
 import { SmartLink } from '@/components/ui/SmartLink'
 import { ANNOUNCEMENT } from '@/data/site'
 import { DismissAnnouncement } from './DismissAnnouncement'
@@ -21,16 +20,15 @@ export function AnnouncementBar() {
   return (
     <div data-announcement-bar className="announcement grid">
       <div className="min-h-0 overflow-hidden">
-        <div className="relative bg-crimson text-cream">
+        <div className="relative bg-shade text-cream">
           <div className="container-x flex min-h-10 items-center justify-center gap-3 py-2 pr-12 text-center md:pr-14">
-            <p className="type-meta">
+            <p className="type-small text-cream/90">
               {ANNOUNCEMENT.message}{' '}
               <SmartLink
                 href={ANNOUNCEMENT.link.href}
-                className="group inline-flex items-center gap-1 font-semibold whitespace-nowrap text-cream underline decoration-cream/50 underline-offset-4 transition-colors hover:decoration-cream"
+                className="font-semibold whitespace-nowrap text-cream underline decoration-cream/40 underline-offset-4 transition-colors hover:decoration-cream"
               >
                 {ANNOUNCEMENT.link.label}
-                <ArrowRight aria-hidden className="size-3.5 transition-transform group-hover:translate-x-0.5" strokeWidth={2} />
               </SmartLink>
             </p>
           </div>

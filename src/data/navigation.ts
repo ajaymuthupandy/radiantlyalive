@@ -1,8 +1,8 @@
 /**
  * Site navigation, mirroring radiantlyalive.com's header folders exactly
  * (labels, order, nesting and URLs; see SITE_INVENTORY.md, "Navigation").
- * The mega menu adds an intro and a feature image per folder, using copy
- * from the source pages.
+ * The desktop header shows four of them as real links; each opens a short
+ * list of destinations plus one featured item.
  */
 import type { MediaKey } from './media'
 
@@ -18,32 +18,30 @@ export interface NavLink {
 
 export interface NavGroup {
   id: string
+  /** Short label used in the header and mobile menu. */
   label: string
-  /** The source folder URL (redirects to the folder's first page). */
+  /** The group's hub page: the top-level header item links here. */
   href: string
-  intro: { eyebrow: string; title: string; text: string }
-  feature: { image: MediaKey; title: string; text: string; cta: { label: string; href: string } }
+  /** Shown in the desktop header. Groups left out live in the footer and mobile menu. */
+  inHeader: boolean
+  /** One short featured destination beside the link list. */
+  feature?: { image: MediaKey; title: string; cta: { label: string; href: string } }
   links: NavLink[]
 }
 
 export const MAIN_NAV: NavGroup[] = [
   {
     id: 'trainings',
-    label: 'Yoga Teacher Trainings',
-    href: '/ytt',
-    intro: {
-      eyebrow: 'Yoga Teacher Training · Est. 2010',
-      title: 'Your teacher training. In the place that changes everything.',
-      text: 'Three programs rooted in 15 years of transformational practice in Ubud. One community.',
-    },
+    label: 'Trainings',
+    href: '/yoga-teacher-training-2026-1',
+    inHeader: true,
     feature: {
       image: 'graduationWhite',
-      title: 'Not sure which training is right for you?',
-      text: 'Compare the programs side by side and choose the path that fits your life.',
-      cta: { label: 'Start Here', href: '/yoga-teacher-training-2026-1' },
+      title: 'Not sure which training fits?',
+      cta: { label: 'Compare the trainings', href: '/yoga-teacher-training-2026-1' },
     },
     links: [
-      { label: 'Start Here', href: '/yoga-teacher-training-2026-1', description: 'Find your path and compare the trainings' },
+      { label: 'Start here', href: '/yoga-teacher-training-2026-1', description: 'Compare the trainings side by side' },
       { label: '200hr Bali', href: '/200hr-yoga-teacher-training-ra-vinyasa-ubud', description: 'Our flagship 24-day immersion in Ubud' },
       { label: '300hr Bali', href: '/300hr-yoga-teacher-training-ra-vinyasa-ubud', description: 'Advanced 4-week immersion for certified teachers' },
       {
@@ -70,22 +68,17 @@ export const MAIN_NAV: NavGroup[] = [
   },
   {
     id: 'studio',
-    label: 'Ubud Studio',
-    href: '/ubud-studio',
-    intro: {
-      eyebrow: 'Our Bali Studio',
-      title: 'Your Yoga Home',
-      text: 'At the center of Ubud, our studio is more than a space, it’s the soul of Radiantly Alive.',
-    },
+    label: 'Studio',
+    href: '/classes',
+    inHeader: true,
     feature: {
       image: 'shalaJungle',
-      title: 'Book Your Class',
-      text: 'Schedules are published the week before. Or come to the studio and book directly with our reception staff.',
-      cta: { label: 'Class Schedule', href: '/classes' },
+      title: 'Book a class',
+      cta: { label: 'See this week’s schedule', href: '/classes' },
     },
     links: [
       { label: 'Class Schedule', href: '/classes', description: 'Daily classes, passes and class descriptions' },
-      { label: 'Studio Workshops & Events | Ubud', href: '/studio-workshops-events-ubud', description: 'Workshops, sound journeys, ceremonies' },
+      { label: 'Workshops & Events', href: '/studio-workshops-events-ubud', description: 'Workshops, sound journeys, ceremonies' },
       { label: 'Short Trainings', href: '/short-trainings-overview', description: 'Immersions with visiting teachers' },
       { label: 'Studio Healings', href: '/healing-studio', description: 'Physical, emotional and spiritual healing' },
       { label: 'Our Teachers', href: '/our-teachers', description: 'Meet the teachers of the Ubud studio' },
@@ -94,35 +87,20 @@ export const MAIN_NAV: NavGroup[] = [
   },
   {
     id: 'retreats',
-    label: 'Retreats & Events',
-    href: '/european-events',
-    intro: {
-      eyebrow: 'Bali Retreats',
-      title: 'Take time to nourish yourself',
-      text: 'A flexible retreat designed just for you, where you can curate your own experience and truly recharge.',
-    },
-    feature: {
-      image: 'templePurification',
-      title: 'Me-Time. My Way.',
-      text: 'Wellness Retreat in Bali',
-      cta: { label: 'Read more', href: '/wellness-retreat-bali' },
-    },
+    label: 'Retreats',
+    href: '/retreats',
+    inHeader: true,
     links: [{ label: 'Bali Retreats', href: '/retreats', description: 'Me-Time. My Way. Wellness Retreat in Bali' }],
   },
   {
     id: 'online',
-    label: 'Online Studio',
-    href: '/online-studio',
-    intro: {
-      eyebrow: 'RA Online Studios',
-      title: 'Practice Wherever You Are',
-      text: 'Yoga, movement, and mindfulness with a global community by your side.',
-    },
+    label: 'Online',
+    href: '/ra-online-monthly-membership',
+    inHeader: true,
     feature: {
       image: 'onlineHomePractice',
-      title: 'Start your 14-day FREE trial',
-      text: 'Practice anytime, anywhere, with a global community by your side.',
-      cta: { label: 'Online Studio & Community', href: '/ra-online-monthly-membership' },
+      title: 'Try the online studio free for 14 days',
+      cta: { label: 'About the membership', href: '/ra-online-monthly-membership' },
     },
     links: [
       { label: 'Online Studio & Community', href: '/ra-online-monthly-membership', description: 'Asana, meditation, mobility and sadhana' },
@@ -133,18 +111,8 @@ export const MAIN_NAV: NavGroup[] = [
   {
     id: 'movement',
     label: 'RA Movement',
-    href: '/ra-movement',
-    intro: {
-      eyebrow: 'RA Movement',
-      title: 'A global community of committed, inspired individuals',
-      text: 'Graduates teaching worldwide, the RA family and the ways to grow with it.',
-    },
-    feature: {
-      image: 'communityJoy',
-      title: 'RA Teachers Worldwide',
-      text: 'Find a Radiantly Alive teacher near you.',
-      cta: { label: 'Explore the directory', href: '/radiantly-alive-teachers' },
-    },
+    href: '/radiantly-alive-teachers',
+    inHeader: false,
     links: [
       { label: 'RA Teachers Worldwide', href: '/radiantly-alive-teachers', description: 'Graduates teaching around the world' },
       { label: 'Referral Program', href: '/referral-program', description: 'Share the experience, earn rewards' },
@@ -156,7 +124,10 @@ export const MAIN_NAV: NavGroup[] = [
 ]
 
 /** Header call to action (the source's most-linked conversion page). */
-export const HEADER_CTA = { label: 'Book a Class', href: '/classes' } as const
+export const HEADER_CTA = { label: 'Book a class', href: '/classes' } as const
+
+/** Quiet text link beside the header CTA. */
+export const HEADER_SCHEDULE = { label: 'Schedule', href: '/classes' } as const
 
 /** Footer columns, as published on the source footer. */
 export const FOOTER_NAV: { title: string; links: NavLink[] }[] = [

@@ -12,12 +12,12 @@ export function IntensityMeter({ value, tone = 'light' }: { value: Intensity; to
             key={n}
             className={cn(
               'size-1.5 rounded-full',
-              n <= value ? (tone === 'dark' ? 'bg-saffron' : 'bg-crimson') : tone === 'dark' ? 'bg-cream/25' : 'bg-ink/15',
+              n <= value ? (tone === 'dark' ? 'bg-cream' : 'bg-ink') : tone === 'dark' ? 'bg-cream/25' : 'bg-ink/15',
             )}
           />
         ))}
       </span>
-      <span className="type-meta">{intensityLabel[value]}</span>
+      <span className="type-small">{intensityLabel[value]}</span>
     </span>
   )
 }
@@ -33,7 +33,7 @@ interface ClassCardProps {
 export function ClassCard({ item, index, detailed }: ClassCardProps) {
   return (
     <article className="grid grid-cols-[2.5rem_1fr] gap-x-4 border-t hairline py-7 md:grid-cols-[3.5rem_1fr] md:py-8">
-      <span className="type-meta pt-2 text-crimson" aria-hidden>
+      <span className="type-small pt-2 text-crimson" aria-hidden>
         {String(index + 1).padStart(2, '0')}
       </span>
       <div>
@@ -43,7 +43,7 @@ export function ClassCard({ item, index, detailed }: ClassCardProps) {
             <IntensityMeter value={item.intensity} />
           </div>
         </div>
-        <p className="type-meta mt-2 text-ink-soft">
+        <p className="type-small mt-2 text-ink-soft">
           {item.levels}
           {item.duration && <> · {item.duration}</>}
         </p>

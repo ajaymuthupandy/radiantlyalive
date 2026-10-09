@@ -73,7 +73,7 @@ export function ContentPage({ page }: { page: PageContent }) {
             </nav>
           )}
           {hero.eyebrow && (
-            <p className="type-eyebrow text-saffron" data-hero-item>
+            <p className="type-eyebrow text-mist" data-hero-item>
               {hero.eyebrow}
             </p>
           )}
@@ -100,11 +100,11 @@ export function ContentPage({ page }: { page: PageContent }) {
       </section>
 
       {hero.facts && hero.facts.length > 0 && (
-        <section aria-label="Key facts" className="border-b hairline bg-paper">
+        <section aria-label="Key facts" className="border-b hairline bg-sand/60">
           <dl className={cn('container-x grid grid-cols-2', hero.facts.length >= 4 ? 'lg:grid-cols-4' : 'lg:grid-cols-3')}>
             {hero.facts.map((f) => (
               <div key={f.label} className="border-b hairline py-7 pr-6 lg:border-b-0">
-                <dt className="type-eyebrow text-crimson">{f.label}</dt>
+                <dt className="type-small text-ink-soft">{f.label}</dt>
                 <dd className="type-display-sm mt-2">{f.value}</dd>
               </div>
             ))}

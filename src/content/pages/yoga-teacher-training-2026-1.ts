@@ -1,15 +1,16 @@
 import type { PageContent } from '../types'
+import { yearsRunning } from '@/data/site'
 
 /** Source: https://www.radiantlyalive.com/yoga-teacher-training-2026-1 ("Start Here"; /ytt redirects here). */
 export const page: PageContent = {
   path: '/yoga-teacher-training-2026-1',
   title: 'Yoga Teacher Training in Bali: 200H, Hybrid & 300H',
   description:
-    'Three programs rooted in 15 years of transformational practice in Ubud. One community. A school that stays with you long after you leave. 200H Bali Immersion, 200H Hybrid and 300H Advanced, Yoga Alliance certified.',
+    `Three programs rooted in ${yearsRunning()} years of transformational practice in Ubud. One community. A school that stays with you long after you leave. 200H Bali Immersion, 200H Hybrid and 300H Advanced, Yoga Alliance certified.`,
   hero: {
     eyebrow: 'Yoga Teacher Training · Ubud, Bali · Est. 2010',
     title: 'Your teacher training. *In the place that changes everything.*',
-    lead: 'Three programs rooted in 15 years of transformational practice in Ubud. One community. A school that stays with you long after you leave.',
+    lead: `Three programs rooted in ${yearsRunning()} years of transformational practice in Ubud. One community. A school that stays with you long after you leave.`,
     body: ['Many people who train here don’t come primarily to teach, they come to grow.'],
     image: 'ytt200TeachingLab',
     imagePosition: '60% 30%',
@@ -72,7 +73,7 @@ export const page: PageContent = {
             '2027 (ENG): Jan • Mar • May • Aug • Nov',
             '2027 (ESP): Abril',
           ],
-          note: '**Best for:** those ready to fully commit — drawn to Bali, to depth, to the most complete experience',
+          note: '**Best for:** those ready to fully commit – drawn to Bali, to depth, to the most complete experience',
           href: '/200hr-yoga-teacher-training-ra-vinyasa-ubud',
           ctaLabel: 'Explore the Full Program →',
         },
@@ -84,7 +85,7 @@ export const page: PageContent = {
             'Online study + 10 days in-person immersion',
             'Locations: Bali or Morocco',
             'English & Spanish options',
-            '2026 (ENG): Aug - Nov',
+            '2026 (ENG): Aug – Nov',
             '2027 (ENG): Apr-Jul | Jun-Oct',
             '2027 (ESP): Mar-Jun',
           ],
@@ -123,7 +124,7 @@ export const page: PageContent = {
         { label: 'Duration', values: ['24 days in Bali', '~3 months online + 10 days in-person', '26 days in Bali'] },
         { label: 'Location', values: ['Ubud, Bali', 'Online + Bali or Morocco', 'Ubud, Bali'] },
         { label: 'Certification', values: ['Yoga Alliance RYT-200', 'Yoga Alliance RYT-200', 'Yoga Alliance E-RYT 500'] },
-        { label: 'Prerequisite', values: ['None — open to all', 'None — open to all', 'RYT-200 + 1 yr teaching'] },
+        { label: 'Prerequisite', values: ['None – open to all', 'None – open to all', 'RYT-200 + 1 yr teaching'] },
         { label: 'Language', values: ['English or Spanish', 'English or Spanish', 'English'] },
         { label: 'Class Size', values: ['Up to 32 students (Average 24)', 'Small group', 'Up to 20 students (Average 15)'] },
       ],
@@ -160,7 +161,7 @@ export const page: PageContent = {
           text: 'We believe teacher training is learned through relationship as much as curriculum. Across all our programmes, students receive direct guidance, personal feedback, and ongoing support from experienced faculty throughout the training journey.',
         },
         {
-          title: '15 years, 50+ trainings, 1,000+ graduates',
+          title: `${yearsRunning()} years, 50+ trainings, 1,000+ graduates`,
           text: 'The longest-standing yoga school in Bali. Over 50 teacher trainings delivered since 2010, with a 4.9/5 rating across 150+ Yoga Alliance reviews.',
         },
         {
@@ -189,7 +190,7 @@ export const page: PageContent = {
         { time: 'Evening', title: 'Integration & community', text: 'Most evenings are yours. Occasionally, we come together for an evening session.' },
         {
           time: 'Stay & Food',
-          title: 'Accommodation not included — by design',
+          title: 'Accommodation not included – by design',
           text: 'Students arrange their own stay in Ubud, giving you personal space and flexibility. We provide recommended options at every price point.',
         },
       ],
@@ -275,6 +276,6 @@ export const page: PageContent = {
     type: 'course',
     name: 'Yoga Teacher Training in Ubud, Bali',
     description:
-      'Three programs rooted in 15 years of transformational practice in Ubud: the 200H Bali Immersion, the 200H Hybrid and the 300H Advanced, leading to Yoga Alliance RYT-200 or E-RYT 500 certification.',
+      `Three programs rooted in ${yearsRunning()} years of transformational practice in Ubud: the 200H Bali Immersion, the 200H Hybrid and the 300H Advanced, leading to Yoga Alliance RYT-200 or E-RYT 500 certification.`,
   },
 }

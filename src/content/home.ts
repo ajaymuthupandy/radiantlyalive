@@ -1,88 +1,81 @@
 /**
- * Homepage copy, verbatim from https://www.radiantlyalive.com/ (and, for the
- * Teachers and RA Movement sections, from /our-teachers, /ra-movement-academy
- * and /radiantly-alive-teachers). Layout lives in components/home/.
+ * Homepage copy. Facts come from radiantlyalive.com (homepage, /shala-rental,
+ * /ra-movement-academy, the training pages); phrasing is kept plain and
+ * specific. Each fact has one home on the page: stats live in the trainings
+ * block, the tagline in the closing invitation, the film in the hero.
+ * Layout lives in components/home/.
  */
 import type { MediaKey } from '@/data/media'
-import { INTEGRATIONS } from '@/data/site'
+import { INTEGRATIONS, SITE, yearsRunning } from '@/data/site'
+
+export const hero = {
+  heading: 'A global yoga community born in Bali.',
+  lead: 'Daily classes in Ubud, Yoga Alliance teacher trainings in Bali and beyond, and an online studio for the days you can’t be here.',
+  cta: { label: 'Explore teacher trainings', href: '/yoga-teacher-training-2026-1' },
+} as const
 
 export const studioHome = {
-  eyebrow: 'Our Bali Studio',
-  heading: 'Your Yoga Home',
-  subheading: 'Explore our offerings and find your perfect practice',
-  body: 'At the center of Ubud, our studio is more than a space, it’s the soul of Radiantly Alive. Practice, connect, and grow in an environment designed to support every step of your journey.',
+  heading: 'Your yoga home in Ubud',
+  body: `Five shalas on ${SITE.address.street}, in the centre of Ubud. Classes run from morning to evening, with workshops, short trainings, retreats and healings in between.`,
   image: 'teacherAssisting' satisfies MediaKey,
   /** The six tiles of the source "Your Yoga Home" section, in order, with their own photographs. */
   offerings: [
-    { label: 'Class Schedule', href: '/classes', image: 'trainingArtOfTeaching' },
-    { label: 'Workshops & Events', href: '/studio-workshops-events-ubud', image: 'homeTileWorkshops' },
-    { label: 'Short Trainings', href: '/short-trainings-overview', image: 'trainingAssist' },
+    { label: 'Class schedule', href: '/classes', image: 'trainingArtOfTeaching' },
+    { label: 'Workshops & events', href: '/studio-workshops-events-ubud', image: 'homeTileWorkshops' },
+    { label: 'Short trainings', href: '/short-trainings-overview', image: 'trainingAssist' },
     { label: 'Retreats', href: '/retreats', image: 'templePurification' },
-    { label: 'Shala Rental', href: '/shala-rental', image: 'homeTileShalaRental' },
+    { label: 'Shala rental', href: '/shala-rental', image: 'homeTileShalaRental' },
     { label: 'Healings', href: '/healing-studio', image: 'homeTileHealings' },
   ] satisfies { label: string; href: string; image: MediaKey }[],
 } as const
 
 export const teacherTrainings = {
-  eyebrow: 'Yoga Teacher Trainings',
-  heading: 'An Experience of a Lifetime',
+  heading: `Teacher trainings, since ${SITE.foundingYear}`,
   paragraphs: [
-    'Step into your next chapter, whether you’re just starting out or deepening your path.',
-    'Our immersive trainings in Ubud, Bali and across Europe are designed to build your skills, boost your confidence, and transform your understanding of yoga.',
-    'Taught in English or Spanish, these programs are open to both aspiring and experienced teachers ready to grow - personally and professionally.',
+    'Our 200-hour and 300-hour Yoga Alliance trainings run in Ubud, with hybrid formats in Bali and Morocco, taught in English or Spanish.',
+    'They suit people starting out as much as teachers who want to go deeper, and they are led by the same teachers you meet in daily class.',
   ],
   image: 'ceremonyCircle' satisfies MediaKey,
   programs: [
-    { label: '200H Level 1 Training', href: '/200hr-yoga-teacher-training-ra-vinyasa-ubud', meta: '200H • Yoga Alliance RYT-200' },
-    { label: '300H Level 2 (Advanced) Training', href: '/300hr-yoga-teacher-training-ra-vinyasa-ubud', meta: '300H • Yoga Alliance E-RYT 500' },
-    { label: '200H Spanish Training', href: '/200hour-yoga-teacher-training-spanish', meta: '200H • Yoga Alliance RYT-200' },
+    { label: '200H Level 1', href: '/200hr-yoga-teacher-training-ra-vinyasa-ubud', meta: 'Yoga Alliance RYT-200' },
+    { label: '300H Level 2 (Advanced)', href: '/300hr-yoga-teacher-training-ra-vinyasa-ubud', meta: 'Yoga Alliance E-RYT 500' },
+    { label: '200H in Spanish', href: '/200hour-yoga-teacher-training-spanish', meta: 'Yoga Alliance RYT-200' },
   ],
-  /** From /yoga-teacher-training-2026-1 ("900+ graduates · 80+ countries · 4.9/5 Yoga Alliance · Est. 2010"). */
+  /** From /yoga-teacher-training-2026-1. Shown here only, where they back up a decision. */
   proof: [
-    { value: '900+', label: 'graduates worldwide' },
-    { value: '80+', label: 'countries where RA teachers practice' },
-    { value: '4.9/5', label: 'Yoga Alliance rating, 150+ reviews' },
+    { value: '900+', label: 'graduates' },
+    { value: '80+', label: 'countries where they now teach' },
+    { value: '4.9/5', label: 'on Yoga Alliance, from 150+ reviews' },
   ],
   badges: ['badgeRys200', 'badgeRys300', 'badgeYacep'] satisfies MediaKey[],
   reviewsHref: INTEGRATIONS.yogaAllianceReviews,
-  cta: { label: 'Find your path', href: '/yoga-teacher-training-2026-1' },
+  cta: { label: 'Compare the trainings', href: '/yoga-teacher-training-2026-1' },
 } as const
 
 export const community = {
-  statement: 'Come for Yoga - Feel Radiantly Alive',
   image: 'cohortPanorama' satisfies MediaKey,
-  stayConnected: {
-    eyebrow: 'Our Community',
-    heading: 'Stay Connected',
-    body: 'Follow along for class updates, training news, retreat moments and daily inspiration from our Ubud shala and global community.',
-    image: 'communityEmbrace' satisfies MediaKey,
-  },
 } as const
 
 export const online = {
-  eyebrow: 'Online Studio',
-  heading: 'Practice Wherever You Are',
-  body: 'Join our online studio for yoga, movement, and mindfulness designed to support your growth – physically, mentally, and emotionally. Practice anytime, anywhere, with a global community by your side.',
+  heading: 'Practice wherever you are',
+  body: 'Classes from our teachers in Ubud, to follow whenever it suits you: asana, meditation, mobility and sadhana. The first 14 days are free.',
   images: ['onlineHomePractice', 'onlineHomeMeditation', 'onlineHomePortrait'] satisfies MediaKey[],
-  cta: { label: 'Start your 14-day FREE trial', href: INTEGRATIONS.onlineSignUp },
-  secondary: { label: 'Online Studio & Community', href: '/ra-online-monthly-membership' },
+  cta: { label: 'Start the free trial', href: INTEGRATIONS.onlineSignUp },
+  secondary: { label: 'About the membership', href: '/ra-online-monthly-membership' },
 } as const
 
 export const teachersSection = {
-  eyebrow: 'Radiantly Alive',
-  heading: 'Our Teachers',
-  subheading: 'Get to know us',
+  heading: 'Our teachers',
   cta: { label: 'Meet all our teachers', href: '/our-teachers' },
 } as const
 
 export const movement = {
-  eyebrow: 'RA Movement',
-  heading: 'Radiantly Alive Movement & Leadership Path',
+  heading: 'The Movement and Leadership Path',
   paragraphs: [
-    'What started in our Bali studio over 13 years ago is now evolving into something greater, a global Movement fueled by RA teachers, guides, and leaders like you, who carry the yoga light into every corner of the world.',
-    'We will collaborate, co-create, celebrate and support each other’s growth.',
+    `What started in our Bali studio ${yearsRunning()} years ago has grown into a global Movement, carried by RA teachers, guides and leaders teaching in their own cities.`,
+    'We collaborate, co-create, celebrate and support each other’s growth.',
   ],
-  quote: '“Like the LOTUS, we too have the ability to rise from the mud, bloom out of the darkness, and radiate into the world.”',
+  quote: '“Like the lotus, we too have the ability to rise from the mud, bloom out of the darkness, and radiate into the world.”',
   stages: [
     { name: 'Seed', theme: 'Awakening', text: 'Rising from the role of student, awakening into the role of teacher.' },
     { name: 'Bud', theme: 'Emergence', text: 'Emerging from simply sharing, maturing into lasting impact.' },
@@ -91,17 +84,17 @@ export const movement = {
   ],
   image: 'communityJoy' satisfies MediaKey,
   directory: {
-    heading: 'RA Teachers Around The World',
-    text: 'It’s been an incredible privilege to train these remarkable teachers at our Bali studio. Many are now sharing their gifts in their hometowns and across the globe, spreading the essence of yoga far and wide.',
+    heading: 'RA teachers around the world',
+    text: 'Many of the teachers we have trained in Bali now teach in their hometowns and further afield. The directory lists where to find them.',
   },
   ctas: [
-    { label: 'Join our Leadership Path', href: '/ra-movement-academy' },
-    { label: 'RA Teachers Worldwide', href: '/radiantly-alive-teachers' },
+    { label: 'Join the Leadership Path', href: '/ra-movement-academy' },
+    { label: 'Find an RA teacher', href: '/radiantly-alive-teachers' },
   ],
 } as const
 
 export const reviews = {
-  eyebrow: 'What graduates say',
+  heading: 'What graduates say',
   links: [
     {
       label: 'Google reviews',
@@ -114,11 +107,11 @@ export const reviews = {
 } as const
 
 export const finalCta = {
-  heading: 'Come for Yoga. *Stay for Family.*',
-  text: 'Join the Community. Get insider updates, expert tips, and early access to classes and retreats.',
+  heading: SITE.tagline,
+  text: 'Drop in for a class this week, or write to us about a training.',
   image: 'graduationDance' satisfies MediaKey,
   ctas: [
-    { label: 'Find your path', href: '/yoga-teacher-training-2026-1' },
-    { label: 'Class Schedule', href: '/classes' },
+    { label: 'Book a class', href: '/classes' },
+    { label: 'Write to us', href: '/contact', variant: 'link' as const },
   ],
 } as const

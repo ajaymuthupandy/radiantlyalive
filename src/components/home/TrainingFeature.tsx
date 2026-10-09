@@ -1,11 +1,9 @@
 import Link from 'next/link'
-import { ArrowRight } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { Media } from '@/components/ui/Media'
 import { teacherTrainings as t } from '@/content/home'
-import { pad } from '@/lib/utils'
 
-/** "Yoga Teacher Trainings — An Experience of a Lifetime": the strongest conversion moment. */
+/** Teacher trainings: the programmes, the proof behind them and one way in. */
 export function TrainingFeature() {
   return (
     <section aria-labelledby="training-title" className="section-y surface-dark overflow-hidden bg-plum text-cream">
@@ -39,11 +37,8 @@ export function TrainingFeature() {
         </div>
 
         <div className="order-1 lg:order-2 lg:col-span-6 lg:col-start-7">
-          <p className="type-eyebrow text-saffron" data-reveal>
-            {t.eyebrow}
-          </p>
-          <h2 id="training-title" className="type-display-lg mt-5 text-balance" data-text-reveal>
-            An Experience of <em>a Lifetime</em>
+          <h2 id="training-title" className="type-display-lg text-balance" data-text-reveal>
+            {t.heading}
           </h2>
           <div className="type-body measure mt-6 space-y-4 text-pretty text-mist">
             {t.paragraphs.map((p) => (
@@ -53,34 +48,24 @@ export function TrainingFeature() {
             ))}
           </div>
 
-          <ol className="mt-10 border-b border-cream/15" data-stagger>
-            {t.programs.map((program, i) => (
+          <ul className="mt-10 border-b border-cream/15" data-stagger>
+            {t.programs.map((program) => (
               <li key={program.href} className="border-t border-cream/15" data-stagger-item>
-                <Link href={program.href} className="group grid grid-cols-[2.5rem_1fr_auto] items-center gap-x-4 py-5">
-                  <span className="type-meta text-saffron" aria-hidden>
-                    {pad(i + 1)}
+                <Link href={program.href} className="group flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 py-5">
+                  <span className="type-display-sm underline decoration-transparent underline-offset-[0.2em] transition-colors group-hover:decoration-cream/50">
+                    {program.label}
                   </span>
-                  <span>
-                    <span className="type-eyebrow block text-balance text-mist">{program.meta}</span>
-                    <span className="type-display-sm mt-1.5 block transition-colors group-hover:text-saffron">
-                      {program.label}
-                    </span>
-                  </span>
-                  <ArrowRight
-                    aria-hidden
-                    strokeWidth={1.5}
-                    className="size-5 text-cream/60 transition-all duration-500 ease-[var(--ease-out-expo)] group-hover:translate-x-1 group-hover:text-saffron"
-                  />
+                  <span className="type-small text-mist">{program.meta}</span>
                 </Link>
               </li>
             ))}
-          </ol>
+          </ul>
 
           <dl className="mt-10 grid grid-cols-3 gap-x-6" data-stagger>
             {t.proof.map((p) => (
               <div key={p.label} className="flex flex-col" data-stagger-item>
-                <dt className="type-meta order-2 mt-2 text-mist">{p.label}</dt>
-                <dd className="type-display-md order-1 leading-none text-saffron">{p.value}</dd>
+                <dt className="type-small order-2 mt-2 text-mist">{p.label}</dt>
+                <dd className="type-display-sm order-1 leading-none">{p.value}</dd>
               </div>
             ))}
           </dl>

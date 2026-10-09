@@ -147,32 +147,32 @@ export const page: PageContent = {
       tone: 'paper',
       items: [
         {
-          label: '01 — Pillar',
+          label: '01 – Pillar',
           title: 'Advanced Teaching Methodology',
           text: 'The deepest work of the training. How you cue, sequence, and adapt; studied at a level that goes past technique. Supervised practice teaching with direct feedback from faculty who have been training teachers for over a decade. You’ll be challenged on your habits and asked to teach with more precision, more responsiveness, more presence.',
         },
         {
-          label: '02 — Pillar',
+          label: '02 – Pillar',
           title: 'Advanced Asana Exploration',
           text: 'RA Vinyasa at an advanced level, for a teacher who already has a practice. Arm balances, backbends, inversions and their architecture. How to teach complex postures to students with different bodies and different histories. The asana curriculum is about refinement and intelligent risk, not adding more shapes.',
         },
         {
-          label: '03 — Pillar',
+          label: '03 – Pillar',
           title: 'Applied Anatomy & Biomechanics',
           text: 'Functional anatomy for the advanced practitioner. Joint mechanics, fascia, the nervous system. How to read a body, spot compensation patterns, and modify with real understanding rather than borrowed rules. Guest specialist teaching is integrated into this module. Graduates consistently say this is among the most practically useful work of the entire training.',
         },
         {
-          label: '04 — Pillar',
+          label: '04 – Pillar',
           title: 'Yoga Philosophy & Living Inquiry',
           text: 'Patanjali’s Yoga Sutras, the Bhagavad Gita, Vedanta. Studied seriously, not as a history lesson. Philosophy at this level is a framework for examining how you practice, how you teach, and how you move through your life. Daily meditation and pranayama build the experiential ground the study needs.',
         },
         {
-          label: '05 — Pillar',
+          label: '05 – Pillar',
           title: 'Pranayama, Restorative & Yin',
           text: 'The energetic side of practice, taught rigorously. Classical pranayama, its physiological basis, and how to introduce it safely in class. Restorative and Yin studied as distinct disciplines, not as recovery. A teacher at the 500-hour level should be able to hold every end of the practice spectrum. This module builds that range.',
         },
         {
-          label: '06 — Pillar',
+          label: '06 – Pillar',
           title: 'Leadership, Voice & the Path That Comes Next',
           text: 'What it means to teach at this level and to keep teaching well over time. Your voice as a teacher: how it’s distinct, how to refine it, how not to lose it. How to build a sustainable career. How to lead without performing. This module also looks honestly at what comes after the 300hr: ongoing mentorship, the possibility of contributing to RA trainings and events, the alumni network you’re stepping into, and what the longer teacher path can look like when it’s pursued with intention.',
         },
@@ -230,7 +230,7 @@ export const page: PageContent = {
     {
       type: 'people',
       eyebrow: 'Specialist Faculty',
-      lead: 'Each module is taught by someone who lives their subject — not a guest lecturer reading slides. Different disciplines. Different perspectives. One shared commitment to developing thoughtful teachers.',
+      lead: 'Each module is taught by someone who lives their subject – not a guest lecturer reading slides. Different disciplines. Different perspectives. One shared commitment to developing thoughtful teachers.',
       columns: 4,
       people: [
         {
@@ -287,12 +287,12 @@ export const page: PageContent = {
           text: 'Plant-based food available at training rates, on site. The café is where the cohort tends to gather between sessions, that informality matters for what happens in the room.',
         },
         {
-          title: 'Ubud - the right environment for this work',
+          title: 'Ubud – the right environment for this work',
           text: 'Not tourism copy. Ubud is genuinely slower, more inward. The pace supports intensive study in a way most cities don’t. The cultural relationship to practice here is real. You feel it within a few days.',
         },
         {
           title: 'Cultural excursions and ceremonies',
-          text: 'Integrated into the programme schedule where relevant — approached with genuine respect and context, not as tourism add-ons.',
+          text: 'Integrated into the programme schedule where relevant – approached with genuine respect and context, not as tourism add-ons.',
         },
         {
           title: 'Accommodation guide provided',
@@ -306,13 +306,13 @@ export const page: PageContent = {
       heading: 'Sample daily *schedule*',
       lead: 'Structured days. Intensive mornings. Evenings mostly yours. The rhythm is designed to allow depth without burning people out in week one.',
       items: [
-        { time: '6:30 — 7:10', title: 'Meditation & Pranayama' },
-        { time: '7:30 — 9:30', title: 'Sadhana — Advanced Asana Practice' },
-        { time: '9:30 — 10:30', title: 'Breakfast' },
-        { time: '10:30 — 13:00', title: 'Advanced Teaching Lab' },
-        { time: '13:00 — 14:30', title: 'Lunch' },
-        { time: '14:30 — 16:00', title: 'Advanced Asana Exploration' },
-        { time: '16:15 — 18:00', title: 'Anatomy / Philosophy' },
+        { time: '6:30 – 7:10', title: 'Meditation & Pranayama' },
+        { time: '7:30 – 9:30', title: 'Sadhana – Advanced Asana Practice' },
+        { time: '9:30 – 10:30', title: 'Breakfast' },
+        { time: '10:30 – 13:00', title: 'Advanced Teaching Lab' },
+        { time: '13:00 – 14:30', title: 'Lunch' },
+        { time: '14:30 – 16:00', title: 'Advanced Asana Exploration' },
+        { time: '16:15 – 18:00', title: 'Anatomy / Philosophy' },
         { time: 'Selected evenings', title: 'Restorative / Yin / Cultural visits' },
       ],
       note: 'Exact schedule varies across the 26 days. Full program provided in preparatory materials.',
@@ -356,7 +356,7 @@ export const page: PageContent = {
         {
           label: 'Community',
           title: 'An active network of working teachers',
-          text: '900+ graduates across 80 countries. Not a mailing list — teachers who trained together, stay in contact, and continue developing alongside one another.',
+          text: '900+ graduates across 80 countries. Not a mailing list – teachers who trained together, stay in contact, and continue developing alongside one another.',
         },
         {
           label: 'Continuity',
@@ -432,9 +432,9 @@ export const page: PageContent = {
         },
       ],
       notes: [
-        '**[300H RA Vinyasa YTT | Ubud - Early Bird Price](/tt-classes-retreats/p/300h-ra-vinyasa-ytt-ubud-early-bird-price)** · $2,900.00',
-        '**[300H RA Vinyasa YTT | Ubud - Regular Price](/tt-classes-retreats/p/300h-ra-vinyasa-ytt-ubud-regular-price)** · from $1,000.00',
-        'Dates: 2026 | November 2 - 27 · 2027 | May 3 - 28 · 2027 | November 1 - 26',
+        '**[300H RA Vinyasa YTT | Ubud – Early Bird Price](/tt-classes-retreats/p/300h-ra-vinyasa-ytt-ubud-early-bird-price)** · $2,900.00',
+        '**[300H RA Vinyasa YTT | Ubud – Regular Price](/tt-classes-retreats/p/300h-ra-vinyasa-ytt-ubud-regular-price)** · from $1,000.00',
+        'Dates: 2026 | November 2 – 27 · 2027 | May 3 – 28 · 2027 | November 1 – 26',
         'All prices are in Indonesian Rupiah. The deposit is non-refundable but transferable to another cohort with 60 days notice.',
       ],
     },
@@ -448,7 +448,7 @@ export const page: PageContent = {
             'All cultural experiences within the programme',
             'RA Alumni Network access (lifetime)',
             'Post-graduation support and resources',
-            'Unlimited studio classes — 1 week before and after',
+            'Unlimited studio classes – 1 week before and after',
             'Lifelong 10% alumni discount at Radiantly Alive',
             'Yoga Alliance E-RYT 500 registration support',
             'Preparatory materials sent 4–6 weeks before start',
@@ -473,17 +473,17 @@ export const page: PageContent = {
         {
           question: 'What’s actually different between the 200hr and the 300hr?',
           answer:
-            'The 200hr trains you to teach safely and competently. It’s complete in itself. The 300hr is for teachers who’ve been doing it for a year or more and want to develop craft, depth, and professional maturity. The content and expectations are different in kind — not just volume. The 300hr assumes you already know how to teach.',
+            'The 200hr trains you to teach safely and competently. It’s complete in itself. The 300hr is for teachers who’ve been doing it for a year or more and want to develop craft, depth, and professional maturity. The content and expectations are different in kind – not just volume. The 300hr assumes you already know how to teach.',
         },
         {
           question: 'Do I have to have done my 200hr with Radiantly Alive?',
           answer:
-            'No. We welcome certified teachers from all schools and traditions. The prerequisite is a valid Yoga Alliance RYT-200 (or equivalent) and at least one year of active teaching. We ask about your background in the application — not to gatekeep, but to make sure this training is genuinely the right next step for where you are.',
+            'No. We welcome certified teachers from all schools and traditions. The prerequisite is a valid Yoga Alliance RYT-200 (or equivalent) and at least one year of active teaching. We ask about your background in the application – not to gatekeep, but to make sure this training is genuinely the right next step for where you are.',
         },
         {
           question: 'I haven’t been teaching consistently. Can I still apply?',
           answer:
-            'Reach out to us before applying. We take the teaching requirement seriously — the 300hr content assumes a particular lived experience that consistent teaching produces. In some cases we can support applicants with a strong personal practice and a clear trajectory. A conversation is the best way to find out.',
+            'Reach out to us before applying. We take the teaching requirement seriously – the 300hr content assumes a particular lived experience that consistent teaching produces. In some cases we can support applicants with a strong personal practice and a clear trajectory. A conversation is the best way to find out.',
         },
         {
           question: 'How does the E-RYT 500 registration work?',
@@ -493,7 +493,7 @@ export const page: PageContent = {
         {
           question: 'What happens to most graduates after the training?',
           answer:
-            'Most return to their teaching lives with noticeably more confidence and depth — that’s the ordinary outcome. Some go on to deepen through RA’s continuing education offerings, mentorship, or specialist training. A smaller number have become involved in co-facilitating RA retreats and events in Europe and elsewhere.',
+            'Most return to their teaching lives with noticeably more confidence and depth – that’s the ordinary outcome. Some go on to deepen through RA’s continuing education offerings, mentorship, or specialist training. A smaller number have become involved in co-facilitating RA retreats and events in Europe and elsewhere.',
         },
       ],
     },
@@ -503,7 +503,7 @@ export const page: PageContent = {
       eyebrow: 'HAVE A QUESTION BEFORE ENROLLING?',
       heading: 'Let’s talk about *where you are.*',
       paragraphs: [
-        'About prerequisites, the curriculum, which cohort makes most sense for where you are — ask us. We respond within one working day. The team is based in Ubud.',
+        'About prerequisites, the curriculum, which cohort makes most sense for where you are – ask us. We respond within one working day. The team is based in Ubud.',
       ],
       ctas: [
         { label: 'SPEAK WITH US FIRST', href: '/contact' },
@@ -528,7 +528,7 @@ export const page: PageContent = {
         {
           label: 'Accommodation',
           title: 'Where to stay',
-          text: 'Ubud has options across all budgets — simple guesthouses from ~$30/night, boutique villas at $80–200/night. Most participants stay within 10–20 minutes of the studio. We send a curated guide with your pack.',
+          text: 'Ubud has options across all budgets – simple guesthouses from ~$30/night, boutique villas at $80–200/night. Most participants stay within 10–20 minutes of the studio. We send a curated guide with your pack.',
         },
         {
           label: 'Getting Around',
@@ -541,7 +541,7 @@ export const page: PageContent = {
             'Your yoga mat (studio mats available)',
             'Comfortable yoga clothing',
             'Swimwear and sunscreen',
-            'Light footwear — flip-flops or open shoes',
+            'Light footwear – flip-flops or open shoes',
             'Insect repellent',
             'Notebook and personal journal',
             'Refillable water bottle',

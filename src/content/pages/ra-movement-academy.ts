@@ -1,4 +1,5 @@
 import type { PageContent } from '../types'
+import { yearsRunning } from '@/data/site'
 
 /** Source: https://www.radiantlyalive.com/ra-movement-academy */
 export const page: PageContent = {
@@ -19,7 +20,7 @@ export const page: PageContent = {
       eyebrow: 'The Radiantly Alive Movement',
       heading: 'The Radiantly Alive Movement *& Leadership Path*',
       paragraphs: [
-        'What started in our Bali studio over 13 years ago is now evolving into something greater, a global Movement fueled by RA teachers, guides, and leaders like you, who carry the yoga light into every corner of the world.',
+        `What started in our Bali studio over ${yearsRunning()} years ago is now evolving into something greater, a global Movement fueled by RA teachers, guides, and leaders like you, who carry the yoga light into every corner of the world.`,
         'This is an invitation to grow with us, to receive guidance and support that will empower you to carry the Radiantly Alive and Bali spirit beyond borders, leading retreats and trainings in your own country and community.',
         'We will collaborate, co-create, celebrate and support each other’s growth.',
         'This Movement needs Radiant leaders; grounded, awake, and abundant; join our Leadership Path and Be one!',
@@ -144,19 +145,19 @@ export const page: PageContent = {
           image: 'moveLaura',
           eyebrow: '— Laura, Level 2 BUD (Germany)',
           title: '"The Evolution Happened Fast"',
-          text: 'The opportunity came fast - I was offered the paid support role for the next training, stepping into a completely new position. Radiantly Alive doesn\'t just teach you; they actively create pathways for your evolution. Every time you come back, people know you. There\'s a sense of really knowing each other based on the same values we learn here. It\'s a second family that gives you community, friendships, and opportunities to grow faster than you imagined."',
+          text: 'The opportunity came fast – I was offered the paid support role for the next training, stepping into a completely new position. Radiantly Alive doesn\'t just teach you; they actively create pathways for your evolution. Every time you come back, people know you. There\'s a sense of really knowing each other based on the same values we learn here. It\'s a second family that gives you community, friendships, and opportunities to grow faster than you imagined."',
         },
         {
           image: 'moveLiz',
           eyebrow: '— Liz, Level 3 BLOSSOM (Germany)',
           title: '“The RA Movement Opens Doors”',
-          text: '"I\'ve known Radiantly Alive for 8 years, I did my 300hr in 2020, and the doors just keep opening. I\'ve facilitated modules in YTTs, organized a reunion in Munich with Rafael and Sanna, and return to Bali regularly to stay connected with this family. Radiantly Alive opened my eyes on a personal level - showing me how I want to proceed as a teacher and what kind of light I want to share with my community. The things you learn here are something you can truly take and spread within your own world"',
+          text: '"I\'ve known Radiantly Alive for 8 years, I did my 300hr in 2020, and the doors just keep opening. I\'ve facilitated modules in YTTs, organized a reunion in Munich with Rafael and Sanna, and return to Bali regularly to stay connected with this family. Radiantly Alive opened my eyes on a personal level – showing me how I want to proceed as a teacher and what kind of light I want to share with my community. The things you learn here are something you can truly take and spread within your own world"',
         },
         {
           image: 'moveAlexandra',
           eyebrow: '— Alexandra, Level 1 SEED (France)',
           title: '"From Nervous to Confident"',
-          text: '"Assisting the facilitators during the training was so special because it was one of my dreams to help them and see the trainings from another perspective - not as a student, but as a teacher and as a member of the RA family. Coming back to assist in Bali nine months after my 200hr completely transformed my confidence as a teacher. I went from nervous about adjustments to feeling like a real mentor for new students.."',
+          text: '"Assisting the facilitators during the training was so special because it was one of my dreams to help them and see the trainings from another perspective – not as a student, but as a teacher and as a member of the RA family. Coming back to assist in Bali nine months after my 200hr completely transformed my confidence as a teacher. I went from nervous about adjustments to feeling like a real mentor for new students.."',
         },
       ],
     },
@@ -166,7 +167,7 @@ export const page: PageContent = {
       eyebrow: 'Perhaps it’s your time',
       heading: 'Your Growth *Journey Awaits*',
       paragraphs: [
-        'Every respected yoga teacher and mentor started exactly where you are - with a love for sharing yoga and a sense that there are more ways to serve.',
+        'Every respected yoga teacher and mentor started exactly where you are – with a love for sharing yoga and a sense that there are more ways to serve.',
         'The Radiantly Alive Leadership Path has supported 500+ teachers in deepening their impact and expanding their light to a global yoga community. **Perhaps it\'s your time.**',
         'We\'d love to hear about your journey and how the RA Leadership Path can support your growth.',
       ],
@@ -182,10 +183,10 @@ export const page: PageContent = {
         {
           question: "What if I'm not experienced enough?",
           answer:
-            "The beauty of our 4-phase path is that it meets you where you are. Phase 1 starts with supporting roles and gentle mentoring, building your confidence organically. You don't have to be perfect - you have to be willing to grow and serve.",
+            "The beauty of our 4-phase path is that it meets you where you are. Phase 1 starts with supporting roles and gentle mentoring, building your confidence organically. You don't have to be perfect – you have to be willing to grow and serve.",
         },
         {
-          question: 'Six years seems like a long time - is there a faster path?',
+          question: 'Six years seems like a long time – is there a faster path?',
           answer:
             "Just like becoming a doctor, lawyer, or master craftsperson, true expertise requires discipline, dedication and time. Quick certifications create basic teachers. Our Movement creates leaders. The timeline ensures you're equipped and prepared for each phase of responsibility.",
         },

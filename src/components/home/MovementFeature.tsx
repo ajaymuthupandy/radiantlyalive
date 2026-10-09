@@ -1,20 +1,16 @@
 import { Button } from '@/components/ui/Button'
 import { Media } from '@/components/ui/Media'
 import { movement as m } from '@/content/home'
-import { pad } from '@/lib/utils'
 
-/** RA Movement: the Leadership Path (Seed → Bud → Blossom → Pod) and the teacher directory. */
+/** RA Movement: the Leadership Path (Seed → Bud → Blossom → Pod) and the teacher directory. Numbered because the stages are a real progression. */
 export function MovementFeature() {
   return (
-    <section aria-labelledby="movement-title" className="section-y overflow-hidden bg-paper">
-      <div className="container-x">
+    <section aria-labelledby="movement-title" className="section-y overflow-hidden">
+      <div className="container-x border-t hairline pt-[var(--section-space-tight)]">
         <div className="grid gap-y-10 lg:grid-cols-12 lg:gap-x-10 xl:gap-x-12">
           <div className="lg:col-span-6 lg:py-4">
-            <p className="type-eyebrow text-crimson" data-reveal>
-              {m.eyebrow}
-            </p>
-            <h2 id="movement-title" className="type-display-lg mt-5 text-balance" data-text-reveal>
-              Radiantly Alive Movement <em>&amp; Leadership Path</em>
+            <h2 id="movement-title" className="type-display-lg text-balance" data-text-reveal>
+              {m.heading}
             </h2>
             <div className="type-body measure mt-6 space-y-4 text-pretty">
               {m.paragraphs.map((p, i) => (
@@ -24,7 +20,7 @@ export function MovementFeature() {
               ))}
             </div>
             <blockquote className="mt-8 rounded-frame bg-plum px-7 py-7 text-cream md:mt-10 md:px-10 md:py-9" data-reveal>
-              <p className="border-l-2 border-saffron/80 pl-6 font-display text-xl leading-relaxed text-pretty md:text-[1.375rem]">{m.quote}</p>
+              <p className="type-display-sm border-l-2 border-cream/30 pl-6 text-pretty">{m.quote}</p>
             </blockquote>
           </div>
 
@@ -37,11 +33,11 @@ export function MovementFeature() {
 
         <ol className="mt-10 grid gap-px overflow-hidden rounded-frame border border-ink/10 bg-ink/10 sm:grid-cols-2 lg:grid-cols-4 md:mt-12" data-stagger>
           {m.stages.map((stage, i) => (
-            <li key={stage.name} className="bg-paper p-6 md:p-8" data-stagger-item>
-              <p className="type-eyebrow text-crimson">
-                {pad(i + 1)} · {stage.theme}
+            <li key={stage.name} className="bg-canvas p-6 md:p-8" data-stagger-item>
+              <p className="type-small text-ink-soft">
+                {i + 1}. {stage.theme}
               </p>
-              <h3 className="type-display-sm mt-4 leading-none tracking-[0.06em] uppercase">{stage.name}</h3>
+              <h3 className="type-display-sm mt-3">{stage.name}</h3>
               <p className="type-small mt-3 text-ink-soft">{stage.text}</p>
             </li>
           ))}
@@ -56,9 +52,9 @@ export function MovementFeature() {
               {m.directory.text}
             </p>
           </div>
-          <div className="flex flex-wrap items-end gap-3 md:col-span-5 md:justify-end" data-reveal>
+          <div className="flex flex-wrap items-center gap-x-8 gap-y-3 md:col-span-5 md:justify-end" data-reveal>
             {m.ctas.map((cta, i) => (
-              <Button key={cta.href} href={cta.href} variant={i === 0 ? 'primary' : 'secondary'}>
+              <Button key={cta.href} href={cta.href} variant={i === 0 ? 'primary' : 'link'}>
                 {cta.label}
               </Button>
             ))}

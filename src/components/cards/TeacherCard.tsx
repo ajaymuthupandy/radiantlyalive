@@ -17,7 +17,7 @@ export function TeacherCard({ teacher, tone = 'light' }: { teacher: Teacher; ton
         />
       </div>
       <h3 className={`type-h3 mt-5 ${dark ? 'text-cream' : 'text-ink'}`}>{teacher.name}</h3>
-      <p className={`type-eyebrow mt-2 ${dark ? 'text-saffron' : 'text-crimson'}`}>{teacher.role}</p>
+      <p className={`type-small mt-1 ${dark ? 'text-mist' : 'text-ink-soft'}`}>{teacher.role}</p>
       <details className={`mt-4 border-t pt-3 ${dark ? 'border-cream/15' : 'hairline'}`}>
         <summary
           className={`type-nav flex min-h-11 items-center justify-between gap-3 ${dark ? 'text-cream' : 'text-ink'} [&::-webkit-details-marker]:hidden`}

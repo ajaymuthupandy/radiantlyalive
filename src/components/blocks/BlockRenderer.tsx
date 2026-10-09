@@ -53,7 +53,7 @@ function Form({ blockKey, ...b }: WithKey<FormBlock>) {
             strings={ui(b.lang)}
           />
           {b.privacyNote && (
-            <p className={cn('type-meta mt-6 max-w-xl', isDark(tone) ? 'text-mist' : 'text-ink-soft')}>
+            <p className={cn('type-small mt-6 max-w-xl', isDark(tone) ? 'text-mist' : 'text-ink-soft')}>
               <Rich text={b.privacyNote} />
             </p>
           )}
@@ -106,7 +106,9 @@ export function BlockRenderer({ blocks, lang = 'en' }: { blocks: Block[]; lang?:
     <>
       {blocks.map((block, i) => {
         const key = block.id ?? `b${i}`
-        const props = { ...block, blockKey: key, lang }
+        // A heading carries its own section; a kicker above it only repeats it.
+        const eyebrow = 'heading' in block && block.heading ? undefined : 'eyebrow' in block ? block.eyebrow : undefined
+        const props = { ...block, eyebrow, blockKey: key, lang }
         switch (block.type) {
           case 'intro':
             return <Intro key={key} {...(props as WithKey<typeof block>)} />

@@ -46,12 +46,10 @@ export function NewsletterForm() {
 
   return (
     <form onSubmit={onSubmit} className="w-full" noValidate={false}>
-      <label htmlFor={id} className="type-eyebrow text-saffron">
-        Join the community
+      <label htmlFor={id} className="type-h3 text-cream">
+        The newsletter
       </label>
-      <p className="type-small mt-4 text-mist">
-        Get insider updates, expert tips, and early access to classes and retreats.
-      </p>
+      <p className="type-small mt-2 text-mist">Class news, training dates and the occasional story from Ubud.</p>
       <div className="mt-5 flex items-center border-b border-cream/30 focus-within:border-saffron">
         <input
           id={id}
@@ -71,12 +69,12 @@ export function NewsletterForm() {
           <span className="sr-only">Sign Up</span>
         </button>
       </div>
-      <p className="type-meta mt-3 text-mist empty:hidden" role="status" aria-live="polite">
+      <p className="type-small mt-3 text-mist empty:hidden" role="status" aria-live="polite">
         {status === 'done' && 'We’re just getting started – see you in your inbox (and on the mat)!'}
         {status === 'error' && 'Something went wrong. Please try again in a moment.'}
         {status === 'idle' && !ENDPOINT && 'Opens our newsletter sign-up page to confirm.'}
       </p>
-      <p className="type-meta mt-2 text-mist/80">
+      <p className="type-small mt-2 text-mist/80">
         By signing up, you agree to receive emails from Radiantly Alive. You can unsubscribe at any time. Read more in our{' '}
         <Link href="/radiantly-alive-privacy-policy" className="underline underline-offset-4 hover:text-cream">
           Privacy Policy

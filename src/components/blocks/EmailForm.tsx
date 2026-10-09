@@ -83,13 +83,13 @@ export function EmailForm({ form, fallbackHref, submitLabel, successMessage, dar
         disabled={status === 'sending'}
         className={cn(
           'group type-button mt-8 inline-flex min-h-12 items-center gap-2.5 rounded-control px-6 transition-colors disabled:opacity-60',
-          dark ? 'bg-saffron text-plum hover:bg-cream' : 'bg-plum text-cream hover:bg-crimson',
+          'bg-saffron text-ink hover:bg-saffron-deep',
         )}
       >
         {status === 'sending' ? strings.formSending : submitLabel}
         <ArrowRight aria-hidden className="size-4 transition-transform group-hover:translate-x-1" strokeWidth={1.75} />
       </button>
-      <p className={cn('type-meta mt-4 min-h-5', dark ? 'text-mist' : 'text-ink-soft')} role="status" aria-live="polite">
+      <p className={cn('type-small mt-4 min-h-5', dark ? 'text-mist' : 'text-ink-soft')} role="status" aria-live="polite">
         {status === 'done' && successMessage}
         {status === 'error' && strings.formError}
         {status === 'idle' && !endpoint && strings.formFallback}

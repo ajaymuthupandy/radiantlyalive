@@ -116,11 +116,11 @@ export function ContactForm() {
         <button
           type="submit"
           disabled={status === 'sending'}
-          className="type-button inline-flex min-h-12 items-center rounded-control bg-plum px-6 text-cream transition-colors hover:bg-crimson disabled:opacity-60"
+          className="type-button inline-flex min-h-12 items-center rounded-control px-6 transition-colors bg-saffron text-ink hover:bg-saffron-deep disabled:opacity-60"
         >
           {status === 'sending' ? 'Sending…' : 'Send message'}
         </button>
-        <p className="type-meta text-ink-soft" role="status" aria-live="polite">
+        <p className="type-small text-ink-soft" role="status" aria-live="polite">
           {status === 'done' && (ENDPOINT ? 'Thank you! Your message has been sent.' : 'Your email app should open with your message ready to send.')}
           {status === 'error' && `Something went wrong. Please email us at ${SITE.email}.`}
           {status === 'idle' && !ENDPOINT && 'Sending opens your email app with the message prepared.'}

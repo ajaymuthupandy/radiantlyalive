@@ -4,9 +4,9 @@ import type { Shala } from './types'
 export const brandStory = {
   vision: 'Our Vision is to empower people through yoga',
   visionDetail:
-    'Building confidence, strength, and clarity - and to grow a global community of committed, inspired individuals.',
+    'Building confidence, strength and clarity, and growing a global community of committed, inspired people.',
   moreThanStudio:
-    'Radiantly Alive is a space to grow - on and off the mat. Whether you’re here for a class, a retreat, or teacher training, you’ll gain real tools to feel stronger in your body, clearer in your mind, and more connected to yourself and others.',
+    'Radiantly Alive is a space to grow – on and off the mat. Whether you’re here for a class, a retreat, or teacher training, you’ll gain real tools to feel stronger in your body, clearer in your mind, and more connected to yourself and others.',
   belonging: 'This isn’t just about poses, it’s about progress, purpose, and belonging.',
   rooted:
     'Radiantly Alive has been here since 2010. We didn’t come to visit. We built here: five shalas, a teaching lineage, a community rooted in this particular ground.',

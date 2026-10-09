@@ -21,7 +21,7 @@ export const SITE = {
   tagline: 'Come for Yoga. Stay for Family.',
   positioning: 'A global yoga community born in Bali.',
   description:
-    'A global yoga community born in Bali. Deepen your practice with world-class teachers, transformative trainings and meaningful connections - in Bali, across Europe, or online.',
+    'A global yoga community born in Bali. Deepen your practice with world-class teachers, transformative trainings and meaningful connections – in Bali, across Europe, or online.',
   email: 'info@radiantlyalive.com',
   yttEmail: 'ra.ytt@radiantlyalive.com',
   /** Published on /referral-program and the Spanish training pages. */
@@ -37,6 +37,9 @@ export const SITE = {
   mapsUrl: 'https://maps.app.goo.gl/mk6K3mDuQ1WsNA2LA',
   ogImage: '/assets/og/og-default.jpg',
 } as const
+
+/** Years the studio has been teaching, counted from the founding year so copy never goes stale. */
+export const yearsRunning = () => new Date().getFullYear() - SITE.foundingYear
 
 export const SOCIAL = [
   { label: 'Instagram', href: 'https://www.instagram.com/radiantlyaliveyoga/', icon: 'instagram' },
@@ -55,8 +58,8 @@ export type SocialIcon = (typeof SOCIAL)[number]['icon']
 export const ANNOUNCEMENT = {
   id: 'nov-2026-ytt',
   enabled: true,
-  message: 'Join our November 200HR & 300HR Yoga Teacher Trainings — Limited spots available',
-  link: { label: 'Enrol today!', href: '/yoga-teacher-training-2026-1' },
+  message: 'November 200HR and 300HR teacher trainings: limited places left.',
+  link: { label: 'Apply', href: '/yoga-teacher-training-2026-1' },
 } as const
 
 /**

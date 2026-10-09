@@ -13,12 +13,13 @@ interface PageHeroProps {
   imagePosition?: string
   breadcrumb?: { label: string; href: string }
   children?: React.ReactNode
+  /** @deprecated every hero sits on plum; kept so existing callers compile. */
   tone?: 'plum' | 'crimson'
 }
 
 /** Inner-page hero: shorter than the homepage, same cinematic language. */
-export function PageHero({ id, eyebrow, title, lead, image, imagePosition = 'object-center', breadcrumb, children, tone = 'plum' }: PageHeroProps) {
-  const from = tone === 'crimson' ? 'from-crimson via-crimson/50' : 'from-plum via-plum/50'
+export function PageHero({ id, eyebrow, title, lead, image, imagePosition = 'object-center', breadcrumb, children }: PageHeroProps) {
+  const from = 'from-plum via-plum/50'
 
   return (
     <section
@@ -26,7 +27,7 @@ export function PageHero({ id, eyebrow, title, lead, image, imagePosition = 'obj
       aria-labelledby={`${id}-title`}
       className={cn(
         'surface-dark relative isolate flex min-h-[32rem] items-end overflow-hidden text-cream md:min-h-[36rem] lg:min-h-[min(70svh,46rem)]',
-        tone === 'crimson' ? 'bg-crimson' : 'bg-plum',
+        'bg-plum',
       )}
     >
       <div data-hero-media className="absolute inset-0 -z-10">
@@ -45,7 +46,7 @@ export function PageHero({ id, eyebrow, title, lead, image, imagePosition = 'obj
             </Link>
           </nav>
         )}
-        <p className={cn('type-eyebrow', tone === 'crimson' ? 'text-cream' : 'text-saffron')} data-hero-item>
+        <p className={cn('type-eyebrow', 'text-mist')} data-hero-item>
           {eyebrow}
         </p>
         <h1 id={`${id}-title`} className="hero-rise type-display-lg mt-5 max-w-[18ch] text-balance">

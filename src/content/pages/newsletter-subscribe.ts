@@ -5,12 +5,12 @@ export const page: PageContent = {
   path: '/newsletter-subscribe',
   title: 'RA Newsletter',
   description:
-    "Join 10,000+ Radiant Beings receiving monthly wisdom from Bali's heart - ancient teachings, real transformation stories, and practices that actually change your life.",
+    "Join 10,000+ Radiant Beings receiving monthly wisdom from Bali's heart – ancient teachings, real transformation stories, and practices that actually change your life.",
   parent: { label: 'RA Movement', href: '/radiantly-alive-teachers' },
   hero: {
     eyebrow: 'RA Newsletter',
     title: 'Yoga Wisdom, Community & *Bali Stories*',
-    lead: "Join 10,000+ Radiant Beings receiving monthly wisdom from Bali's heart - ancient teachings, real transformation stories, and practices that actually change your life.",
+    lead: "Join 10,000+ Radiant Beings receiving monthly wisdom from Bali's heart – ancient teachings, real transformation stories, and practices that actually change your life.",
     image: 'moveNewsletter',
     ctas: [{ label: 'Join the Community', href: '#subscribe' }],
   },

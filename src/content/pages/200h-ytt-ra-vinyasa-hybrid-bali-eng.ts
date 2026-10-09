@@ -1,4 +1,5 @@
 import type { PageContent } from '../types'
+import { yearsRunning } from '@/data/site'
 
 const SOURCE_URL = 'https://www.radiantlyalive.com/200h-ytt-ra-vinyasa-hybrid-bali-eng'
 
@@ -13,7 +14,7 @@ export const page: PageContent = {
     eyebrow: '200-Hour Hybrid Yoga Teacher Training · Bali · English',
     title: 'Study from home. *Complete it in Bali.*',
     lead: '100 hours online, on your schedule. 100 hours in Ubud inside a real working studio. The same RYT-200 certification. Built for people who cannot leave life behind for a full month',
-    body: ['Scroll to understand the program — or [jump to dates and investment](#dates) if you’re ready.'],
+    body: ['Scroll to understand the program – or [jump to dates and investment](#dates) if you’re ready.'],
     image: 'hybridBaliHero',
     imagePosition: '50% 30%',
     facts: [
@@ -82,7 +83,7 @@ export const page: PageContent = {
           text: 'You’re self-directed, you show up for your practice, and you understand that the Saturday live sessions are not optional. The online phase rewards people who bring their own discipline to it.',
         },
         {
-          title: 'You want Bali — and the full depth',
+          title: 'You want Bali – and the full depth',
           text: 'You’re not looking for a lighter version. You want to arrive in Ubud, be inside a working studio, train with senior faculty in person, and leave having genuinely done the work.',
         },
       ],
@@ -94,7 +95,7 @@ export const page: PageContent = {
       heading: 'Not a lesser version. *A different structure.*',
       paragraphs: [
         'The 200-hour Hybrid leads to the same Yoga Alliance RYT-200 certification as the full Bali Immersion. Same curriculum. Same faculty. Same standard.',
-        'What differs is the structure. The Hybrid is built for people whose lives don’t allow 24 consecutive days away — not for people who want something easier. There isn’t an easier version. There is only this one, offered in two shapes.',
+        'What differs is the structure. The Hybrid is built for people whose lives don’t allow 24 consecutive days away – not for people who want something easier. There isn’t an easier version. There is only this one, offered in two shapes.',
         'If full immersion resonates more and you can step away for four weeks, the full Bali Immersion may be the better fit.',
       ],
       ctas: [
@@ -141,7 +142,7 @@ export const page: PageContent = {
         {
           label: 'Module',
           title: 'Anatomy & Biomechanics',
-          text: 'Functional anatomy grounded in how real bodies actually move — applied directly to the postures and situations you will encounter as a teacher.',
+          text: 'Functional anatomy grounded in how real bodies actually move – applied directly to the postures and situations you will encounter as a teacher.',
         },
         {
           label: 'Module',
@@ -196,8 +197,8 @@ export const page: PageContent = {
           text: 'Structured video content released week by week. Lectures, guided practices, faculty teaching. Work through them in your own time within the weekly window.',
         },
         {
-          title: 'Saturday live sessions — required',
-          text: 'Live sessions with faculty, held fortnightly or weekly depending on cohort pace. The backbone of the online phase — not optional, not available as recordings. Where your cohort forms before Bali.',
+          title: 'Saturday live sessions – required',
+          text: 'Live sessions with faculty, held fortnightly or weekly depending on cohort pace. The backbone of the online phase – not optional, not available as recordings. Where your cohort forms before Bali.',
         },
         {
           title: 'Homework & personal practice',
@@ -205,7 +206,7 @@ export const page: PageContent = {
         },
         {
           title: 'Cohort community',
-          text: 'You are not studying alone. Your cohort is in it with you — shared platform, private group, Saturday sessions to keep the connection alive across time zones.',
+          text: 'You are not studying alone. Your cohort is in it with you – shared platform, private group, Saturday sessions to keep the connection alive across time zones.',
         },
       ],
     },
@@ -218,7 +219,7 @@ export const page: PageContent = {
         'The Saturdays are the one non-negotiable of the online phase. Live, shared, and where your relationship with your cohort and faculty actually forms. If you cannot consistently commit to the Saturdays, the full Bali Immersion is likely the better fit.',
         'Sessions take place from 8pm to 11pm Bali time.',
         '**Platform & Access.** All recorded content is delivered via Our Online Studio. Access is provided after registration and remains available for one year after the program ends.',
-        'Question about the online phase — time zones, schedule, platform? [Ask us ↓](#contact)',
+        'Question about the online phase – time zones, schedule, platform? [Ask us ↓](#contact)',
       ],
       image: 'hybridMoroccoOnlineStudio',
       imageSide: 'left',
@@ -228,9 +229,9 @@ export const page: PageContent = {
       eyebrow: 'Phase Two · Bali',
       heading: 'The Bali immersion. *Where it becomes real.*',
       paragraphs: [
-        'You don’t arrive in Bali to start learning. You arrive having completed 100 hours of preparation — and the 10-day immersion is where you embody it. In the shala, with your cohort, with faculty who have been present since your first Saturday session.',
+        'You don’t arrive in Bali to start learning. You arrive having completed 100 hours of preparation – and the 10-day immersion is where you embody it. In the shala, with your cohort, with faculty who have been present since your first Saturday session.',
       ],
-      note: '“Radiantly Alive is not a venue. It is a living school: daily classes, resident teachers, a community that has been here for 15 years.” UBUD, Bali · Founded 2010',
+      note: `“Radiantly Alive is not a venue. It is a living school: daily classes, resident teachers, a community that has been here for ${yearsRunning()} years.” UBUD, Bali · Founded 2010`,
       image: 'hybridBaliJungleShala',
       imageSide: 'right',
     },
@@ -243,12 +244,12 @@ export const page: PageContent = {
         {
           label: 'The Studio',
           title: 'A real working school',
-          text: 'Radiantly Alive runs daily classes in Ubud year-round. Not a rented retreat venue — a studio with 15 years of roots, 25+ resident teachers, and a live daily programme running morning to evening.',
+          text: `Radiantly Alive runs daily classes in Ubud year-round. Not a rented retreat venue – a studio with ${yearsRunning()} years of roots, 25+ resident teachers, and a live daily programme running morning to evening.`,
         },
         {
           label: 'Teaching',
           title: 'Teaching labs from day one',
-          text: 'Because you arrive prepared, the immersion moves quickly into hands-on teaching practice. Teaching labs, peer feedback, faculty adjustments — the focus of the 10 days, not content delivery.',
+          text: 'Because you arrive prepared, the immersion moves quickly into hands-on teaching practice. Teaching labs, peer feedback, faculty adjustments – the focus of the 10 days, not content delivery.',
         },
         {
           label: 'Faculty',
@@ -286,12 +287,12 @@ export const page: PageContent = {
         {
           label: 'The School',
           title: 'A live school, not a rented space',
-          text: 'Radiantly Alive has been operating daily in Ubud since 2010. 25+ resident teachers, morning-to-evening classes, an active community year-round. When you arrive for the immersion, you are stepping into something with 15 years of roots.',
+          text: `Radiantly Alive has been operating daily in Ubud since 2010. 25+ resident teachers, morning-to-evening classes, an active community year-round. When you arrive for the immersion, you are stepping into something with ${yearsRunning()} years of roots.`,
         },
         {
           label: 'Continuity',
           title: 'Same faculty online and in Bali',
-          text: 'The teachers who lead your Saturday sessions are the same teachers in the room in Ubud. No handoff, no disconnect. The relationship begins in Phase One and deepens in Bali — not reset from scratch on arrival.',
+          text: 'The teachers who lead your Saturday sessions are the same teachers in the room in Ubud. No handoff, no disconnect. The relationship begins in Phase One and deepens in Bali – not reset from scratch on arrival.',
         },
         {
           label: 'Depth',
@@ -368,14 +369,14 @@ export const page: PageContent = {
       quote:
         'Radiantly Alive was unlike anything I’d experienced before. It really fulfilled me. I feel more energized and ready for what’s next. What stood out the most was the people and the sense of spirituality throughout the training. There’s something very real about it. Now I feel genuinely motivated to teach. Teaching my first class here was surprisingly fun and exciting, I didn’t expect to enjoy it that much. We really became like a family. Everyone is so lovely.',
       name: 'Nadine, Switzerland',
-      context: '200-Hour Immersion graduate — Hybrid launches its first cohort in November 2026',
+      context: '200-Hour Immersion graduate – Hybrid launches its first cohort in November 2026',
     },
     {
       type: 'split',
       heading: 'Beyond the *certification.*',
       paragraphs: [
         'Most graduates take the 200-hour training and return to their lives with more confidence, a clearer sense of their practice, and sometimes a new direction. That is enough. That is often exactly what this training is for.',
-        'Others stay connected. Through alumni events, continuing education, mentorship, assisting future trainings, and the wider RA community that has been building in Ubud and across the world for 15 years.',
+        `Others stay connected. Through alumni events, continuing education, mentorship, assisting future trainings, and the wider RA community that has been building in Ubud and across the world for ${yearsRunning()} years.`,
         'The Leadership Path is one way that relationship can unfold over time, a framework for continued growth, connection, and contribution after graduation. It is not a guarantee of opportunity, and it is not a fixed progression. It is simply a way of describing what becomes possible when the relationship continues.',
       ],
       ctas: [{ label: 'Explore the Leadership Path →', href: 'https://www.radiantlyalive.com/ra-movement-academy', variant: 'secondary' }],
@@ -392,9 +393,9 @@ export const page: PageContent = {
       lead: 'Two cohorts open for 2027. Places are limited to 32 per immersion.',
       columns: ['Cohort', 'Online', 'In-person', 'Lead Teacher', 'Status'],
       rows: [
-        { label: 'August - Nov 2026', values: ['Aug 4 – Oct 22', 'Oct 23 – Nov 1', 'Led by Niko Kisic', 'Ongoing'] },
-        { label: 'April - July 2027', values: ['Apr 9 – Jul 15', 'Jul 16 – 25', 'Lucinda Muldoon', 'Open'] },
-        { label: 'June - October 2027', values: ['Jun 18 – Sep 23', 'Sep 24 – Oct 3', 'Niko Kisic', '—'] },
+        { label: 'August – Nov 2026', values: ['Aug 4 – Oct 22', 'Oct 23 – Nov 1', 'Led by Niko Kisic', 'Ongoing'] },
+        { label: 'April – July 2027', values: ['Apr 9 – Jul 15', 'Jul 16 – 25', 'Lucinda Muldoon', 'Open'] },
+        { label: 'June – October 2027', values: ['Jun 18 – Sep 23', 'Sep 24 – Oct 3', 'Niko Kisic', '—'] },
       ],
     },
     {
@@ -406,7 +407,7 @@ export const page: PageContent = {
         {
           label: 'Early Commitment',
           prices: ['IDR 26.7 millions'],
-          note: 'Available for the first 10 enrolments per cohort. Full payment at the time of reservation. Cohorts: 200H Hybrid EB | Apr 9 - July 25, 2027 · 200H Hybrid EB | Jun 18 - Oct 3, 2027',
+          note: 'Available for the first 10 enrolments per cohort. Full payment at the time of reservation. Cohorts: 200H Hybrid EB | Apr 9 – July 25, 2027 · 200H Hybrid EB | Jun 18 – Oct 3, 2027',
           href: '/tt-classes-retreats/p/200hr-hybrid-yoga-teacher-training-bali-eb',
           ctaLabel: 'Purchase',
         },
@@ -419,9 +420,9 @@ export const page: PageContent = {
         },
       ],
       notes: [
-        '2026 | Online ─ August 4 - October 22 | In-person ─ Oct 23 - Nov 1',
-        '2027 | Online ─ April 9 - July 15 | In-person ─ July 16 - 25',
-        '2027 | Online ─ June 18 - Sept 23 | In-person ─ Sept 24 - Oct 3',
+        '2026 | Online ─ August 4 – October 22 | In-person ─ Oct 23 – Nov 1',
+        '2027 | Online ─ April 9 – July 15 | In-person ─ July 16 – 25',
+        '2027 | Online ─ June 18 – Sept 23 | In-person ─ Sept 24 – Oct 3',
         'All prices are in Indonesian Rupiah. The deposit is non-refundable but transferable to another cohort with 60 days notice.',
       ],
     },
@@ -431,8 +432,8 @@ export const page: PageContent = {
       lists: [
         {
           items: [
-            'Full online phase — all recorded content and materials',
-            '10-day Bali immersion — all sessions',
+            'Full online phase – all recorded content and materials',
+            '10-day Bali immersion – all sessions',
             'Course manual and digital resources',
             'Live Saturday sessions (Phase One)',
             'Yoga Alliance RYT-200 registration support',
@@ -462,19 +463,19 @@ export const page: PageContent = {
         },
         {
           question: 'Is the in-person portion enough time to complete the training properly?',
-          answer: 'The in-person immersion is sufficient because of what precedes it. Students arrive with a solid theoretical foundation — which means the in-person week can focus entirely on practice, teaching, and embodiment. It is not a sampler. It is a focused completion of what the online phase began.',
+          answer: 'The in-person immersion is sufficient because of what precedes it. Students arrive with a solid theoretical foundation – which means the in-person week can focus entirely on practice, teaching, and embodiment. It is not a sampler. It is a focused completion of what the online phase began.',
         },
         {
           question: 'What is the difference between the Bali English and Bali Spanish tracks?',
-          answer: 'Both take place in Ubud at the same school. The Spanish track is a dedicated Spanish-speaking cohort — the online phase, teaching labs, faculty communication, and feedback all happen in Spanish. The English track is identical in structure but delivered in English.',
+          answer: 'Both take place in Ubud at the same school. The Spanish track is a dedicated Spanish-speaking cohort – the online phase, teaching labs, faculty communication, and feedback all happen in Spanish. The English track is identical in structure but delivered in English.',
         },
         {
           question: 'What happens after the training?',
-          answer: 'Graduates enter the Radiantly Alive ecosystem — with access to the Seed → Bud → Blossom → Pod leadership path, opportunities to return as assistant teachers, and a continued relationship with the school and its community.',
+          answer: 'Graduates enter the Radiantly Alive ecosystem – with access to the Seed → Bud → Blossom → Pod leadership path, opportunities to return as assistant teachers, and a continued relationship with the school and its community.',
         },
         {
           question: 'What level of yoga experience do I need?',
-          answer: 'There is no formal prerequisite, but a consistent personal practice is important. You do not need to be an advanced practitioner — you need to be someone who has been practising and is ready to study seriously.',
+          answer: 'There is no formal prerequisite, but a consistent personal practice is important. You do not need to be an advanced practitioner – you need to be someone who has been practising and is ready to study seriously.',
         },
         {
           question: 'How much of the training is online?',
@@ -482,7 +483,7 @@ export const page: PageContent = {
         },
         {
           question: 'What is the difference between Bali and Morocco?',
-          answer: 'Bali places you inside Radiantly Alive — a living school with daily classes, 25+ resident teachers, and a real student ecosystem. Morocco is a destination-based in-person immersion with a more contained group structure. Same curriculum. Different experience of the in-person environment.',
+          answer: 'Bali places you inside Radiantly Alive – a living school with daily classes, 25+ resident teachers, and a real student ecosystem. Morocco is a destination-based in-person immersion with a more contained group structure. Same curriculum. Different experience of the in-person environment.',
         },
         {
           question: "Can I join even if I don't intend to teach?",
@@ -490,7 +491,7 @@ export const page: PageContent = {
         },
         {
           question: 'Can I speak to someone before applying?',
-          answer: 'Yes — and we encourage it. A discovery call helps you decide whether the Hybrid is right for you and which track fits your life. Book one from the contact page, or send a message to the team.',
+          answer: 'Yes – and we encourage it. A discovery call helps you decide whether the Hybrid is right for you and which track fits your life. Book one from the contact page, or send a message to the team.',
         },
       ],
     },
@@ -501,7 +502,7 @@ export const page: PageContent = {
       eyebrow: 'Still have questions?',
       heading: 'Ask us *directly.*',
       paragraphs: [
-        'We answer every enquiry personally. If you are unsure about the online phase, the Bali immersion, your schedule, your experience level, or whether this training is the right fit — send us your question. Most responses arrive within one working day. This is a conversation, not a funnel.',
+        'We answer every enquiry personally. If you are unsure about the online phase, the Bali immersion, your schedule, your experience level, or whether this training is the right fit – send us your question. Most responses arrive within one working day. This is a conversation, not a funnel.',
         'Or email us at [info@radiantlyalive.com](mailto:info@radiantlyalive.com)',
       ],
       ctas: [{ label: 'Send your question', href: 'mailto:info@radiantlyalive.com' }],

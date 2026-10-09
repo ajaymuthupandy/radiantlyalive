@@ -7,31 +7,36 @@ import { ChevronDown, Menu } from 'lucide-react'
 import { Logo } from '@/components/brand/Logo'
 import { MegaMenuPanel } from '@/components/mega-menu/MegaMenuPanel'
 import { MobileMenu } from '@/components/mobile-menu/MobileMenu'
-import { flattenNav, HEADER_CTA, MAIN_NAV } from '@/data/navigation'
+import { flattenNav, HEADER_CTA, HEADER_SCHEDULE, MAIN_NAV, type NavGroup } from '@/data/navigation'
 import { scrollToTop } from '@/lib/lenis'
 import { isActivePath } from '@/lib/routes'
 import { cn } from '@/lib/utils'
 
-const SOLID_AFTER = 64
+const SCROLLED_AFTER = 64
 const HIDE_AFTER = 560
-const OPEN_DELAY = 70
+/** Hover intent: a pointer passing over an item doesn't open its panel. */
+const OPEN_DELAY = 150
 const CLOSE_DELAY = 220
+/** An open panel closes once the page has scrolled this far. */
+const CLOSE_ON_SCROLL = 48
+
+const HEADER_NAV = MAIN_NAV.filter((g) => g.inHeader)
+const hasPanel = (group: NavGroup) => group.links.length > 1
 
 /**
- * Site header: announcement bar + logo + the source site's five navigation
- * folders as mega menus.
+ * Site header: a quiet announcement bar, then a solid plum bar with the
+ * logo, four linked sections, a schedule link and one call to action.
  *
- * - Transparent over each page's hero, solid after scrolling or while a menu
- *   is open; tucks away on scroll down and returns on scroll up.
- * - Mega menus open on hover (with intent delays) and on click; the keyboard
- *   model follows the WAI disclosure-navigation pattern: Enter/Space toggle,
- *   ArrowDown opens and moves into the panel, Left/Right move between
- *   folders, Escape closes and returns focus to the folder button.
+ * - Each top-level label is a real link to its hub page. Hovering it (with
+ *   intent) opens a short panel of destinations; keyboard and touch users
+ *   open the same panel with the small chevron button beside the label.
+ * - Panels close on Escape, outside click, route change and scroll.
+ * - The bar tucks away on scroll down and returns on scroll up.
  */
 export function SiteHeader({ announcement }: { announcement?: ReactNode }) {
   const pathname = usePathname()
   const [openId, setOpenId] = useState<string | null>(null)
-  const [solid, setSolid] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
   const [hidden, setHidden] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
 
@@ -39,8 +44,6 @@ export function SiteHeader({ announcement }: { announcement?: ReactNode }) {
   const triggerRefs = useRef<Record<string, HTMLButtonElement | null>>({})
   const mobileToggleRef = useRef<HTMLButtonElement>(null)
   const timer = useRef<number | undefined>(undefined)
-  /** A panel opened by hover is pinned (not closed) by the first click on its trigger. */
-  const openedByHover = useRef(false)
 
   // Scroll state, throttled to one update per frame.
   useEffect(() => {
@@ -49,7 +52,7 @@ export function SiteHeader({ announcement }: { announcement?: ReactNode }) {
     const update = () => {
       frame = 0
       const y = window.scrollY
-      setSolid(y > SOLID_AFTER)
+      setScrolled(y > SCROLLED_AFTER)
       if (Math.abs(y - lastY) > 6) {
         setHidden(y > HIDE_AFTER && y > lastY)
         lastY = y
@@ -66,7 +69,7 @@ export function SiteHeader({ announcement }: { announcement?: ReactNode }) {
     }
   }, [])
 
-  // Moving between folders swaps panels instantly instead of replaying the open animation.
+  // Moving between groups swaps panels instantly instead of replaying the open animation.
   const [prevOpenId, setPrevOpenId] = useState(openId)
   const [switching, setSwitching] = useState(false)
   if (openId !== prevOpenId) {
@@ -94,65 +97,41 @@ export function SiteHeader({ announcement }: { announcement?: ReactNode }) {
     if (returnFocusTo) triggerRefs.current[returnFocusTo]?.focus()
   }, [])
 
-  // Escape anywhere, and clicks outside the header, close the open panel.
+  // While a panel is open: Escape, outside clicks and scrolling close it.
   useEffect(() => {
     if (!openId) return
+    const y0 = window.scrollY
     const onKey = (e: globalThis.KeyboardEvent) => {
       if (e.key === 'Escape') close(openId)
     }
     const onPointer = (e: PointerEvent) => {
       if (!headerRef.current?.contains(e.target as Node)) close()
     }
+    const onScroll = () => {
+      if (Math.abs(window.scrollY - y0) > CLOSE_ON_SCROLL) close()
+    }
     document.addEventListener('keydown', onKey)
     document.addEventListener('pointerdown', onPointer)
+    window.addEventListener('scroll', onScroll, { passive: true })
     return () => {
       document.removeEventListener('keydown', onKey)
       document.removeEventListener('pointerdown', onPointer)
+      window.removeEventListener('scroll', onScroll)
     }
   }, [openId, close])
 
-  const focusPanelLink = (id: string, which: 'first' | 'last' = 'first') => {
+  const focusPanelLink = (id: string, which: 'first' | 'last') => {
     requestAnimationFrame(() => {
       const links = document.querySelectorAll<HTMLElement>(`#mega-${id} a`)
       links[which === 'first' ? 0 : links.length - 1]?.focus()
     })
   }
 
-  const onTriggerKeyDown = (e: KeyboardEvent<HTMLButtonElement>, index: number) => {
-    const id = MAIN_NAV[index].id
-    const move = (delta: number) => {
-      const next = MAIN_NAV[(index + delta + MAIN_NAV.length) % MAIN_NAV.length]
-      triggerRefs.current[next.id]?.focus()
-      if (openId) setOpenId(next.id)
-    }
-    switch (e.key) {
-      case 'ArrowDown':
-        e.preventDefault()
-        setOpenId(id)
-        focusPanelLink(id)
-        break
-      case 'ArrowUp':
-        e.preventDefault()
-        setOpenId(id)
-        focusPanelLink(id, 'last')
-        break
-      case 'ArrowRight':
-        e.preventDefault()
-        move(1)
-        break
-      case 'ArrowLeft':
-        e.preventDefault()
-        move(-1)
-        break
-      case 'Home':
-        e.preventDefault()
-        triggerRefs.current[MAIN_NAV[0].id]?.focus()
-        break
-      case 'End':
-        e.preventDefault()
-        triggerRefs.current[MAIN_NAV[MAIN_NAV.length - 1].id]?.focus()
-        break
-    }
+  const onTriggerKeyDown = (e: KeyboardEvent<HTMLButtonElement>, id: string) => {
+    if (e.key !== 'ArrowDown' && e.key !== 'ArrowUp') return
+    e.preventDefault()
+    setOpenId(id)
+    focusPanelLink(id, e.key === 'ArrowDown' ? 'first' : 'last')
   }
 
   const onPanelKeyDown = (e: KeyboardEvent<HTMLDivElement>) => {
@@ -170,18 +149,15 @@ export function SiteHeader({ announcement }: { announcement?: ReactNode }) {
   }
 
   const menuOpen = openId !== null
-  const overlay = !solid && !menuOpen && !mobileOpen
-  const groupActive = (id: string) => {
-    const group = MAIN_NAV.find((g) => g.id === id)
-    return !!group && flattenNav(group.links).some((l) => isActivePath(pathname, l.href))
-  }
+  const groupActive = (group: NavGroup) =>
+    isActivePath(pathname, group.href) || flattenNav(group.links).some((l) => isActivePath(pathname, l.href))
 
   return (
     <>
       <div
         ref={headerRef}
         id="site-header"
-        data-scrolled={solid || undefined}
+        data-scrolled={scrolled || undefined}
         data-switching={switching || undefined}
         onBlurCapture={onBlurCapture}
         onPointerLeave={(e) => e.pointerType === 'mouse' && schedule(() => setOpenId(null), CLOSE_DELAY)}
@@ -193,22 +169,8 @@ export function SiteHeader({ announcement }: { announcement?: ReactNode }) {
       >
         {announcement}
 
-        <header
-          className={cn(
-            'relative text-cream transition-[background-color,box-shadow] duration-500 ease-[var(--ease-out-expo)]',
-            overlay ? 'bg-transparent' : 'bg-plum shadow-[0_1px_0_0_rgb(255_253_235/0.08)]',
-          )}
-        >
-          {/* Legibility veil over bright hero footage */}
-          <div
-            aria-hidden
-            className={cn(
-              'pointer-events-none absolute inset-x-0 top-0 h-36 bg-gradient-to-b from-shade/45 to-transparent transition-opacity duration-500',
-              overlay ? 'opacity-100' : 'opacity-0',
-            )}
-          />
-
-          <div className="container-x relative flex h-[var(--header-height)] items-center justify-between gap-6">
+        <header className="relative border-b border-cream/10 bg-plum text-cream">
+          <div className="container-x flex h-[var(--header-height)] items-center gap-10">
             <Link
               href="/"
               data-header-home
@@ -222,62 +184,72 @@ export function SiteHeader({ announcement }: { announcement?: ReactNode }) {
               className="shrink-0 rounded-sm"
               aria-label="Radiantly Alive, home"
             >
-              {/* Between 1024 and 1280 the five folders need the room: emblem only */}
-              <Logo compact wordmarkClassName="lg:max-xl:sr-only" />
+              <Logo />
             </Link>
 
             <nav aria-label="Main" className="hidden h-full lg:block">
-              <ul className="flex h-full items-center">
-                {MAIN_NAV.map((group, index) => {
+              <ul className="flex h-full items-center gap-7">
+                {HEADER_NAV.map((group) => {
                   const open = openId === group.id
+                  const panel = hasPanel(group)
+                  const active = groupActive(group)
                   return (
-                    <li key={group.id} className="h-full">
-                      <button
-                        ref={(el) => {
-                          triggerRefs.current[group.id] = el
-                        }}
-                        type="button"
-                        aria-expanded={open}
-                        aria-controls={`mega-${group.id}`}
-                        data-active={groupActive(group.id) || undefined}
-                        onClick={(e) => {
-                          const pinHover = e.detail > 0 && open && openedByHover.current
-                          openedByHover.current = false
-                          setOpenId(open && !pinHover ? null : group.id)
-                        }}
-                        onKeyDown={(e) => onTriggerKeyDown(e, index)}
-                        onPointerEnter={(e) => {
-                          if (e.pointerType !== 'mouse') return
-                          schedule(() => {
-                            if (openId !== group.id) openedByHover.current = true
-                            setOpenId(group.id)
-                          }, openId ? 0 : OPEN_DELAY)
-                        }}
+                    <li
+                      key={group.id}
+                      className="flex h-full items-center gap-0.5"
+                      onPointerEnter={(e) => {
+                        if (e.pointerType !== 'mouse') return
+                        schedule(() => setOpenId(panel ? group.id : null), openId ? 0 : OPEN_DELAY)
+                      }}
+                    >
+                      <Link
+                        href={group.href}
+                        aria-current={active ? 'true' : undefined}
                         className={cn(
-                          'type-nav group relative flex h-full items-center gap-1 px-2.5 whitespace-nowrap transition-colors 2xl:px-4',
-                          'after:absolute after:inset-x-2.5 after:bottom-[calc(50%-1.1rem)] after:h-px after:origin-left after:scale-x-0 after:bg-current after:transition-transform after:duration-500 after:ease-[var(--ease-out-expo)] 2xl:after:inset-x-4',
-                          'hover:text-saffron hover:after:scale-x-100 aria-expanded:text-saffron aria-expanded:after:scale-x-100 data-active:after:scale-x-100',
+                          'type-nav flex h-full items-center whitespace-nowrap transition-[box-shadow] duration-300',
+                          active || open
+                            ? 'shadow-[inset_0_-2px_0_0_var(--color-saffron)]'
+                            : 'shadow-[inset_0_-2px_0_0_transparent] hover:shadow-[inset_0_-2px_0_0_var(--color-cream)]',
                         )}
                       >
                         {group.label}
-                        <ChevronDown
-                          aria-hidden
-                          strokeWidth={1.75}
-                          className="size-3.5 opacity-70 transition-transform duration-300 group-aria-expanded:rotate-180"
-                        />
-                      </button>
+                      </Link>
+                      {panel && (
+                        <button
+                          ref={(el) => {
+                            triggerRefs.current[group.id] = el
+                          }}
+                          type="button"
+                          aria-expanded={open}
+                          aria-controls={`mega-${group.id}`}
+                          aria-label={`${group.label} menu`}
+                          onClick={() => setOpenId(open ? null : group.id)}
+                          onKeyDown={(e) => onTriggerKeyDown(e, group.id)}
+                          className="grid size-7 place-items-center rounded-full text-cream/60 transition-colors hover:text-cream"
+                        >
+                          <ChevronDown
+                            aria-hidden
+                            strokeWidth={1.75}
+                            className={cn('size-3.5 transition-transform duration-300', open && 'rotate-180')}
+                          />
+                        </button>
+                      )}
                     </li>
                   )
                 })}
               </ul>
             </nav>
 
-            <div className="flex items-center gap-1.5">
+            <div className="ml-auto flex items-center gap-6">
+              <Link
+                href={HEADER_SCHEDULE.href}
+                className="type-nav hidden underline decoration-transparent underline-offset-4 transition-colors hover:decoration-cream md:inline"
+              >
+                {HEADER_SCHEDULE.label}
+              </Link>
               <Link
                 href={HEADER_CTA.href}
-                className={cn(
-                  'type-button hidden min-h-11 items-center rounded-control bg-saffron px-5 whitespace-nowrap text-plum transition-colors duration-300 hover:bg-cream sm:inline-flex lg:hidden xl:inline-flex',
-                )}
+                className="type-button hidden min-h-11 items-center rounded-control bg-saffron px-5 whitespace-nowrap text-ink transition-colors duration-300 hover:bg-saffron-deep sm:inline-flex"
               >
                 {HEADER_CTA.label}
               </Link>
@@ -295,9 +267,9 @@ export function SiteHeader({ announcement }: { announcement?: ReactNode }) {
             </div>
           </div>
 
-          {/* Desktop mega menus: all rendered (crawlable), only the open one is interactive */}
+          {/* Desktop panels: all rendered (crawlable), only the open one is interactive */}
           <div className="hidden lg:block" onKeyDown={onPanelKeyDown}>
-            {MAIN_NAV.map((group) => (
+            {HEADER_NAV.filter(hasPanel).map((group) => (
               <MegaMenuPanel
                 key={group.id}
                 group={group}
@@ -310,12 +282,12 @@ export function SiteHeader({ announcement }: { announcement?: ReactNode }) {
         </header>
       </div>
 
-      {/* Page dim behind an open mega menu */}
+      {/* Light page dim behind an open panel */}
       <div
         aria-hidden
         onClick={() => setOpenId(null)}
         className={cn(
-          'fixed inset-0 z-[var(--z-scrim)] hidden bg-plum/40 transition-opacity duration-500 lg:block',
+          'fixed inset-0 z-[var(--z-scrim)] hidden bg-shade/20 transition-opacity duration-300 lg:block',
           menuOpen ? 'opacity-100' : 'pointer-events-none opacity-0',
         )}
       />

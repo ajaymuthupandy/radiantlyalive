@@ -1,7 +1,7 @@
 import { existsSync } from 'node:fs'
 import path from 'node:path'
-import { ArrowDown } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
+import { hero } from '@/content/home'
 import { Media } from '@/components/ui/Media'
 import { VideoModal } from '@/components/ui/VideoModal'
 import { media } from '@/data/media'
@@ -19,8 +19,8 @@ function localSources(files: readonly string[]) {
 }
 
 /**
- * Cinematic homepage hero: Radiantly Alive's film over its poster
- * photograph, with the source homepage's own headline and positioning line.
+ * Homepage hero: Radiantly Alive's film over its poster photograph, the
+ * positioning line, one call to action and the film itself. Nothing else.
  */
 export function HomeHero() {
   const poster = media[HERO_VIDEO.poster]
@@ -63,41 +63,19 @@ export function HomeHero() {
 
       <div
         data-hero-content
-        className="container-x flex w-full flex-1 flex-col items-center justify-center pt-[calc(var(--header-height)+3.5rem)] pb-8 text-center"
+        className="container-x flex w-full flex-1 flex-col items-center justify-center pt-[calc(var(--header-height)+3.5rem)] pb-16 text-center"
       >
         <h1 id="home-hero-title" className="hero-rise type-display-xl max-w-[15ch] text-balance">
-          A global yoga community <em className="text-saffron">born in Bali.</em>
+          {hero.heading}
         </h1>
 
-        <p className="hero-rise hero-rise-late type-lead mt-6 max-w-[38rem] text-pretty text-cream/90">
-          Deepen your practice with world-class teachers, transformative trainings and meaningful connections - in Bali, across Europe, or
-          online.
-        </p>
+        <p className="hero-rise hero-rise-late type-lead mt-6 max-w-[36rem] text-pretty text-cream/90">{hero.lead}</p>
 
-        <div className="mt-10 flex flex-wrap justify-center gap-3 max-xs:w-full max-xs:flex-col" data-hero-item>
-          <Button href="/yoga-teacher-training-2026-1" tone="dark">
-            Find your path
+        <div className="mt-10 flex flex-wrap items-center justify-center gap-x-8 gap-y-4 max-xs:flex-col" data-hero-item>
+          <Button href={hero.cta.href} tone="dark">
+            {hero.cta.label}
           </Button>
-          <Button href="/classes" variant="secondary" tone="dark">
-            Class Schedule
-          </Button>
-        </div>
-      </div>
-
-      <div className="container-x w-full pb-6 md:pb-8" data-hero-item>
-        <div className="flex flex-wrap items-center justify-between gap-x-6 gap-y-4 border-t border-cream/15 pt-5">
-          <VideoModal videoId={INTEGRATIONS.manifestoVideoId} title={HERO_VIDEO.title} label="Watch our Manifesto Video" />
-          <p className="type-meta hidden text-mist md:block">
-            900+ graduates <span aria-hidden>·</span> 80+ countries <span aria-hidden>·</span> 4.9/5 Yoga Alliance
-          </p>
-          <div className="flex items-center gap-6">
-            <a
-              href="#vision"
-              className="type-eyebrow hidden items-center gap-2 text-cream/80 transition-colors hover:text-cream lg:inline-flex"
-            >
-              Scroll <ArrowDown aria-hidden className="size-3.5" />
-            </a>
-          </div>
+          <VideoModal videoId={INTEGRATIONS.manifestoVideoId} title={HERO_VIDEO.title} label="Watch our film" />
         </div>
       </div>
 

@@ -26,29 +26,18 @@ export function LogoMark({ className, title }: { className?: string; title?: str
 
 interface LogoProps {
   className?: string
-  /** Hide the wordmark below a breakpoint, e.g. on very small screens. */
-  compact?: boolean
-  /** Extra classes for the wordmark, e.g. to hide it where the header is tight. */
-  wordmarkClassName?: string
 }
 
 /**
- * Brand lockup as used in Radiantly Alive's own films: emblem plus
- * "RADIANTLY ALIVE" in spaced serif capitals.
+ * Brand lockup: emblem plus the name in Bagnard, mixed case at its natural
+ * spacing (the face is drawn for display sizes, not small tracked capitals).
+ * The name is always shown: a first-time visitor needs to read it.
  */
-export function Logo({ className, compact, wordmarkClassName }: LogoProps) {
+export function Logo({ className }: LogoProps) {
   return (
-    <span className={cn('inline-flex items-center gap-3', className)}>
-      <LogoMark className="size-9 md:size-10" />
-      <span
-        className={cn(
-          'font-display text-[0.9375rem] leading-none tracking-[0.2em] whitespace-nowrap uppercase md:text-base',
-          compact && 'max-xs:sr-only',
-          wordmarkClassName,
-        )}
-      >
-        Radiantly Alive
-      </span>
+    <span className={cn('inline-flex items-center gap-2.5', className)}>
+      <LogoMark className="size-8 md:size-9" />
+      <span className="font-display text-[1.25rem] leading-none whitespace-nowrap md:text-[1.375rem]">Radiantly Alive</span>
     </span>
   )
 }

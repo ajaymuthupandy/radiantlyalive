@@ -14,7 +14,7 @@ export default function NotFound() {
     <section aria-labelledby="nf-title" className="flex min-h-svh items-center bg-plum pt-28 pb-20 text-cream">
       <div className="container-x">
         <LogoMark className="size-12 text-saffron" />
-        <p className="type-eyebrow mt-10 text-saffron">404 · Page not found</p>
+        <p className="type-eyebrow mt-10 text-mist">Page not found (404)</p>
         <h1 id="nf-title" className="type-display-lg mt-6 max-w-[16ch] text-balance">
           This path leads <em>somewhere else.</em>
         </h1>

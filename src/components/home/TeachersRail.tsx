@@ -4,22 +4,14 @@ import { RailControls } from '@/components/ui/RailControls'
 import { teachersSection as s } from '@/content/home'
 import { teachers } from '@/data/teachers'
 
-/** "Our Teachers — Get to know us": resident teachers as a portrait rail. */
+/** Resident teachers as a portrait rail. */
 export function TeachersRail() {
   return (
     <section aria-labelledby="teachers-title" className="section-y overflow-hidden">
       <div className="container-x flex flex-wrap items-end justify-between gap-x-8 gap-y-6">
-        <div>
-          <p className="type-eyebrow text-crimson" data-reveal>
-            {s.eyebrow}
-          </p>
-          <h2 id="teachers-title" className="type-display-lg mt-5" data-text-reveal>
-            {s.heading}
-          </h2>
-          <p className="type-lead mt-4 text-ink-soft" data-reveal>
-            {s.subheading}
-          </p>
-        </div>
+        <h2 id="teachers-title" className="type-display-lg" data-text-reveal>
+          {s.heading}
+        </h2>
         <div className="flex items-center gap-6" data-reveal>
           <Button href={s.cta.href} variant="link">
             {s.cta.label}
@@ -49,7 +41,7 @@ export function TeachersRail() {
               </div>
               <figcaption className="mt-4">
                 <span className="type-h3 block">{teacher.name}</span>
-                <span className="type-eyebrow mt-2 block text-crimson">{teacher.role}</span>
+                <span className="type-small mt-1 block text-ink-soft">{teacher.role}</span>
               </figcaption>
             </figure>
           </li>

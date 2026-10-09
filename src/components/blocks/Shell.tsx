@@ -3,19 +3,22 @@ import type { Cta, RichText, Tone } from '@/content/types'
 import { cn } from '@/lib/utils'
 import { Rich } from './Rich'
 
-const toneClass: Record<Tone, string> = {
+/**
+ * Content still names five tones; the page renders two surfaces.
+ * Legacy `paper`/`sand` sections become canvas and `crimson` becomes plum.
+ */
+export const surfaceOf = (tone: Tone = 'canvas'): 'canvas' | 'plum' => (tone === 'plum' || tone === 'crimson' ? 'plum' : 'canvas')
+
+const surfaceClass = {
   canvas: 'bg-canvas text-ink',
-  paper: 'bg-paper text-ink',
-  sand: 'bg-sand/60 text-ink',
   plum: 'surface-dark bg-plum text-cream',
-  crimson: 'surface-dark bg-crimson text-cream',
-}
+} as const
 
-export const isDark = (tone?: Tone) => tone === 'plum' || tone === 'crimson'
+export const isDark = (tone?: Tone) => surfaceOf(tone) === 'plum'
 
-/** Accent for eyebrows, numerals and rules: crimson on light, saffron on plum, cream on crimson (saffron fails contrast there). */
-export const accentText = (tone?: Tone) => (tone === 'crimson' ? 'text-cream' : tone === 'plum' ? 'text-saffron' : 'text-crimson')
-export const accentBg = (tone?: Tone) => (tone === 'crimson' ? 'bg-cream' : tone === 'plum' ? 'bg-saffron' : 'bg-crimson')
+/** Quiet accent for kickers, numerals and rules: soft ink on canvas, mist on plum. */
+export const accentText = (tone?: Tone) => (isDark(tone) ? 'text-mist' : 'text-ink-soft')
+export const accentBg = (tone?: Tone) => (isDark(tone) ? 'bg-mist' : 'bg-ink-soft')
 
 interface ShellProps {
   id?: string
@@ -32,8 +35,8 @@ export function Shell({ id, tone = 'canvas', labelledBy, className, tight, child
     <section
       id={id}
       aria-labelledby={labelledBy}
-      data-tone={tone}
-      className={cn(tight ? 'section-y-tight' : 'section-y', 'block-shell scroll-mt-24 overflow-hidden', toneClass[tone], className)}
+      data-tone={surfaceOf(tone)}
+      className={cn(tight ? 'section-y-tight' : 'section-y', 'block-shell scroll-mt-24 overflow-hidden', surfaceClass[surfaceOf(tone)], className)}
     >
       <div className="container-x">{children}</div>
     </section>
@@ -65,7 +68,7 @@ export function BlockHead({ id, eyebrow, heading, lead, tone, align = 'left', cl
               {eyebrow}
             </p>
           )}
-          <h2 id={id} className={cn('type-display-md text-balance', eyebrow && 'mt-5')} data-text-reveal>
+          <h2 id={id} className={cn('type-display-lg text-balance', eyebrow && 'mt-5')} data-text-reveal>
             <Rich text={heading} />
           </h2>
         </div>
@@ -84,7 +87,7 @@ export function BlockHead({ id, eyebrow, heading, lead, tone, align = 'left', cl
         </p>
       )}
       {heading && (
-        <h2 id={id} className={cn('type-display-md text-balance', eyebrow && 'mt-5')} data-text-reveal>
+        <h2 id={id} className={cn('type-display-lg text-balance', eyebrow && 'mt-5')} data-text-reveal>
           <Rich text={heading} />
         </h2>
       )}

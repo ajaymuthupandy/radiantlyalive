@@ -397,7 +397,7 @@ export const unlimitedPasses: (ClassPass & { href: string })[] = [
 export const passNotes = [
   'All prices in IDR. Class passes are valid for 60 days. KTP / KITAS rates are applied at reception on presentation of your document.',
   'All prices in IDR. Unlimited access to the Ubud studio\'s class schedule for the duration of the pass.',
-  'Balinese at reception - Donation',
+  'Balinese at reception – Donation',
   'Notes: All class and workshop payments are non-refundable. Credits are valid only within the stated time period and cannot be exchanged for cash.',
 ]
 
