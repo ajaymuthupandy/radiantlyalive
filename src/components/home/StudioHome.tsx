@@ -13,28 +13,30 @@ export function StudioHome() {
   return (
     <section aria-labelledby="studio-home-title" className="section-y overflow-hidden">
       <div className="container-x">
-        <div className="grid gap-y-8 lg:grid-cols-12 lg:items-end lg:gap-x-10">
-          <div className="lg:col-span-7">
+        {/* Heading row: title left, supporting copy right behind a thin crimson rule */}
+        <div className="grid gap-y-6 md:grid-cols-2 md:items-center md:gap-x-10 lg:gap-x-16">
+          <div>
             <p className="type-eyebrow text-crimson" data-reveal>
               {studioHome.eyebrow}
             </p>
-            <h2 id="studio-home-title" className="type-display-lg mt-5 text-balance" data-text-reveal>
+            <h2 id="studio-home-title" className="type-display-lg mt-4 text-balance md:mt-5" data-text-reveal>
               {studioHome.heading}
             </h2>
           </div>
-          <div className="lg:col-span-5 lg:col-start-8 xl:col-span-4 xl:col-start-9">
-            <p className="type-h3 text-balance" data-reveal>
+          <div className="md:border-l md:border-crimson md:pl-8 lg:pl-12">
+            <span aria-hidden className="mb-5 block h-px w-12 bg-crimson md:hidden" />
+            <p className="type-h3 max-w-[34ch] text-balance" data-reveal>
               {studioHome.subheading}
             </p>
-            <p className="type-body mt-4 text-pretty text-ink-soft" data-reveal data-reveal-delay="0.1">
+            <p className="type-body mt-3 max-w-[60ch] text-pretty text-ink-soft" data-reveal data-reveal-delay="0.1">
               {studioHome.body}
             </p>
           </div>
         </div>
 
-        <div className="relative mt-12 aspect-[4/5] overflow-hidden rounded-frame sm:aspect-[16/9] md:mt-16 lg:aspect-[21/9]" data-image-reveal>
+        <div className="relative mt-8 aspect-[4/3] overflow-hidden rounded-frame md:mt-10 md:aspect-[2/1] lg:aspect-[12/5]" data-image-reveal>
           <div data-parallax="0.12" className="absolute inset-x-0 -inset-y-[10%]">
-            <Media asset={studioHome.image} fill sizes="(min-width: 1440px) 1360px, 100vw" className="object-cover object-[50%_40%]" />
+            <Media asset={studioHome.image} fill sizes="(min-width: 1440px) 1360px, 100vw" className="object-cover object-[60%_62%]" />
           </div>
         </div>
       </div>
